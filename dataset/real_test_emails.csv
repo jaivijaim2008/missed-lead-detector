@@ -1,0 +1,16 @@
+text,expected
+"Hi, I came across your product and would like to know the pricing for a small business.",lead
+"Could someone contact me regarding purchasing your software?",lead
+"We are interested in getting a demo for our company.",lead
+"Please let me know if you have any discounts available.",lead
+"I would like to discuss a possible partnership with your company.",lead
+"Can we arrange a call tomorrow to discuss our requirements?",lead
+"Please send me the product specifications and available plans.",lead
+"Thanks for your help. I have received the information.",normal
+"Here is the report you requested yesterday.",normal
+"I wanted to confirm that I received your email.",normal
+"Please find the attached document for your reference.",normal
+"Thank you for the update.",normal
+"Congratulations, you have been selected to receive a cash reward. Claim now!",spam
+"You have won a free gift. Click here immediately to collect it.",spam
+"Urgent! Your account has won a $5000 prize. Send your details now.",spam

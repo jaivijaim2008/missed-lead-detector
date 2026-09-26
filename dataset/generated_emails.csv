@@ -1,0 +1,1001 @@
+id,sender,subject,body,label,intent,priority
+2,user1,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,document,HIGH
+14,user13,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,document,HIGH
+15,user14,The meeting has been rescheduled.,The meeting has been rescheduled.,general,info,HIGH
+17,user16,I will get back to you shortly.,I will get back to you shortly.,general,update,MEDIUM
+21,user20,I received the document you sent.,I received the document you sent.,general,update,HIGH
+22,user21,The project is progressing as planned.,The project is progressing as planned.,general,document,MEDIUM
+25,user24,Thank you for the update. - ,Thank you for the update. - ,general,document,HIGH
+27,user26,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,HIGH
+30,user29,I will get back to you shortly.,I will get back to you shortly.,general,document,HIGH
+31,user30,I received the document you sent. - ,I received the document you sent. - ,general,info,MEDIUM
+32,user31,Thank you for the update.,Thank you for the update.,general,document,HIGH
+36,user35,Please review the attached document.,Please review the attached document.,general,update,MEDIUM
+40,user39,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,info,MEDIUM
+43,user42,The project is progressing as planned. - ,The project is progressing as planned. - ,general,document,MEDIUM
+44,user43,Could you please clarify the timeline?,Could you please clarify the timeline?,general,info,MEDIUM
+45,user44,The project is progressing as planned. - ,The project is progressing as planned. - ,general,info,MEDIUM
+51,user50,The project is progressing as planned.,The project is progressing as planned.,general,document,MEDIUM
+62,user61,Thank you for the update.,Thank you for the update.,general,info,HIGH
+65,user64,The project is progressing as planned. - ,The project is progressing as planned. - ,general,document,HIGH
+67,user66,Please review the attached document.,Please review the attached document.,general,info,HIGH
+69,user68,I will get back to you shortly. - ,I will get back to you shortly. - ,general,info,HIGH
+71,user70,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,MEDIUM
+73,user72,Please review the attached document.,Please review the attached document.,general,info,MEDIUM
+78,user77,Please review the attached document.,Please review the attached document.,general,info,HIGH
+79,user78,Please review the attached document.,Please review the attached document.,general,info,HIGH
+83,user82,I received the document you sent.,I received the document you sent.,general,document,HIGH
+86,user85,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,document,MEDIUM
+91,user90,Please review the attached document.,Please review the attached document.,general,info,HIGH
+92,user91,Please review the attached document. - ,Please review the attached document. - ,general,document,HIGH
+96,user95,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,MEDIUM
+101,user0,I received the document you sent.,I received the document you sent.,general,document,MEDIUM
+102,user1,I received the document you sent.,I received the document you sent.,general,update,HIGH
+103,user2,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,HIGH
+105,user4,The project is progressing as planned. - ,The project is progressing as planned. - ,general,info,HIGH
+111,user10,I will get back to you shortly.,I will get back to you shortly.,general,info,HIGH
+114,user13,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,HIGH
+115,user14,I received the document you sent.,I received the document you sent.,general,document,HIGH
+116,user15,Please review the attached document.,Please review the attached document.,general,info,HIGH
+117,user16,Meeting has been moved to Monday. - ,Meeting has been moved to Monday. - ,general,document,HIGH
+122,user21,Thank you for the update.,Thank you for the update.,general,update,HIGH
+125,user24,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,info,HIGH
+136,user35,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,HIGH
+138,user37,Could you please clarify the timeline?,Could you please clarify the timeline?,general,update,HIGH
+140,user39,Please review the attached document.,Please review the attached document.,general,update,MEDIUM
+141,user40,Please review the attached document. - ,Please review the attached document. - ,general,document,HIGH
+147,user46,Please review the attached document. - ,Please review the attached document. - ,general,update,MEDIUM
+148,user47,Please review the attached document.,Please review the attached document.,general,document,HIGH
+155,user54,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,info,HIGH
+160,user59,The project is progressing as planned.,The project is progressing as planned.,general,update,HIGH
+164,user63,I will get back to you shortly.,I will get back to you shortly.,general,document,HIGH
+170,user69,Thank you for the update. - ,Thank you for the update. - ,general,update,HIGH
+171,user70,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,document,HIGH
+175,user74,I will get back to you shortly.,I will get back to you shortly.,general,update,HIGH
+177,user76,I received the document you sent. - ,I received the document you sent. - ,general,info,HIGH
+178,user77,Thank you for the update.,Thank you for the update.,general,info,HIGH
+180,user79,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,update,HIGH
+182,user81,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,update,HIGH
+185,user84,I received the document you sent.,I received the document you sent.,general,info,MEDIUM
+188,user87,I received the document you sent.,I received the document you sent.,general,document,MEDIUM
+193,user92,Please review the attached document.,Please review the attached document.,general,update,HIGH
+195,user94,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,MEDIUM
+198,user97,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,info,MEDIUM
+201,user0,I received the document you sent.,I received the document you sent.,general,update,MEDIUM
+203,user2,Please review the attached document.,Please review the attached document.,general,update,MEDIUM
+220,user19,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,HIGH
+221,user20,Thank you for the update.,Thank you for the update.,general,info,HIGH
+222,user21,I received the document you sent.,I received the document you sent.,general,info,HIGH
+226,user25,Please review the attached document.,Please review the attached document.,general,info,HIGH
+227,user26,Could you please clarify the timeline?,Could you please clarify the timeline?,general,update,HIGH
+228,user27,Thank you for the update.,Thank you for the update.,general,update,HIGH
+231,user30,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,document,MEDIUM
+232,user31,The project is progressing as planned. - ,The project is progressing as planned. - ,general,update,HIGH
+236,user35,The project is progressing as planned.,The project is progressing as planned.,general,document,HIGH
+238,user37,I will get back to you shortly. - ,I will get back to you shortly. - ,general,update,HIGH
+242,user41,The project is progressing as planned.,The project is progressing as planned.,general,info,MEDIUM
+247,user46,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,update,MEDIUM
+248,user47,Please review the attached document.,Please review the attached document.,general,info,MEDIUM
+249,user48,The project is progressing as planned.,The project is progressing as planned.,general,update,MEDIUM
+251,user50,I received the document you sent.,I received the document you sent.,general,update,MEDIUM
+253,user52,I received the document you sent.,I received the document you sent.,general,info,HIGH
+258,user57,Could you please clarify the timeline?,Could you please clarify the timeline?,general,update,HIGH
+259,user58,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,document,HIGH
+266,user65,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,update,MEDIUM
+271,user70,I will get back to you shortly.,I will get back to you shortly.,general,document,HIGH
+276,user75,Could you please clarify the timeline?,Could you please clarify the timeline?,general,update,HIGH
+277,user76,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,MEDIUM
+279,user78,I received the document you sent.,I received the document you sent.,general,document,MEDIUM
+282,user81,Thank you for the update. - ,Thank you for the update. - ,general,info,HIGH
+283,user82,Could you please clarify the timeline?,Could you please clarify the timeline?,general,info,HIGH
+285,user84,Thank you for the update.,Thank you for the update.,general,document,MEDIUM
+288,user87,Meeting has been moved to Monday. - ,Meeting has been moved to Monday. - ,general,info,HIGH
+303,user2,The meeting has been rescheduled.,The meeting has been rescheduled.,general,update,MEDIUM
+304,user3,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,info,HIGH
+306,user5,The project is progressing as planned. - ,The project is progressing as planned. - ,general,info,MEDIUM
+307,user6,I received the document you sent. - ,I received the document you sent. - ,general,update,HIGH
+309,user8,The meeting has been rescheduled.,The meeting has been rescheduled.,general,info,HIGH
+310,user9,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,update,HIGH
+312,user11,I received the document you sent.,I received the document you sent.,general,update,HIGH
+316,user15,Thank you for the update.,Thank you for the update.,general,document,HIGH
+317,user16,I received the document you sent.,I received the document you sent.,general,info,MEDIUM
+318,user17,The project is progressing as planned.,The project is progressing as planned.,general,document,MEDIUM
+327,user26,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,update,HIGH
+331,user30,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,HIGH
+337,user36,Thank you for the update.,Thank you for the update.,general,update,HIGH
+338,user37,Thank you for the update.,Thank you for the update.,general,update,MEDIUM
+342,user41,The project is progressing as planned.,The project is progressing as planned.,general,update,HIGH
+344,user43,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,HIGH
+347,user46,The meeting has been rescheduled.,The meeting has been rescheduled.,general,update,MEDIUM
+359,user58,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,update,HIGH
+361,user60,I will get back to you shortly.,I will get back to you shortly.,general,update,HIGH
+363,user62,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,HIGH
+366,user65,The project is progressing as planned.,The project is progressing as planned.,general,document,HIGH
+371,user70,The project is progressing as planned. - ,The project is progressing as planned. - ,general,update,HIGH
+376,user75,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,HIGH
+380,user79,Thank you for the update. - ,Thank you for the update. - ,general,info,MEDIUM
+390,user89,I will get back to you shortly. - ,I will get back to you shortly. - ,general,document,HIGH
+393,user92,Please review the attached document.,Please review the attached document.,general,document,HIGH
+394,user93,The meeting has been rescheduled.,The meeting has been rescheduled.,general,update,HIGH
+397,user96,The project is progressing as planned.,The project is progressing as planned.,general,update,HIGH
+402,user1,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,HIGH
+405,user4,Please review the attached document. - ,Please review the attached document. - ,general,update,MEDIUM
+412,user11,I received the document you sent.,I received the document you sent.,general,update,HIGH
+415,user14,The project is progressing as planned. - ,The project is progressing as planned. - ,general,info,HIGH
+418,user17,I received the document you sent.,I received the document you sent.,general,info,MEDIUM
+419,user18,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,MEDIUM
+422,user21,The meeting has been rescheduled.,The meeting has been rescheduled.,general,info,HIGH
+423,user22,I will get back to you shortly. - ,I will get back to you shortly. - ,general,update,MEDIUM
+428,user27,Please review the attached document.,Please review the attached document.,general,update,MEDIUM
+429,user28,I received the document you sent. - ,I received the document you sent. - ,general,update,HIGH
+432,user31,The project is progressing as planned. - ,The project is progressing as planned. - ,general,info,MEDIUM
+434,user33,Meeting has been moved to Monday. - ,Meeting has been moved to Monday. - ,general,info,HIGH
+435,user34,Please review the attached document.,Please review the attached document.,general,info,HIGH
+438,user37,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,document,HIGH
+442,user41,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,HIGH
+443,user42,Could you please clarify the timeline?,Could you please clarify the timeline?,general,update,MEDIUM
+444,user43,The project is progressing as planned. - ,The project is progressing as planned. - ,general,document,HIGH
+450,user49,I will get back to you shortly.,I will get back to you shortly.,general,info,HIGH
+456,user55,The project is progressing as planned.,The project is progressing as planned.,general,info,HIGH
+457,user56,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,HIGH
+458,user57,The project is progressing as planned.,The project is progressing as planned.,general,document,HIGH
+459,user58,I will get back to you shortly. - ,I will get back to you shortly. - ,general,info,HIGH
+460,user59,Thank you for the update.,Thank you for the update.,general,update,HIGH
+462,user61,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,HIGH
+463,user62,Please review the attached document. - ,Please review the attached document. - ,general,info,MEDIUM
+472,user71,I received the document you sent.,I received the document you sent.,general,update,MEDIUM
+482,user81,I received the document you sent.,I received the document you sent.,general,update,HIGH
+483,user82,I will get back to you shortly.,I will get back to you shortly.,general,info,HIGH
+487,user86,Could you please clarify the timeline?,Could you please clarify the timeline?,general,info,HIGH
+497,user96,The meeting has been rescheduled.,The meeting has been rescheduled.,general,info,MEDIUM
+501,user0,I received the document you sent.,I received the document you sent.,general,info,HIGH
+502,user1,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,MEDIUM
+503,user2,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,MEDIUM
+512,user11,Please review the attached document. - ,Please review the attached document. - ,general,info,HIGH
+513,user12,I received the document you sent.,I received the document you sent.,general,document,HIGH
+515,user14,Thank you for the update.,Thank you for the update.,general,info,MEDIUM
+519,user18,Please review the attached document.,Please review the attached document.,general,info,HIGH
+520,user19,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,update,MEDIUM
+521,user20,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,info,MEDIUM
+523,user22,Thank you for the update.,Thank you for the update.,general,info,HIGH
+526,user25,I will get back to you shortly. - ,I will get back to you shortly. - ,general,info,HIGH
+530,user29,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,HIGH
+534,user33,I will get back to you shortly.,I will get back to you shortly.,general,update,HIGH
+540,user39,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,update,HIGH
+554,user53,I will get back to you shortly.,I will get back to you shortly.,general,update,HIGH
+555,user54,I will get back to you shortly. - ,I will get back to you shortly. - ,general,update,HIGH
+556,user55,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,MEDIUM
+560,user59,I received the document you sent.,I received the document you sent.,general,info,HIGH
+561,user60,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,document,HIGH
+564,user63,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,document,MEDIUM
+566,user65,Meeting has been moved to Monday. - ,Meeting has been moved to Monday. - ,general,update,HIGH
+568,user67,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,MEDIUM
+570,user69,Please review the attached document. - ,Please review the attached document. - ,general,document,HIGH
+572,user71,The project is progressing as planned.,The project is progressing as planned.,general,info,HIGH
+573,user72,Please review the attached document.,Please review the attached document.,general,document,HIGH
+576,user75,Thank you for the update. - ,Thank you for the update. - ,general,info,HIGH
+589,user88,Please review the attached document.,Please review the attached document.,general,update,HIGH
+594,user93,The project is progressing as planned.,The project is progressing as planned.,general,update,HIGH
+597,user96,Please review the attached document.,Please review the attached document.,general,info,MEDIUM
+598,user97,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,update,HIGH
+601,user0,I received the document you sent. - ,I received the document you sent. - ,general,info,MEDIUM
+607,user6,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,HIGH
+610,user9,Please review the attached document. - ,Please review the attached document. - ,general,document,HIGH
+612,user11,I received the document you sent.,I received the document you sent.,general,document,HIGH
+613,user12,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,info,MEDIUM
+620,user19,I received the document you sent.,I received the document you sent.,general,update,HIGH
+623,user22,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,HIGH
+625,user24,I received the document you sent. - ,I received the document you sent. - ,general,document,HIGH
+626,user25,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,document,MEDIUM
+627,user26,Meeting has been moved to Monday. - ,Meeting has been moved to Monday. - ,general,info,HIGH
+629,user28,The meeting has been rescheduled.,The meeting has been rescheduled.,general,info,HIGH
+632,user31,I received the document you sent.,I received the document you sent.,general,update,HIGH
+637,user36,I received the document you sent. - ,I received the document you sent. - ,general,update,HIGH
+639,user38,Thank you for the update.,Thank you for the update.,general,update,HIGH
+642,user41,Please review the attached document.,Please review the attached document.,general,document,HIGH
+653,user52,I will get back to you shortly.,I will get back to you shortly.,general,info,HIGH
+659,user58,I received the document you sent.,I received the document you sent.,general,document,HIGH
+662,user61,The project is progressing as planned. - ,The project is progressing as planned. - ,general,update,HIGH
+663,user62,Thank you for the update.,Thank you for the update.,general,update,MEDIUM
+664,user63,Please review the attached document.,Please review the attached document.,general,document,HIGH
+665,user64,The meeting has been rescheduled.,The meeting has been rescheduled.,general,update,HIGH
+667,user66,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,document,HIGH
+669,user68,Please review the attached document. - ,Please review the attached document. - ,general,document,MEDIUM
+682,user81,Thank you for the update.,Thank you for the update.,general,update,HIGH
+684,user83,Thank you for the update.,Thank you for the update.,general,update,HIGH
+688,user87,Please review the attached document.,Please review the attached document.,general,info,HIGH
+690,user89,I will get back to you shortly.,I will get back to you shortly.,general,document,HIGH
+692,user91,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,MEDIUM
+693,user92,The meeting has been rescheduled.,The meeting has been rescheduled.,general,update,HIGH
+698,user97,I will get back to you shortly. - ,I will get back to you shortly. - ,general,update,MEDIUM
+703,user2,Please review the attached document.,Please review the attached document.,general,info,HIGH
+707,user6,I will get back to you shortly. - ,I will get back to you shortly. - ,general,update,HIGH
+708,user7,Please review the attached document. - ,Please review the attached document. - ,general,update,MEDIUM
+710,user9,Thank you for the update. - ,Thank you for the update. - ,general,info,HIGH
+715,user14,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,document,HIGH
+716,user15,Please review the attached document. - ,Please review the attached document. - ,general,update,MEDIUM
+717,user16,I received the document you sent.,I received the document you sent.,general,info,HIGH
+723,user22,The meeting has been rescheduled.,The meeting has been rescheduled.,general,update,HIGH
+726,user25,I will get back to you shortly.,I will get back to you shortly.,general,update,HIGH
+730,user29,Could you please clarify the timeline?,Could you please clarify the timeline?,general,update,HIGH
+736,user35,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,document,HIGH
+740,user39,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,update,MEDIUM
+742,user41,Thank you for the update. - ,Thank you for the update. - ,general,document,HIGH
+747,user46,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,update,HIGH
+750,user49,Meeting has been moved to Monday. - ,Meeting has been moved to Monday. - ,general,info,HIGH
+753,user52,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,document,HIGH
+754,user53,I will get back to you shortly. - ,I will get back to you shortly. - ,general,info,HIGH
+757,user56,I will get back to you shortly.,I will get back to you shortly.,general,update,HIGH
+759,user58,Please review the attached document.,Please review the attached document.,general,document,MEDIUM
+762,user61,I received the document you sent.,I received the document you sent.,general,document,HIGH
+763,user62,I received the document you sent. - ,I received the document you sent. - ,general,document,MEDIUM
+767,user66,Please review the attached document. - ,Please review the attached document. - ,general,info,HIGH
+771,user70,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,document,HIGH
+777,user76,Thank you for the update.,Thank you for the update.,general,document,HIGH
+779,user78,I will get back to you shortly.,I will get back to you shortly.,general,document,MEDIUM
+782,user81,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,MEDIUM
+783,user82,Please review the attached document. - ,Please review the attached document. - ,general,document,HIGH
+790,user89,The project is progressing as planned.,The project is progressing as planned.,general,document,HIGH
+795,user94,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,HIGH
+801,user0,The meeting has been rescheduled.,The meeting has been rescheduled.,general,update,MEDIUM
+802,user1,I will get back to you shortly.,I will get back to you shortly.,general,document,MEDIUM
+803,user2,The project is progressing as planned. - ,The project is progressing as planned. - ,general,info,MEDIUM
+804,user3,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,document,HIGH
+809,user8,Please review the attached document. - ,Please review the attached document. - ,general,info,MEDIUM
+810,user9,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,HIGH
+811,user10,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,update,HIGH
+813,user12,Please review the attached document.,Please review the attached document.,general,info,HIGH
+814,user13,The project is progressing as planned. - ,The project is progressing as planned. - ,general,info,HIGH
+821,user20,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,HIGH
+822,user21,The meeting has been rescheduled.,The meeting has been rescheduled.,general,info,MEDIUM
+824,user23,The meeting has been rescheduled.,The meeting has been rescheduled.,general,info,MEDIUM
+825,user24,Thank you for the update.,Thank you for the update.,general,document,HIGH
+827,user26,I received the document you sent. - ,I received the document you sent. - ,general,info,HIGH
+832,user31,Could you please clarify the timeline?,Could you please clarify the timeline?,general,update,HIGH
+844,user43,I received the document you sent.,I received the document you sent.,general,document,HIGH
+854,user53,Meeting has been moved to Monday. - ,Meeting has been moved to Monday. - ,general,update,HIGH
+857,user56,I will get back to you shortly.,I will get back to you shortly.,general,info,HIGH
+861,user60,The project is progressing as planned.,The project is progressing as planned.,general,document,HIGH
+865,user64,I received the document you sent.,I received the document you sent.,general,update,HIGH
+867,user66,The meeting has been rescheduled.,The meeting has been rescheduled.,general,document,HIGH
+868,user67,Please review the attached document.,Please review the attached document.,general,info,HIGH
+871,user70,Thank you for the update.,Thank you for the update.,general,document,HIGH
+872,user71,Please review the attached document. - ,Please review the attached document. - ,general,document,HIGH
+873,user72,The project is progressing as planned.,The project is progressing as planned.,general,update,HIGH
+877,user76,I will get back to you shortly.,I will get back to you shortly.,general,update,MEDIUM
+880,user79,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,document,HIGH
+882,user81,Could you please clarify the timeline? - ,Could you please clarify the timeline? - ,general,update,HIGH
+883,user82,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,HIGH
+884,user83,Please review the attached document. - ,Please review the attached document. - ,general,document,MEDIUM
+893,user92,I will get back to you shortly.,I will get back to you shortly.,general,info,MEDIUM
+899,user98,I will get back to you shortly. - ,I will get back to you shortly. - ,general,document,MEDIUM
+902,user1,The meeting has been rescheduled.,The meeting has been rescheduled.,general,info,HIGH
+906,user5,Could you please clarify the timeline?,Could you please clarify the timeline?,general,document,HIGH
+908,user7,Please review the attached document.,Please review the attached document.,general,document,HIGH
+913,user12,The meeting has been rescheduled. - ,The meeting has been rescheduled. - ,general,info,MEDIUM
+918,user17,I received the document you sent.,I received the document you sent.,general,update,MEDIUM
+922,user21,I received the document you sent. - ,I received the document you sent. - ,general,document,HIGH
+925,user24,Thank you for the update.,Thank you for the update.,general,document,HIGH
+926,user25,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,update,HIGH
+930,user29,The project is progressing as planned.,The project is progressing as planned.,general,info,MEDIUM
+933,user32,I will get back to you shortly.,I will get back to you shortly.,general,info,HIGH
+934,user33,Meeting has been moved to Monday. - ,Meeting has been moved to Monday. - ,general,update,HIGH
+935,user34,Could you please clarify the timeline?,Could you please clarify the timeline?,general,update,HIGH
+936,user35,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,HIGH
+937,user36,Thank you for the update. - ,Thank you for the update. - ,general,update,HIGH
+945,user44,Please review the attached document.,Please review the attached document.,general,info,MEDIUM
+951,user50,The project is progressing as planned. - ,The project is progressing as planned. - ,general,document,HIGH
+960,user59,The project is progressing as planned.,The project is progressing as planned.,general,info,HIGH
+961,user60,The project is progressing as planned. - ,The project is progressing as planned. - ,general,update,HIGH
+966,user65,I will get back to you shortly. - ,I will get back to you shortly. - ,general,update,HIGH
+973,user72,The project is progressing as planned. - ,The project is progressing as planned. - ,general,info,HIGH
+974,user73,I will get back to you shortly.,I will get back to you shortly.,general,update,HIGH
+979,user78,The project is progressing as planned. - ,The project is progressing as planned. - ,general,update,MEDIUM
+984,user83,Please review the attached document.,Please review the attached document.,general,document,HIGH
+985,user84,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,info,MEDIUM
+986,user85,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,document,HIGH
+989,user88,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,document,MEDIUM
+993,user92,Could you please clarify the timeline?,Could you please clarify the timeline?,general,update,HIGH
+994,user93,I will get back to you shortly. - ,I will get back to you shortly. - ,general,info,HIGH
+995,user94,Please review the attached document. - ,Please review the attached document. - ,general,info,HIGH
+996,user95,Meeting has been moved to Monday.,Meeting has been moved to Monday.,general,update,MEDIUM
+3,user2,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,pricing,LOW
+6,user5,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,LOW
+7,user6,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,partnership,HIGH
+8,user7,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,product_inquiry,MEDIUM
+9,user8,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,partnership,MEDIUM
+10,user9,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,partnership,HIGH
+11,user10,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,product_inquiry,MEDIUM
+12,user11,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,partnership,HIGH
+13,user12,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,meeting,LOW
+16,user15,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,partnership,LOW
+19,user18,Could you provide more information about your products?,Could you provide more information about your products?,lead,meeting,HIGH
+20,user19,Could you provide more information about your products?,Could you provide more information about your products?,lead,pricing,HIGH
+23,user22,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,partnership,HIGH
+28,user27,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,partnership,HIGH
+29,user28,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,pricing,LOW
+34,user33,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,partnership,LOW
+35,user34,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,pricing,HIGH
+39,user38,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,product_inquiry,MEDIUM
+41,user40,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,meeting,LOW
+42,user41,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,LOW
+46,user45,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,product_inquiry,LOW
+50,user49,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,HIGH
+53,user52,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,partnership,LOW
+57,user56,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,meeting,MEDIUM
+59,user58,"Hello, we are interested in your AI solution. Please share your pricing structure. - ","Hello, we are interested in your AI solution. Please share your pricing structure. - ",lead,meeting,LOW
+60,user59,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,partnership,MEDIUM
+63,user62,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,meeting,MEDIUM
+70,user69,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,partnership,HIGH
+72,user71,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,product_inquiry,LOW
+74,user73,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,pricing,HIGH
+76,user75,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,partnership,LOW
+80,user79,"Hello, we are interested in your AI solution. Please share your pricing structure. - ","Hello, we are interested in your AI solution. Please share your pricing structure. - ",lead,partnership,MEDIUM
+81,user80,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,partnership,HIGH
+82,user81,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,meeting,LOW
+84,user83,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,partnership,LOW
+85,user84,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,product_inquiry,MEDIUM
+88,user87,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,meeting,LOW
+90,user89,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,product_inquiry,LOW
+93,user92,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,meeting,HIGH
+97,user96,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,HIGH
+98,user97,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,LOW
+99,user98,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,meeting,LOW
+108,user7,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,product_inquiry,LOW
+109,user8,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,pricing,HIGH
+110,user9,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,pricing,HIGH
+113,user12,We are interested in your AI solution. Could you send a price estimate? - ,We are interested in your AI solution. Could you send a price estimate? - ,lead,partnership,LOW
+119,user18,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,partnership,LOW
+120,user19,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,MEDIUM
+123,user22,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,LOW
+126,user25,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,partnership,MEDIUM
+127,user26,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,product_inquiry,MEDIUM
+129,user28,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,meeting,LOW
+132,user31,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,meeting,LOW
+134,user33,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,partnership,LOW
+135,user34,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,pricing,HIGH
+137,user36,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,partnership,MEDIUM
+139,user38,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,product_inquiry,LOW
+142,user41,We are interested in your AI solution. Could you send a price estimate? - ,We are interested in your AI solution. Could you send a price estimate? - ,lead,product_inquiry,LOW
+143,user42,"Hello, we are interested in your AI solution. Please share your pricing structure. - ","Hello, we are interested in your AI solution. Please share your pricing structure. - ",lead,pricing,MEDIUM
+144,user43,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,meeting,LOW
+145,user44,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,LOW
+150,user49,We are interested in your AI solution. Could you send a price estimate? - ,We are interested in your AI solution. Could you send a price estimate? - ,lead,meeting,HIGH
+154,user53,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,pricing,HIGH
+156,user55,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,product_inquiry,MEDIUM
+158,user57,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,product_inquiry,LOW
+163,user62,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,partnership,MEDIUM
+165,user64,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,LOW
+166,user65,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,meeting,MEDIUM
+167,user66,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,product_inquiry,HIGH
+168,user67,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,meeting,HIGH
+169,user68,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,LOW
+173,user72,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,meeting,HIGH
+174,user73,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,product_inquiry,LOW
+176,user75,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,partnership,HIGH
+181,user80,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,pricing,LOW
+184,user83,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,meeting,LOW
+186,user85,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,meeting,LOW
+190,user89,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,product_inquiry,MEDIUM
+194,user93,Could you provide more information about your products?,Could you provide more information about your products?,lead,meeting,MEDIUM
+196,user95,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,meeting,LOW
+199,user98,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,HIGH
+200,user99,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,meeting,HIGH
+206,user5,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,pricing,HIGH
+207,user6,Could you provide more information about your products?,Could you provide more information about your products?,lead,meeting,HIGH
+208,user7,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,product_inquiry,MEDIUM
+210,user9,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,product_inquiry,MEDIUM
+211,user10,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,partnership,MEDIUM
+212,user11,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,HIGH
+213,user12,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,pricing,LOW
+214,user13,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,meeting,LOW
+215,user14,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,meeting,LOW
+218,user17,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,meeting,MEDIUM
+219,user18,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,MEDIUM
+223,user22,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,LOW
+224,user23,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,meeting,LOW
+225,user24,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,partnership,MEDIUM
+229,user28,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,LOW
+230,user29,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,partnership,HIGH
+235,user34,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,meeting,HIGH
+241,user40,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,partnership,HIGH
+243,user42,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,product_inquiry,MEDIUM
+244,user43,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,MEDIUM
+246,user45,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,pricing,LOW
+252,user51,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,product_inquiry,HIGH
+254,user53,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,partnership,HIGH
+255,user54,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,pricing,MEDIUM
+256,user55,Could you provide more information about your products?,Could you provide more information about your products?,lead,meeting,LOW
+257,user56,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,meeting,HIGH
+261,user60,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,partnership,MEDIUM
+262,user61,I am interested in your subscription plan. We are interested in buying the solution. - ,I am interested in your subscription plan. We are interested in buying the solution. - ,lead,product_inquiry,LOW
+263,user62,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,pricing,MEDIUM
+267,user66,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,meeting,LOW
+269,user68,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,partnership,HIGH
+274,user73,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,partnership,HIGH
+280,user79,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,meeting,HIGH
+284,user83,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,product_inquiry,MEDIUM
+289,user88,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,product_inquiry,HIGH
+290,user89,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,partnership,LOW
+291,user90,I am interested in your subscription plan. We are interested in buying the solution. - ,I am interested in your subscription plan. We are interested in buying the solution. - ,lead,pricing,HIGH
+292,user91,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,partnership,HIGH
+293,user92,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,product_inquiry,MEDIUM
+294,user93,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,meeting,HIGH
+296,user95,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,meeting,MEDIUM
+297,user96,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,product_inquiry,MEDIUM
+299,user98,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,LOW
+300,user99,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,MEDIUM
+301,user0,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,partnership,LOW
+302,user1,"Hello, we are interested in your AI solution. Please share your pricing structure. - ","Hello, we are interested in your AI solution. Please share your pricing structure. - ",lead,meeting,HIGH
+311,user10,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,meeting,MEDIUM
+314,user13,We are interested in your AI solution. Could you send a price estimate? - ,We are interested in your AI solution. Could you send a price estimate? - ,lead,partnership,LOW
+315,user14,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,product_inquiry,MEDIUM
+323,user22,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,meeting,MEDIUM
+324,user23,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,partnership,HIGH
+325,user24,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,product_inquiry,LOW
+328,user27,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,partnership,HIGH
+332,user31,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,product_inquiry,MEDIUM
+333,user32,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,partnership,MEDIUM
+335,user34,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,pricing,HIGH
+336,user35,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,partnership,HIGH
+339,user38,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,meeting,MEDIUM
+345,user44,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,product_inquiry,MEDIUM
+348,user47,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,meeting,MEDIUM
+349,user48,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,pricing,LOW
+351,user50,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,product_inquiry,MEDIUM
+352,user51,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,product_inquiry,MEDIUM
+353,user52,We are interested in your AI solution. Could you send a price estimate? - ,We are interested in your AI solution. Could you send a price estimate? - ,lead,pricing,LOW
+357,user56,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,product_inquiry,HIGH
+360,user59,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,product_inquiry,MEDIUM
+365,user64,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,partnership,HIGH
+367,user66,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,meeting,HIGH
+373,user72,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,meeting,MEDIUM
+374,user73,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,partnership,MEDIUM
+375,user74,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,partnership,LOW
+379,user78,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,MEDIUM
+385,user84,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,partnership,LOW
+386,user85,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,meeting,MEDIUM
+387,user86,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,meeting,HIGH
+388,user87,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,product_inquiry,LOW
+389,user88,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,pricing,HIGH
+396,user95,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,MEDIUM
+398,user97,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,meeting,LOW
+399,user98,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,partnership,HIGH
+400,user99,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,meeting,MEDIUM
+408,user7,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,pricing,MEDIUM
+410,user9,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,HIGH
+414,user13,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,meeting,HIGH
+417,user16,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,partnership,LOW
+420,user19,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,pricing,LOW
+421,user20,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,meeting,HIGH
+426,user25,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,partnership,HIGH
+427,user26,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,product_inquiry,MEDIUM
+433,user32,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,MEDIUM
+436,user35,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,partnership,HIGH
+439,user38,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,product_inquiry,LOW
+440,user39,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,product_inquiry,LOW
+441,user40,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,MEDIUM
+445,user44,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,HIGH
+448,user47,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,product_inquiry,LOW
+452,user51,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,product_inquiry,MEDIUM
+453,user52,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,pricing,MEDIUM
+454,user53,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,product_inquiry,LOW
+455,user54,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,product_inquiry,MEDIUM
+461,user60,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,product_inquiry,HIGH
+464,user63,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,product_inquiry,HIGH
+465,user64,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,product_inquiry,MEDIUM
+466,user65,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,meeting,HIGH
+468,user67,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,HIGH
+469,user68,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,partnership,MEDIUM
+470,user69,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,product_inquiry,MEDIUM
+471,user70,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,MEDIUM
+473,user72,Could you provide more information about your products?,Could you provide more information about your products?,lead,meeting,MEDIUM
+474,user73,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,partnership,LOW
+475,user74,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,MEDIUM
+476,user75,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,meeting,HIGH
+477,user76,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,pricing,LOW
+478,user77,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,product_inquiry,HIGH
+481,user80,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,LOW
+485,user84,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,HIGH
+486,user85,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,partnership,LOW
+489,user88,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,LOW
+490,user89,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,pricing,MEDIUM
+491,user90,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,LOW
+493,user92,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,meeting,MEDIUM
+494,user93,Could you provide more information about your products?,Could you provide more information about your products?,lead,pricing,LOW
+495,user94,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,MEDIUM
+504,user3,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,product_inquiry,MEDIUM
+508,user7,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,partnership,HIGH
+516,user15,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,product_inquiry,MEDIUM
+517,user16,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,pricing,LOW
+518,user17,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,HIGH
+524,user23,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,partnership,LOW
+527,user26,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,meeting,HIGH
+529,user28,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,MEDIUM
+533,user32,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,product_inquiry,HIGH
+537,user36,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,product_inquiry,LOW
+538,user37,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,partnership,LOW
+539,user38,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,meeting,LOW
+544,user43,Could you provide more information about your products?,Could you provide more information about your products?,lead,partnership,LOW
+546,user45,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,partnership,HIGH
+548,user47,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,MEDIUM
+552,user51,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,HIGH
+553,user52,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,MEDIUM
+557,user56,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,HIGH
+559,user58,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,meeting,LOW
+563,user62,Could you provide more information about your products?,Could you provide more information about your products?,lead,pricing,LOW
+567,user66,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,LOW
+569,user68,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,meeting,MEDIUM
+571,user70,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,LOW
+575,user74,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,pricing,LOW
+577,user76,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,pricing,MEDIUM
+578,user77,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,partnership,HIGH
+582,user81,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,product_inquiry,HIGH
+584,user83,I would like to learn more about your business solution. - ,I would like to learn more about your business solution. - ,lead,partnership,LOW
+586,user85,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,MEDIUM
+588,user87,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,partnership,HIGH
+590,user89,Could you provide more information about your products?,Could you provide more information about your products?,lead,pricing,LOW
+591,user90,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,MEDIUM
+595,user94,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,meeting,LOW
+599,user98,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,LOW
+602,user1,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,MEDIUM
+603,user2,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,meeting,LOW
+604,user3,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,meeting,MEDIUM
+606,user5,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,meeting,MEDIUM
+611,user10,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,meeting,LOW
+616,user15,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,LOW
+617,user16,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,product_inquiry,LOW
+618,user17,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,HIGH
+619,user18,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,meeting,HIGH
+621,user20,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,partnership,LOW
+628,user27,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,pricing,LOW
+630,user29,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,HIGH
+631,user30,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,pricing,LOW
+633,user32,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,product_inquiry,HIGH
+635,user34,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,pricing,LOW
+636,user35,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,MEDIUM
+638,user37,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,LOW
+640,user39,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,pricing,LOW
+643,user42,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,HIGH
+644,user43,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,product_inquiry,MEDIUM
+647,user46,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,LOW
+648,user47,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,product_inquiry,HIGH
+649,user48,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,product_inquiry,HIGH
+651,user50,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,pricing,MEDIUM
+654,user53,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,product_inquiry,LOW
+655,user54,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,pricing,LOW
+656,user55,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,partnership,MEDIUM
+658,user57,We are interested in your AI solution. Could you send a price estimate? - ,We are interested in your AI solution. Could you send a price estimate? - ,lead,pricing,HIGH
+670,user69,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,LOW
+671,user70,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,meeting,LOW
+674,user73,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,meeting,HIGH
+677,user76,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,product_inquiry,MEDIUM
+678,user77,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,meeting,MEDIUM
+680,user79,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,partnership,MEDIUM
+683,user82,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,pricing,MEDIUM
+687,user86,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,product_inquiry,MEDIUM
+696,user95,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,HIGH
+700,user99,Could you provide more information about your products?,Could you provide more information about your products?,lead,partnership,LOW
+701,user0,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,LOW
+704,user3,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,LOW
+705,user4,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,partnership,LOW
+706,user5,Could you provide more information about your products?,Could you provide more information about your products?,lead,partnership,MEDIUM
+709,user8,Could you provide more information about your products?,Could you provide more information about your products?,lead,pricing,MEDIUM
+712,user11,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,MEDIUM
+713,user12,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,meeting,LOW
+718,user17,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,product_inquiry,HIGH
+719,user18,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,pricing,HIGH
+720,user19,"Hello, we are interested in your AI solution. Please share your pricing structure. - ","Hello, we are interested in your AI solution. Please share your pricing structure. - ",lead,pricing,HIGH
+721,user20,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,MEDIUM
+722,user21,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,product_inquiry,LOW
+724,user23,Could you provide more information about your products?,Could you provide more information about your products?,lead,pricing,LOW
+725,user24,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,partnership,HIGH
+731,user30,Could you provide more information about your products?,Could you provide more information about your products?,lead,partnership,MEDIUM
+733,user32,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,HIGH
+737,user36,I am interested in your subscription plan. We are interested in buying the solution. - ,I am interested in your subscription plan. We are interested in buying the solution. - ,lead,product_inquiry,LOW
+738,user37,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,meeting,MEDIUM
+739,user38,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,product_inquiry,MEDIUM
+741,user40,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,product_inquiry,MEDIUM
+744,user43,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,HIGH
+746,user45,I am interested in your subscription plan. We are interested in buying the solution. - ,I am interested in your subscription plan. We are interested in buying the solution. - ,lead,meeting,LOW
+748,user47,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,meeting,MEDIUM
+751,user50,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,HIGH
+755,user54,We are interested in your AI solution. Could you send a price estimate? - ,We are interested in your AI solution. Could you send a price estimate? - ,lead,product_inquiry,MEDIUM
+760,user59,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,partnership,HIGH
+765,user64,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,meeting,HIGH
+766,user65,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,partnership,LOW
+769,user68,I am interested in your subscription plan. We are interested in buying the solution. - ,I am interested in your subscription plan. We are interested in buying the solution. - ,lead,product_inquiry,MEDIUM
+770,user69,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,LOW
+773,user72,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,pricing,LOW
+774,user73,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,pricing,MEDIUM
+775,user74,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,LOW
+776,user75,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,meeting,HIGH
+781,user80,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,partnership,LOW
+787,user86,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,pricing,LOW
+791,user90,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,pricing,LOW
+794,user93,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,pricing,MEDIUM
+797,user96,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,product_inquiry,MEDIUM
+799,user98,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,partnership,HIGH
+805,user4,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,pricing,LOW
+806,user5,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,meeting,HIGH
+817,user16,We are interested in your AI solution. Could you send a price estimate? - ,We are interested in your AI solution. Could you send a price estimate? - ,lead,product_inquiry,LOW
+818,user17,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,MEDIUM
+820,user19,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,meeting,LOW
+828,user27,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,product_inquiry,MEDIUM
+830,user29,Could you provide more information about your products?,Could you provide more information about your products?,lead,partnership,LOW
+833,user32,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,product_inquiry,LOW
+835,user34,Could you provide more information about your products?,Could you provide more information about your products?,lead,meeting,LOW
+837,user36,Could you provide more information about your products?,Could you provide more information about your products?,lead,product_inquiry,HIGH
+841,user40,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,product_inquiry,HIGH
+845,user44,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,product_inquiry,LOW
+846,user45,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,pricing,MEDIUM
+847,user46,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,pricing,LOW
+848,user47,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,MEDIUM
+849,user48,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,meeting,HIGH
+850,user49,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,product_inquiry,MEDIUM
+852,user51,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,meeting,MEDIUM
+853,user52,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,product_inquiry,LOW
+864,user63,"Hello, we are interested in your AI solution. Please share your pricing structure. - ","Hello, we are interested in your AI solution. Please share your pricing structure. - ",lead,pricing,HIGH
+874,user73,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,product_inquiry,MEDIUM
+875,user74,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,partnership,MEDIUM
+876,user75,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,partnership,LOW
+878,user77,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,partnership,LOW
+879,user78,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,meeting,HIGH
+881,user80,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,product_inquiry,MEDIUM
+885,user84,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,product_inquiry,MEDIUM
+886,user85,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,meeting,MEDIUM
+888,user87,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,partnership,MEDIUM
+889,user88,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,partnership,MEDIUM
+890,user89,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,product_inquiry,LOW
+894,user93,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,product_inquiry,MEDIUM
+895,user94,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,product_inquiry,LOW
+896,user95,I am interested in your enterprise software. Could you send me the pricing details?,I am interested in your enterprise software. Could you send me the pricing details?,lead,pricing,HIGH
+897,user96,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,pricing,MEDIUM
+898,user97,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,partnership,MEDIUM
+900,user99,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,HIGH
+904,user3,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,partnership,LOW
+907,user6,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,LOW
+909,user8,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,HIGH
+910,user9,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,product_inquiry,MEDIUM
+912,user11,Could you provide more information about your products?,Could you provide more information about your products?,lead,partnership,MEDIUM
+914,user13,Could we schedule a demo to see your platform? - ,Could we schedule a demo to see your platform? - ,lead,product_inquiry,MEDIUM
+919,user18,Could you provide more information about your products?,Could you provide more information about your products?,lead,pricing,MEDIUM
+924,user23,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,MEDIUM
+927,user26,Our company is currently looking for your software. We are planning to purchase this for our company. - ,Our company is currently looking for your software. We are planning to purchase this for our company. - ,lead,product_inquiry,MEDIUM
+929,user28,Could you provide more information about your products? - ,Could you provide more information about your products? - ,lead,pricing,LOW
+931,user30,I would like to discuss a partnership opportunity with your company. - ,I would like to discuss a partnership opportunity with your company. - ,lead,partnership,HIGH
+938,user37,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,pricing,HIGH
+939,user38,I am interested in your enterprise software. Could you send me the pricing details? - ,I am interested in your enterprise software. Could you send me the pricing details? - ,lead,partnership,LOW
+940,user39,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,LOW
+941,user40,Please send me the product specifications and available plans. - ,Please send me the product specifications and available plans. - ,lead,partnership,MEDIUM
+942,user41,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,MEDIUM
+943,user42,I would like to discuss a partnership opportunity with your company.,I would like to discuss a partnership opportunity with your company.,lead,pricing,LOW
+947,user46,Could you provide more information about your products?,Could you provide more information about your products?,lead,product_inquiry,MEDIUM
+948,user47,Could we schedule a demo to see your platform?,Could we schedule a demo to see your platform?,lead,product_inquiry,MEDIUM
+949,user48,I am interested in your subscription plan. We are interested in buying the solution. - ,I am interested in your subscription plan. We are interested in buying the solution. - ,lead,meeting,MEDIUM
+950,user49,Could you provide more information about your products?,Could you provide more information about your products?,lead,meeting,LOW
+953,user52,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,meeting,LOW
+955,user54,I am interested in your subscription plan. We are interested in buying the solution.,I am interested in your subscription plan. We are interested in buying the solution.,lead,partnership,LOW
+957,user56,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,MEDIUM
+959,user58,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,LOW
+962,user61,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,pricing,HIGH
+963,user62,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,pricing,LOW
+964,user63,Could you provide more information about your products?,Could you provide more information about your products?,lead,meeting,MEDIUM
+976,user75,"Hello, we are interested in your AI solution. Please share your pricing structure.","Hello, we are interested in your AI solution. Please share your pricing structure.",lead,partnership,HIGH
+978,user77,Our company is currently looking for your software. We are planning to purchase this for our company.,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,pricing,MEDIUM
+980,user79,"Hello, we are interested in your AI solution. Please share your pricing structure. - ","Hello, we are interested in your AI solution. Please share your pricing structure. - ",lead,product_inquiry,MEDIUM
+981,user80,Please send me the product specifications and available plans.,Please send me the product specifications and available plans.,lead,pricing,MEDIUM
+988,user87,I would like to learn more about your business solution.,I would like to learn more about your business solution.,lead,product_inquiry,MEDIUM
+1000,user99,We are interested in your AI solution. Could you send a price estimate?,We are interested in your AI solution. Could you send a price estimate?,lead,meeting,HIGH
+1,user0,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,HIGH
+4,user3,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,winner,HIGH
+5,user4,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,promotion,HIGH
+18,user17,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,offer,HIGH
+24,user23,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,offer,MEDIUM
+26,user25,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,promotion,MEDIUM
+33,user32,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,offer,HIGH
+37,user36,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,winner,MEDIUM
+38,user37,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,MEDIUM
+47,user46,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,promotion,MEDIUM
+48,user47,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,winner,MEDIUM
+49,user48,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,winner,MEDIUM
+52,user51,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,winner,HIGH
+54,user53,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,MEDIUM
+55,user54,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+56,user55,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,promotion,HIGH
+58,user57,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,winner,HIGH
+61,user60,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,offer,HIGH
+64,user63,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,winner,HIGH
+66,user65,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,promotion,HIGH
+68,user67,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,offer,HIGH
+75,user74,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,winner,HIGH
+77,user76,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,HIGH
+87,user86,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,winner,HIGH
+89,user88,Limited time offer - act fast to get your discount! - ,Limited time offer - act fast to get your discount! - ,spam,promotion,HIGH
+94,user93,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,offer,HIGH
+95,user94,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,HIGH
+100,user99,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+104,user3,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,promotion,HIGH
+106,user5,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,winner,MEDIUM
+107,user6,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,promotion,MEDIUM
+112,user11,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,HIGH
+118,user17,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,HIGH
+121,user20,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,winner,HIGH
+124,user23,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,HIGH
+128,user27,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,HIGH
+130,user29,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,HIGH
+131,user30,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,offer,MEDIUM
+133,user32,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,winner,HIGH
+146,user45,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,offer,MEDIUM
+149,user48,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,winner,MEDIUM
+151,user50,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,offer,HIGH
+152,user51,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,offer,HIGH
+153,user52,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+157,user56,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,offer,MEDIUM
+159,user58,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,MEDIUM
+161,user60,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,MEDIUM
+162,user61,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,offer,HIGH
+172,user71,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,offer,HIGH
+179,user78,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,winner,MEDIUM
+183,user82,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,promotion,MEDIUM
+187,user86,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,offer,HIGH
+189,user88,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,offer,MEDIUM
+191,user90,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,HIGH
+192,user91,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,winner,HIGH
+197,user96,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,promotion,MEDIUM
+202,user1,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+204,user3,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,winner,MEDIUM
+205,user4,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+209,user8,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+216,user15,Urgent! Your account has won a $5000 prize. Send your details now. - ,Urgent! Your account has won a $5000 prize. Send your details now. - ,spam,offer,HIGH
+217,user16,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,promotion,MEDIUM
+233,user32,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,offer,MEDIUM
+234,user33,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,promotion,HIGH
+237,user36,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,MEDIUM
+239,user38,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,MEDIUM
+240,user39,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,HIGH
+245,user44,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+250,user49,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,HIGH
+260,user59,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,HIGH
+264,user63,Your password has been compromised. Change it today. - ,Your password has been compromised. Change it today. - ,spam,winner,HIGH
+265,user64,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,MEDIUM
+268,user67,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,winner,MEDIUM
+270,user69,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+272,user71,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,promotion,HIGH
+273,user72,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,MEDIUM
+275,user74,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,HIGH
+278,user77,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,winner,HIGH
+281,user80,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,promotion,HIGH
+286,user85,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,offer,HIGH
+287,user86,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,promotion,MEDIUM
+295,user94,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,MEDIUM
+298,user97,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,winner,MEDIUM
+305,user4,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,promotion,HIGH
+308,user7,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,offer,MEDIUM
+313,user12,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,promotion,HIGH
+319,user18,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,MEDIUM
+320,user19,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,HIGH
+321,user20,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,HIGH
+322,user21,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,MEDIUM
+326,user25,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,winner,HIGH
+329,user28,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,promotion,HIGH
+330,user29,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,HIGH
+334,user33,Urgent! Your account has won a $5000 prize. Send your details now. - ,Urgent! Your account has won a $5000 prize. Send your details now. - ,spam,promotion,HIGH
+340,user39,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,winner,HIGH
+341,user40,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,promotion,MEDIUM
+343,user42,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+346,user45,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,offer,HIGH
+350,user49,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,promotion,HIGH
+354,user53,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,offer,MEDIUM
+355,user54,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,offer,HIGH
+356,user55,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,HIGH
+358,user57,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,MEDIUM
+362,user61,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,HIGH
+364,user63,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+368,user67,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,winner,HIGH
+369,user68,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,promotion,HIGH
+370,user69,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,offer,MEDIUM
+372,user71,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,winner,MEDIUM
+377,user76,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,MEDIUM
+378,user77,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,offer,HIGH
+381,user80,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,MEDIUM
+382,user81,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,winner,MEDIUM
+383,user82,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,HIGH
+384,user83,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,HIGH
+391,user90,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,promotion,HIGH
+392,user91,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,offer,HIGH
+395,user94,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,HIGH
+401,user0,Your password has been compromised. Change it today. - ,Your password has been compromised. Change it today. - ,spam,offer,HIGH
+403,user2,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,MEDIUM
+404,user3,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,MEDIUM
+406,user5,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,winner,HIGH
+407,user6,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,offer,HIGH
+409,user8,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,promotion,HIGH
+411,user10,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,HIGH
+413,user12,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,HIGH
+416,user15,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,winner,HIGH
+424,user23,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,MEDIUM
+425,user24,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,winner,HIGH
+430,user29,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,promotion,HIGH
+431,user30,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,HIGH
+437,user36,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,offer,MEDIUM
+446,user45,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,promotion,HIGH
+447,user46,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,HIGH
+449,user48,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,offer,MEDIUM
+451,user50,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,offer,HIGH
+467,user66,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,promotion,HIGH
+479,user78,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,HIGH
+480,user79,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,MEDIUM
+484,user83,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,winner,HIGH
+488,user87,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,winner,HIGH
+492,user91,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,winner,HIGH
+496,user95,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+498,user97,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,HIGH
+499,user98,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,offer,HIGH
+500,user99,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+505,user4,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,winner,MEDIUM
+506,user5,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,winner,HIGH
+507,user6,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,MEDIUM
+509,user8,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,HIGH
+510,user9,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,HIGH
+511,user10,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,MEDIUM
+514,user13,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,HIGH
+522,user21,Urgent! Your account has won a $5000 prize. Send your details now. - ,Urgent! Your account has won a $5000 prize. Send your details now. - ,spam,offer,MEDIUM
+525,user24,Urgent! Your account has won a $5000 prize. Send your details now. - ,Urgent! Your account has won a $5000 prize. Send your details now. - ,spam,winner,HIGH
+528,user27,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,MEDIUM
+531,user30,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,winner,MEDIUM
+532,user31,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,winner,HIGH
+535,user34,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,HIGH
+536,user35,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,offer,MEDIUM
+541,user40,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,HIGH
+542,user41,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,HIGH
+543,user42,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,promotion,HIGH
+545,user44,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,promotion,HIGH
+547,user46,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,offer,HIGH
+549,user48,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,promotion,MEDIUM
+550,user49,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,winner,HIGH
+551,user50,Limited time offer - act fast to get your discount! - ,Limited time offer - act fast to get your discount! - ,spam,offer,MEDIUM
+558,user57,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,winner,HIGH
+562,user61,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,promotion,MEDIUM
+565,user64,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,MEDIUM
+574,user73,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,MEDIUM
+579,user78,Limited time offer - act fast to get your discount! - ,Limited time offer - act fast to get your discount! - ,spam,offer,HIGH
+580,user79,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+581,user80,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,winner,HIGH
+583,user82,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,promotion,HIGH
+585,user84,Your password has been compromised. Change it today. - ,Your password has been compromised. Change it today. - ,spam,winner,HIGH
+587,user86,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,offer,HIGH
+592,user91,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,promotion,MEDIUM
+593,user92,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,promotion,MEDIUM
+596,user95,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,winner,MEDIUM
+600,user99,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,promotion,MEDIUM
+605,user4,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+608,user7,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,offer,HIGH
+609,user8,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,promotion,HIGH
+614,user13,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,winner,MEDIUM
+615,user14,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,winner,HIGH
+622,user21,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,HIGH
+624,user23,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,promotion,HIGH
+634,user33,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,promotion,HIGH
+641,user40,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,HIGH
+645,user44,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,HIGH
+646,user45,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+650,user49,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,offer,HIGH
+652,user51,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,winner,MEDIUM
+657,user56,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+660,user59,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,winner,HIGH
+661,user60,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,winner,HIGH
+666,user65,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,winner,MEDIUM
+668,user67,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+672,user71,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,HIGH
+673,user72,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,HIGH
+675,user74,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,MEDIUM
+676,user75,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,HIGH
+679,user78,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+681,user80,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+685,user84,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,HIGH
+686,user85,Your password has been compromised. Change it today. - ,Your password has been compromised. Change it today. - ,spam,winner,MEDIUM
+689,user88,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,HIGH
+691,user90,Urgent! Your account has won a $5000 prize. Send your details now. - ,Urgent! Your account has won a $5000 prize. Send your details now. - ,spam,winner,MEDIUM
+694,user93,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,offer,HIGH
+695,user94,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+697,user96,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,MEDIUM
+699,user98,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,HIGH
+702,user1,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,HIGH
+711,user10,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+714,user13,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,HIGH
+727,user26,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,offer,MEDIUM
+728,user27,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,offer,HIGH
+729,user28,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,promotion,HIGH
+732,user31,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,HIGH
+734,user33,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,winner,MEDIUM
+735,user34,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,winner,HIGH
+743,user42,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,HIGH
+745,user44,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,offer,HIGH
+749,user48,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+752,user51,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,winner,MEDIUM
+756,user55,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,offer,HIGH
+758,user57,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,winner,HIGH
+761,user60,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,promotion,HIGH
+764,user63,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,promotion,HIGH
+768,user67,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,promotion,HIGH
+772,user71,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,winner,MEDIUM
+778,user77,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,MEDIUM
+780,user79,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,HIGH
+784,user83,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,HIGH
+785,user84,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,MEDIUM
+786,user85,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,offer,MEDIUM
+788,user87,Limited time offer - act fast to get your discount! - ,Limited time offer - act fast to get your discount! - ,spam,promotion,HIGH
+789,user88,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+792,user91,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,winner,HIGH
+793,user92,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,HIGH
+796,user95,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+798,user97,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,promotion,HIGH
+800,user99,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+807,user6,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,promotion,MEDIUM
+808,user7,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,winner,HIGH
+812,user11,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,promotion,MEDIUM
+815,user14,Limited time offer - act fast to get your discount! - ,Limited time offer - act fast to get your discount! - ,spam,winner,HIGH
+816,user15,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,winner,HIGH
+819,user18,Urgent! Your account has won a $5000 prize. Send your details now. - ,Urgent! Your account has won a $5000 prize. Send your details now. - ,spam,winner,MEDIUM
+823,user22,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,HIGH
+826,user25,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,HIGH
+829,user28,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,MEDIUM
+831,user30,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,promotion,HIGH
+834,user33,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,promotion,HIGH
+836,user35,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,winner,HIGH
+838,user37,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,promotion,HIGH
+839,user38,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,promotion,HIGH
+840,user39,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+842,user41,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+843,user42,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,winner,HIGH
+851,user50,This is a phishing attempt. Verify your account immediately. - ,This is a phishing attempt. Verify your account immediately. - ,spam,winner,HIGH
+855,user54,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+856,user55,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,HIGH
+858,user57,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,MEDIUM
+859,user58,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,winner,HIGH
+860,user59,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,winner,HIGH
+862,user61,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,winner,MEDIUM
+863,user62,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,MEDIUM
+866,user65,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+869,user68,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,MEDIUM
+870,user69,You have won a free gift. Click here immediately to collect it. - ,You have won a free gift. Click here immediately to collect it. - ,spam,winner,MEDIUM
+887,user86,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,winner,MEDIUM
+891,user90,Urgent! Your account has won a $5000 prize. Send your details now. - ,Urgent! Your account has won a $5000 prize. Send your details now. - ,spam,offer,MEDIUM
+892,user91,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,promotion,HIGH
+901,user0,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,promotion,HIGH
+903,user2,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,offer,HIGH
+905,user4,Your password has been compromised. Change it today. - ,Your password has been compromised. Change it today. - ,spam,offer,MEDIUM
+911,user10,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,promotion,HIGH
+915,user14,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,promotion,HIGH
+916,user15,Win a free product! Enter now for a chance to win.,Win a free product! Enter now for a chance to win.,spam,winner,HIGH
+917,user16,Your password has been compromised. Change it today.,Your password has been compromised. Change it today.,spam,offer,HIGH
+920,user19,Your password has been compromised. Change it today. - ,Your password has been compromised. Change it today. - ,spam,promotion,HIGH
+921,user20,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,promotion,HIGH
+923,user22,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,promotion,MEDIUM
+928,user27,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,offer,MEDIUM
+932,user31,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,promotion,MEDIUM
+944,user43,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,MEDIUM
+946,user45,Your password has been compromised. Change it today. - ,Your password has been compromised. Change it today. - ,spam,winner,HIGH
+952,user51,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,winner,MEDIUM
+954,user53,Your password has been compromised. Change it today. - ,Your password has been compromised. Change it today. - ,spam,offer,MEDIUM
+956,user55,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,promotion,MEDIUM
+958,user57,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,offer,HIGH
+965,user64,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,MEDIUM
+967,user66,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,HIGH
+968,user67,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,offer,HIGH
+969,user68,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,winner,HIGH
+970,user69,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,promotion,HIGH
+971,user70,Congratulations! You have been selected to receive a cash reward. Claim now! - ,Congratulations! You have been selected to receive a cash reward. Claim now! - ,spam,offer,MEDIUM
+972,user71,This is a phishing attempt. Verify your account immediately.,This is a phishing attempt. Verify your account immediately.,spam,winner,MEDIUM
+975,user74,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,promotion,MEDIUM
+977,user76,Your invoice is due. Pay now to avoid suspension. - ,Your invoice is due. Pay now to avoid suspension. - ,spam,promotion,HIGH
+982,user81,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,offer,HIGH
+983,user82,Win a free product! Enter now for a chance to win. - ,Win a free product! Enter now for a chance to win. - ,spam,promotion,MEDIUM
+987,user86,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,winner,MEDIUM
+990,user89,You have won a free gift. Click here immediately to collect it.,You have won a free gift. Click here immediately to collect it.,spam,winner,HIGH
+991,user90,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,HIGH
+992,user91,Your invoice is due. Pay now to avoid suspension.,Your invoice is due. Pay now to avoid suspension.,spam,offer,MEDIUM
+997,user96,Limited time offer - act fast to get your discount!,Limited time offer - act fast to get your discount!,spam,offer,MEDIUM
+998,user97,Urgent! Your account has won a $5000 prize. Send your details now.,Urgent! Your account has won a $5000 prize. Send your details now.,spam,offer,HIGH
+999,user98,Congratulations! You have been selected to receive a cash reward. Claim now!,Congratulations! You have been selected to receive a cash reward. Claim now!,spam,offer,HIGH

@@ -1,0 +1,1293 @@
+id,sender,subject,body,label,intent,priority
+1,company32198@company.com,Project update,The project is progressing as planned.,normal,general,low
+2,customer28757@company.com,Pricing information,"Hello, we are interested in your enterprise software. Could you send me the pricing details?",lead,pricing,high
+3,business93950@test.com,Project update,The meeting has been moved to Monday.,normal,general,low
+4,user21026@mail.com,Discussion request,Can we schedule a meeting to discuss your services?,lead,meeting,medium
+5,customer49897@example.com,Product demonstration,I would like to see a demo before making a decision.,lead,demo,high
+6,customer49715@example.com,Order request,"Hi, I am interested in your subscription plan. We are interested in buying the solution.",lead,purchase,high
+7,business92449@example.com,Information,I will get back to you shortly.,normal,general,low
+8,user13338@mail.com,Request for demo,Can we schedule a demo?,lead,demo,high
+9,business87941@business.com,Product details,I would like to know more about your business solution.,lead,product_inquiry,low
+10,sales22531@test.com,Meeting confirmation,I will get back to you shortly.,normal,general,low
+11,client35482@test.com,Document,Please review the attached document.,normal,general,low
+12,client35193@example.com,Purchase inquiry,Our company is currently looking for your software. We are planning to purchase this for our company.,lead,purchase,high
+13,sales65535@mail.com,Partnership discussion,Our company is interested in partnering with you.,lead,partnership,medium
+14,business34818@company.com,You are a winner,You are eligible for a free gift. Claim it now.,spam,general,low
+15,client76584@mail.com,Partnership discussion,I would like to discuss a partnership opportunity.,lead,partnership,medium
+16,user14471@company.com,Schedule a demo,Can we schedule a demo?,lead,demo,high
+17,customer50532@mail.com,Schedule,I will get back to you shortly.,normal,general,low
+18,company72612@example.com,Update,The meeting has been moved to Monday.,normal,general,low
+19,contact98519@business.com,Meeting confirmation,Thanks for the update.,normal,general,low
+20,company57085@company.com,Information,I received the document you sent.,normal,general,low
+21,user82059@business.com,Product details,We are interested in learning more about your service.,lead,product_inquiry,medium
+22,business20132@business.com,Limited time offer,Congratulations! Your reward is waiting for you.,spam,general,low
+23,company64142@example.com,Project update,I will get back to you shortly.,normal,general,low
+24,contact10422@example.com,Order request,Our company is currently looking for your software. I would like to place an order.,lead,purchase,high
+25,contact16583@company.com,Meeting confirmation,Please find the report attached.,normal,general,low
+26,contact79607@mail.com,Document,I will send the report later today.,normal,general,low
+27,sales40957@mail.com,Limited time offer,You have been selected as a lucky winner.,spam,general,low
+28,client67939@mail.com,You are a winner,Click now to receive your special bonus.,spam,general,low
+29,contact72703@company.com,Demo request,I would like to see a demo before making a decision.,lead,demo,high
+30,sales82819@example.com,Project update,I received the document you sent.,normal,general,low
+31,client28180@test.com,Product pricing,"Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,medium
+32,user62093@mail.com,Collaboration request,Our company is interested in partnering with you.,lead,partnership,medium
+33,user95661@example.com,Quotation request,I am considering purchasing your enterprise software. Can you provide a quotation?,lead,pricing,high
+34,client95548@business.com,Meeting confirmation,Thank you for sending the information.,normal,general,low
+35,business25031@test.com,Congratulations,You have been selected as a lucky winner.,spam,general,low
+36,client32842@example.com,Schedule a call,I would like to schedule a call with your team.,lead,meeting,medium
+37,sales70955@example.com,Partnership opportunity,We would like to discuss a business partnership.,lead,partnership,medium
+38,client63753@mail.com,Special offer,Claim your free reward before the offer expires.,spam,general,low
+39,client382@mail.com,Meeting request,I would like to speak with someone about your solution.,lead,meeting,medium
+40,sales95848@test.com,Discussion request,Let's schedule a meeting to discuss the proposal.,lead,meeting,medium
+41,business38990@company.com,Update,Please find the requested file attached.,normal,general,low
+42,customer98138@business.com,Limited time offer,Get huge discounts on our products today.,spam,general,low
+43,user69715@company.com,Collaboration request,I would like to discuss a partnership opportunity.,lead,partnership,medium
+44,customer78092@example.com,Partnership opportunity,Our company is interested in partnering with you.,lead,partnership,medium
+45,customer74768@company.com,Report,I have received your message.,normal,general,low
+47,company26872@business.com,Information,Thank you for the quick response.,normal,general,low
+48,client41541@example.com,Schedule a call,Can we arrange a meeting to discuss our requirements?,lead,meeting,medium
+50,business57533@test.com,Purchase inquiry,Our company is currently looking for your business solution. We are planning to purchase this for our company.,lead,purchase,high
+51,user72792@business.com,Project update,Thanks for the update.,normal,general,low
+52,company15229@example.com,Congratulations,Claim your free reward before the offer expires.,spam,general,low
+54,sales34700@test.com,Report,Thanks for the update.,normal,general,low
+55,company17246@business.com,Pricing inquiry,Could you provide information about your product. Could you send me the pricing details?,lead,pricing,high
+56,customer14763@example.com,Sales meeting,Can we have a video call to discuss the product?,lead,meeting,medium
+57,contact4822@business.com,You are a winner,Claim your free reward before the offer expires.,spam,general,low
+58,business5582@business.com,Document,I have received your message.,normal,general,low
+59,company73485@mail.com,Product pricing,Our company is currently looking for your AI solution. Could you send a price estimate?,lead,pricing,high
+62,company20966@example.com,You are a winner,You have been selected as a lucky winner.,spam,general,low
+63,company40101@company.com,Quotation request,Our company is currently looking for your AI solution. Please let me know the cost for a business plan.,lead,pricing,high
+64,user9199@business.com,Service inquiry,Could you provide information about your business solution.,lead,product_inquiry,low
+66,contact34895@example.com,Exclusive deal,Claim your free reward before the offer expires.,spam,general,low
+67,client79557@test.com,Discussion request,Please share your availability for a meeting.,lead,meeting,medium
+68,customer93001@mail.com,Business collaboration,Could we discuss a possible collaboration?,lead,partnership,medium
+70,company66569@business.com,Meeting confirmation,The project is progressing as planned.,normal,general,low
+71,sales38852@test.com,Information,I have received your message.,normal,general,low
+72,contact74693@business.com,Sales meeting,I would like to speak with someone about your solution.,lead,meeting,medium
+73,contact85913@business.com,Product pricing,We are evaluating your AI solution. Can you provide a quotation?,lead,pricing,medium
+74,client96563@company.com,Schedule a call,Please suggest a convenient time for a meeting.,lead,meeting,medium
+75,sales83060@test.com,Thank you,The meeting has been moved to Monday.,normal,general,low
+76,business3301@example.com,Request for demo,Could you arrange a product demonstration?,lead,demo,high
+77,client82644@test.com,Meeting request,Can someone from your team contact me for a discussion?,lead,meeting,medium
+78,business86090@example.com,More information,I would like to discuss your enterprise software.,lead,product_inquiry,medium
+79,business23153@test.com,Congratulations,Exclusive promotion available today only.,spam,general,low
+80,client17577@mail.com,Business collaboration,We would like to discuss a business partnership.,lead,partnership,medium
+81,client80401@test.com,Information,Please find the report attached.,normal,general,low
+83,sales31458@business.com,Request for demo,Can someone show us how the product works?,lead,demo,medium
+84,company70898@example.com,Product details,Our company is currently looking for your product.,lead,product_inquiry,low
+85,sales28143@example.com,Schedule a demo,We would like to arrange a demo for our team.,lead,demo,high
+86,user55169@mail.com,Buying your product,Could you provide information about your software. I would like to place an order.,lead,purchase,high
+87,user75556@mail.com,Limited time offer,Congratulations! You have won a free prize. Click now to claim it.,spam,general,low
+88,sales96389@test.com,Order request,Could you provide information about your enterprise software. We are interested in buying the solution.,lead,purchase,high
+89,business35874@mail.com,Report,Please review the attached document.,normal,general,low
+90,sales21732@mail.com,Discussion request,Could you arrange a call with a representative?,lead,meeting,medium
+93,company49789@business.com,Special offer,Congratulations! You have won a free prize. Click now to claim it.,spam,general,low
+94,company10835@mail.com,Order request,Could you provide information about your product. Can we proceed with the purchase?,lead,purchase,high
+95,business85315@example.com,Partnership opportunity,Could we discuss a possible collaboration?,lead,partnership,medium
+96,customer32511@company.com,Project update,Please find the report attached.,normal,general,low
+97,business16644@mail.com,Limited time offer,Claim your free reward before the offer expires.,spam,general,low
+100,contact90620@company.com,Buying your product,Could you provide information about your AI solution. We are ready to purchase the product.,lead,purchase,high
+101,contact56248@business.com,Purchase inquiry,I am looking for information regarding your software. We are planning to purchase this for our company.,lead,purchase,high
+102,customer56922@business.com,Product details,"Hi, I am interested in your enterprise software.",lead,product_inquiry,low
+103,business57180@company.com,Update,The project is progressing as planned.,normal,general,low
+104,user70639@mail.com,Thank you,I will get back to you shortly.,normal,general,low
+105,company59187@company.com,Product details,I am considering purchasing your AI solution.,lead,product_inquiry,medium
+106,customer64889@business.com,Schedule,Thank you for your help.,normal,general,low
+107,company78239@business.com,Request for demo,I would like to see a demo before making a decision.,lead,demo,medium
+108,business94481@mail.com,Report,I received the document you sent.,normal,general,low
+111,sales72240@business.com,Partnership discussion,We are looking for potential technology partners.,lead,partnership,medium
+112,company30317@example.com,Discussion request,Can we arrange a meeting to discuss our requirements?,lead,meeting,medium
+114,user25543@business.com,More information,We are evaluating your product.,lead,product_inquiry,medium
+116,user98769@mail.com,Document,Thanks for the update.,normal,general,low
+117,company24264@example.com,Pricing information,We are evaluating your subscription plan. Can you provide a quotation?,lead,pricing,high
+118,client64554@example.com,Meeting request,Are you available for a meeting next week?,lead,meeting,medium
+119,business73872@business.com,Project update,Please find the requested file attached.,normal,general,low
+120,contact78235@test.com,Demo request,Can someone show us how the product works?,lead,demo,medium
+121,client39074@test.com,Collaboration request,We are looking for potential technology partners.,lead,partnership,medium
+122,contact7994@test.com,Exclusive deal,Congratulations! Your reward is waiting for you.,spam,general,low
+124,business72450@example.com,Document,The meeting is confirmed for tomorrow.,normal,general,low
+125,client38275@example.com,Sales meeting,Would it be possible to arrange a meeting this week?,lead,meeting,medium
+126,company82027@test.com,Product details,I would like to discuss your platform.,lead,product_inquiry,medium
+128,business9459@example.com,Thank you,I have forwarded the information to the team.,normal,general,low
+129,sales39957@mail.com,Order request,I would like to discuss your platform. Can we proceed with the purchase?,lead,purchase,high
+131,company79229@business.com,Schedule,The project is progressing as planned.,normal,general,low
+132,contact5373@company.com,Demo request,We would like to arrange a demo for our team.,lead,demo,medium
+133,sales64551@example.com,More information,We are evaluating your service.,lead,product_inquiry,low
+135,client11642@business.com,More information,We are evaluating your enterprise software.,lead,product_inquiry,medium
+136,client54265@example.com,Quotation request,We are interested in learning more about your software. Could you send a price estimate?,lead,pricing,medium
+137,company72087@company.com,Buying your product,I would like to discuss your software. I would like to place an order.,lead,purchase,high
+138,customer3883@test.com,Free reward,You are eligible for a free gift. Claim it now.,spam,general,low
+140,sales20281@mail.com,Demo request,Is it possible to book a demonstration?,lead,demo,high
+141,sales35938@mail.com,Exclusive deal,Get huge discounts on our products today.,spam,general,low
+142,client72355@company.com,Free reward,You have been selected as a lucky winner.,spam,general,low
+144,user436@business.com,Limited time offer,Earn thousands of dollars from home with this opportunity.,spam,general,low
+145,business58629@test.com,Update,I have forwarded the information to the team.,normal,general,low
+146,sales31400@test.com,Buying your product,I would like to discuss your business solution. I would like to place an order.,lead,purchase,high
+147,sales62093@mail.com,Meeting request,Please share your availability for a meeting.,lead,meeting,medium
+148,contact77456@business.com,Service inquiry,I would like to discuss your software.,lead,product_inquiry,medium
+149,contact59990@example.com,Free reward,Get an exclusive discount today. Limited time offer!,spam,general,low
+150,sales20332@example.com,Schedule,I have forwarded the information to the team.,normal,general,low
+151,customer43165@test.com,Order request,I am looking for information regarding your enterprise software. Please let me know how we can place an order.,lead,purchase,high
+152,customer30871@business.com,Buying your product,We are interested in learning more about your software. We are interested in buying the solution.,lead,purchase,high
+153,client13003@example.com,You are a winner,Get an exclusive discount today. Limited time offer!,spam,general,low
+154,user7455@business.com,Product details,"Hi, I am interested in your software.",lead,product_inquiry,low
+155,contact54108@test.com,Schedule a call,Are you available for a quick call tomorrow?,lead,meeting,medium
+156,business10450@test.com,Document,Please find the requested file attached.,normal,general,low
+158,user61081@business.com,Product details,I would like to discuss your product.,lead,product_inquiry,medium
+159,client45393@test.com,Document,I received the document you sent.,normal,general,low
+160,user39699@company.com,Discussion request,Can someone from your team contact me for a discussion?,lead,meeting,medium
+162,customer74277@example.com,Order request,"Hi, I am interested in your enterprise software. We are planning to purchase this for our company.",lead,purchase,high
+164,sales25020@test.com,Information,The meeting is confirmed for tomorrow.,normal,general,low
+165,user57879@example.com,Service inquiry,"Hello, we are interested in your software.",lead,product_inquiry,low
+168,sales44496@example.com,Free reward,Earn thousands of dollars from home with this opportunity.,spam,general,low
+169,company11936@mail.com,Request for pricing,Our company is currently looking for your enterprise software. Please let me know the cost for a business plan.,lead,pricing,medium
+170,company88288@business.com,Partnership opportunity,We are looking for potential technology partners.,lead,partnership,medium
+173,sales39708@mail.com,Update,Thank you for the quick response.,normal,general,low
+174,business70557@company.com,Pricing inquiry,We are evaluating your subscription plan. Could you send me the pricing details?,lead,pricing,high
+175,sales13078@mail.com,Buying your product,I am looking for information regarding your service. Can we proceed with the purchase?,lead,purchase,high
+176,sales48666@company.com,Thank you,Thank you for sending the information.,normal,general,low
+178,sales27901@test.com,Interested in purchasing,"Hello, we are interested in your subscription plan. We are ready to purchase the product.",lead,purchase,high
+179,business16605@test.com,Congratulations,Click now to receive your special bonus.,spam,general,low
+180,business30639@business.com,Business collaboration,I would like to discuss a partnership opportunity.,lead,partnership,medium
+181,user19064@company.com,Project update,I will send the report later today.,normal,general,low
+185,contact29138@test.com,Meeting confirmation,Please review the attached document.,normal,general,low
+186,client52740@mail.com,Product details,I would like to discuss your software.,lead,product_inquiry,medium
+188,contact83078@test.com,Demo request,Could you arrange a product demonstration?,lead,demo,medium
+190,user92083@example.com,Collaboration request,We would like to discuss a business partnership.,lead,partnership,medium
+191,sales28283@mail.com,You are a winner,Get huge discounts on our products today.,spam,general,low
+192,client54624@example.com,Schedule a demo,I would like to see a demo before making a decision.,lead,demo,medium
+193,client8899@example.com,Order request,I am considering purchasing your service. Please let me know how we can place an order.,lead,purchase,high
+196,customer37800@test.com,Quotation request,I am considering purchasing your enterprise software. Please let me know the cost for a business plan.,lead,pricing,medium
+197,client29492@example.com,Pricing information,We are interested in learning more about your AI solution. What are your available plans and prices?,lead,pricing,medium
+198,user36612@test.com,Partnership discussion,We would like to discuss a business partnership.,lead,partnership,medium
+199,sales90994@business.com,Meeting request,Would it be possible to arrange a meeting this week?,lead,meeting,medium
+200,business18876@test.com,Order request,I am considering purchasing your business solution. We are ready to purchase the product.,lead,purchase,high
+201,sales83091@example.com,Meeting confirmation,Please find the requested file attached.,normal,general,low
+202,client59560@business.com,Business collaboration,We are looking for potential technology partners.,lead,partnership,medium
+203,business20732@test.com,Order request,I am looking for information regarding your platform. We are ready to purchase the product.,lead,purchase,high
+204,client54387@business.com,Product pricing,I would like to discuss your enterprise software. Can you provide a quotation?,lead,pricing,medium
+208,company15826@example.com,Thank you,I will send the report later today.,normal,general,low
+209,client69906@company.com,Schedule a call,Please let me know a suitable time for a discussion.,lead,meeting,medium
+212,customer42668@company.com,More information,We are evaluating your platform.,lead,product_inquiry,low
+213,user90488@business.com,Limited time offer,You are eligible for a free gift. Claim it now.,spam,general,low
+214,client40768@business.com,Request for pricing,Could you provide information about your enterprise software. How much does the service cost?,lead,pricing,high
+216,sales84699@company.com,Exclusive deal,Click now to receive your special bonus.,spam,general,low
+218,user82310@business.com,More information,I would like to discuss your subscription plan.,lead,product_inquiry,low
+219,contact7462@business.com,Quotation request,I would like to discuss your product. Please let me know the cost for a business plan.,lead,pricing,high
+220,client5029@example.com,Thank you,Please review the attached document.,normal,general,low
+221,contact72755@example.com,Purchase inquiry,"Hello, we are interested in your enterprise software. Can we proceed with the purchase?",lead,purchase,high
+223,contact84789@company.com,Quotation request,"Hello, we are interested in your business solution. Could you send a price estimate?",lead,pricing,high
+224,company37179@mail.com,More information,I would like to discuss your service.,lead,product_inquiry,low
+225,customer73233@mail.com,Purchase inquiry,I am considering purchasing your platform. We are planning to purchase this for our company.,lead,purchase,high
+226,company40762@mail.com,Service inquiry,I am considering purchasing your platform.,lead,product_inquiry,medium
+227,user16850@test.com,Product information,We are evaluating your enterprise software.,lead,product_inquiry,low
+228,company40583@company.com,More information,We are interested in learning more about your business solution.,lead,product_inquiry,medium
+229,business29793@company.com,Exclusive deal,You are eligible for a free gift. Claim it now.,spam,general,low
+230,company81106@company.com,Purchase inquiry,We are interested in learning more about your software. Please let me know how we can place an order.,lead,purchase,high
+232,customer53952@business.com,Special offer,You are eligible for a free gift. Claim it now.,spam,general,low
+234,company89007@test.com,Request for demo,Is it possible to book a demonstration?,lead,demo,high
+236,business79354@company.com,Document,I have forwarded the information to the team.,normal,general,low
+237,user48755@test.com,Congratulations,You are eligible for a free gift. Claim it now.,spam,general,low
+242,customer37701@mail.com,Purchase inquiry,I am considering purchasing your service. I would like to place an order.,lead,purchase,high
+243,sales61587@mail.com,Document,Please find the report attached.,normal,general,low
+245,user37862@company.com,Schedule,I received the document you sent.,normal,general,low
+246,user65613@test.com,Request for pricing,Could you provide information about your subscription plan. Could you send me the pricing details?,lead,pricing,high
+247,business38277@mail.com,Report,The project is progressing as planned.,normal,general,low
+248,sales87684@example.com,Interested in purchasing,I am looking for information regarding your enterprise software. I would like to place an order.,lead,purchase,high
+250,user61721@example.com,Project update,I have received your message.,normal,general,low
+251,sales2228@business.com,Information,I will send the report later today.,normal,general,low
+253,customer46276@test.com,Information,Please find the requested file attached.,normal,general,low
+254,user17775@example.com,Service inquiry,I would like to discuss your subscription plan.,lead,product_inquiry,medium
+255,company26522@example.com,Update,Thank you for sending the information.,normal,general,low
+256,company67652@mail.com,Project update,Thank you for your help.,normal,general,low
+258,client52531@mail.com,Product pricing,We are evaluating your platform. Please let me know the cost for a business plan.,lead,pricing,high
+259,business65138@mail.com,Free reward,Click now to receive your special bonus.,spam,general,low
+263,sales7618@example.com,Product details,I am looking for information regarding your enterprise software.,lead,product_inquiry,low
+265,sales57532@example.com,Special offer,Congratulations! Your reward is waiting for you.,spam,general,low
+267,client10177@test.com,Discussion request,I want to discuss this product with your sales team.,lead,meeting,medium
+268,customer3496@company.com,Buying your product,I am considering purchasing your product. I would like to place an order.,lead,purchase,high
+269,user34216@mail.com,Meeting request,I would like to schedule a call with your team.,lead,meeting,medium
+271,sales58441@example.com,Free reward,Claim your free reward before the offer expires.,spam,general,low
+277,user75453@example.com,More information,We are interested in learning more about your enterprise software.,lead,product_inquiry,low
+278,contact45256@company.com,Purchase inquiry,I would like to discuss your subscription plan. Please let me know how we can place an order.,lead,purchase,high
+280,customer68008@company.com,Project update,I have forwarded the information to the team.,normal,general,low
+281,company68112@business.com,Request for demo,We would like to arrange a demo for our team.,lead,demo,high
+282,sales72299@business.com,Exclusive deal,You have been selected as a lucky winner.,spam,general,low
+283,contact20310@company.com,Purchase inquiry,We are interested in learning more about your service. We are interested in buying the solution.,lead,purchase,high
+284,contact5499@example.com,Information,I have forwarded the information to the team.,normal,general,low
+285,client82303@test.com,Product details,Our company is currently looking for your enterprise software.,lead,product_inquiry,medium
+286,client9664@example.com,Buying your product,Our company is currently looking for your enterprise software. We are planning to purchase this for our company.,lead,purchase,high
+287,business44689@test.com,Sales meeting,Can someone from your team contact me for a discussion?,lead,meeting,medium
+288,user48667@test.com,Product details,I am considering purchasing your enterprise software.,lead,product_inquiry,medium
+290,client80758@mail.com,Demo request,Can we schedule a demo?,lead,demo,medium
+293,business76560@business.com,Sales meeting,Are you available for a quick call tomorrow?,lead,meeting,medium
+294,contact1171@example.com,Buying your product,I am looking for information regarding your subscription plan. We are planning to purchase this for our company.,lead,purchase,high
+295,client6805@test.com,Order request,Could you provide information about your business solution. We are ready to purchase the product.,lead,purchase,high
+296,company9737@mail.com,Information,The meeting has been moved to Monday.,normal,general,low
+298,user19009@company.com,Quotation request,I am considering purchasing your business solution. How much does the service cost?,lead,pricing,high
+299,customer6038@example.com,Schedule,The meeting has been moved to Monday.,normal,general,low
+300,contact67668@company.com,Buying your product,We are interested in learning more about your subscription plan. I would like to place an order.,lead,purchase,high
+306,user89324@company.com,Schedule,Please find the requested file attached.,normal,general,low
+307,company54990@company.com,Product information,Our company is currently looking for your software.,lead,product_inquiry,low
+308,user96547@example.com,Schedule a demo,Can someone show us how the product works?,lead,demo,medium
+309,company86899@mail.com,Report,The meeting has been moved to Monday.,normal,general,low
+312,business90571@mail.com,Interested in purchasing,We are evaluating your product. Please let me know how we can place an order.,lead,purchase,high
+313,sales71297@mail.com,Order request,We are evaluating your platform. We are interested in buying the solution.,lead,purchase,high
+315,sales62893@company.com,Product information,I am considering purchasing your subscription plan.,lead,product_inquiry,low
+317,sales30618@example.com,Service inquiry,Our company is currently looking for your software.,lead,product_inquiry,medium
+318,contact20801@mail.com,Buying your product,"Hello, we are interested in your service. We are ready to purchase the product.",lead,purchase,high
+319,sales26243@business.com,Update,Please review the attached document.,normal,general,low
+320,business54873@company.com,Product information,"Hello, we are interested in your AI solution.",lead,product_inquiry,medium
+322,customer39210@test.com,Exclusive deal,Congratulations! You have won a free prize. Click now to claim it.,spam,general,low
+325,sales24505@example.com,Product pricing,I would like to know more about your subscription plan. Could you send a price estimate?,lead,pricing,high
+327,client87820@example.com,More information,Could you provide information about your business solution.,lead,product_inquiry,medium
+329,sales47227@company.com,Order request,We are evaluating your software. We are planning to purchase this for our company.,lead,purchase,high
+330,contact92316@business.com,Quotation request,We are evaluating your service. Can you provide a quotation?,lead,pricing,medium
+331,contact29047@company.com,Thank you,Thank you for your help.,normal,general,low
+333,sales99025@test.com,More information,We are interested in learning more about your AI solution.,lead,product_inquiry,medium
+334,client69328@business.com,Congratulations,Get huge discounts on our products today.,spam,general,low
+336,company68302@mail.com,Business collaboration,Our company is interested in partnering with you.,lead,partnership,medium
+338,customer73342@mail.com,Sales meeting,I am interested in discussing this further. Can we meet?,lead,meeting,medium
+339,customer51997@business.com,Thank you,The project is progressing as planned.,normal,general,low
+341,client4259@business.com,Product information,We are interested in learning more about your software.,lead,product_inquiry,medium
+346,business27111@example.com,Product information,"Hi, I am interested in your enterprise software.",lead,product_inquiry,medium
+347,customer52825@mail.com,Quotation request,I am looking for information regarding your software. What are your available plans and prices?,lead,pricing,medium
+350,sales56094@test.com,Order request,"Hi, I am interested in your service. Please let me know how we can place an order.",lead,purchase,high
+351,client53611@company.com,Buying your product,We are interested in learning more about your business solution. Please let me know how we can place an order.,lead,purchase,high
+352,company92843@company.com,Schedule a demo,Could you arrange a product demonstration?,lead,demo,high
+354,company26751@business.com,Schedule,The meeting is confirmed for tomorrow.,normal,general,low
+356,company49536@test.com,Report,Thank you for sending the information.,normal,general,low
+357,user99937@test.com,Meeting confirmation,The meeting is confirmed for tomorrow.,normal,general,low
+361,business72462@business.com,Schedule,Thank you for the quick response.,normal,general,low
+362,contact85129@business.com,Schedule,Please review the attached document.,normal,general,low
+363,client99928@business.com,Buying your product,I would like to discuss your platform. Please let me know how we can place an order.,lead,purchase,high
+366,company20076@company.com,Limited time offer,Exclusive promotion available today only.,spam,general,low
+367,contact85900@business.com,Schedule a call,I would like to book a meeting with your company.,lead,meeting,medium
+369,user9842@example.com,More information,I would like to know more about your software.,lead,product_inquiry,medium
+372,client2161@example.com,Update,Thanks for the update.,normal,general,low
+373,customer69491@business.com,Schedule,Thank you for sending the information.,normal,general,low
+375,customer68832@company.com,Special offer,Get an exclusive discount today. Limited time offer!,spam,general,low
+376,company52122@example.com,Partnership discussion,Could we discuss a possible collaboration?,lead,partnership,medium
+378,contact62490@example.com,Pricing inquiry,"Hello, we are interested in your enterprise software. Can you provide a quotation?",lead,pricing,high
+380,contact5677@company.com,Meeting confirmation,Thank you for the quick response.,normal,general,low
+381,sales36849@test.com,More information,We are evaluating your software.,lead,product_inquiry,medium
+385,company50411@company.com,Free reward,Get huge discounts on our products today.,spam,general,low
+386,sales45432@example.com,Meeting confirmation,The meeting has been moved to Monday.,normal,general,low
+391,company47377@example.com,Schedule a call,Could you arrange a call with a representative?,lead,meeting,medium
+392,business11542@company.com,Buying your product,I am considering purchasing your product. We are ready to purchase the product.,lead,purchase,high
+395,business18298@business.com,Pricing information,Our company is currently looking for your service. Could you send a price estimate?,lead,pricing,high
+396,business57073@business.com,Schedule a call,Are you available for a meeting next week?,lead,meeting,medium
+397,company32421@mail.com,Meeting request,I want to discuss this product with your sales team.,lead,meeting,medium
+399,client43293@mail.com,Discussion request,Would it be possible to arrange a meeting this week?,lead,meeting,medium
+400,client41280@company.com,Service inquiry,We are evaluating your business solution.,lead,product_inquiry,medium
+401,sales91189@mail.com,Exclusive deal,Earn thousands of dollars from home with this opportunity.,spam,general,low
+402,client36839@mail.com,Special offer,Click now to receive your special bonus.,spam,general,low
+404,user90911@example.com,More information,Our company is currently looking for your subscription plan.,lead,product_inquiry,low
+406,client78472@mail.com,Service inquiry,Could you provide information about your enterprise software.,lead,product_inquiry,medium
+408,user32636@business.com,Meeting confirmation,I received the document you sent.,normal,general,low
+409,sales88897@mail.com,Partnership opportunity,I would like to discuss a partnership opportunity.,lead,partnership,medium
+410,customer1482@example.com,Exclusive deal,Exclusive promotion available today only.,spam,general,low
+412,customer63377@example.com,Document,Thank you for your help.,normal,general,low
+413,client27214@test.com,Pricing inquiry,I would like to know more about your business solution. Please share your pricing structure.,lead,pricing,high
+415,sales14434@company.com,Purchase inquiry,"Hello, we are interested in your software. We are planning to purchase this for our company.",lead,purchase,high
+418,client77721@mail.com,More information,Could you provide information about your software.,lead,product_inquiry,medium
+419,contact13436@test.com,Service inquiry,Our company is currently looking for your product.,lead,product_inquiry,medium
+420,sales64257@test.com,Interested in purchasing,I would like to discuss your platform. We are planning to purchase this for our company.,lead,purchase,high
+422,user60112@test.com,Information,Thank you for your help.,normal,general,low
+423,company15548@company.com,Product details,I am looking for information regarding your platform.,lead,product_inquiry,medium
+425,business63888@test.com,Schedule,I have received your message.,normal,general,low
+426,business64278@business.com,Document,The meeting has been moved to Monday.,normal,general,low
+427,customer63618@company.com,Buying your product,I am looking for information regarding your software. We are planning to purchase this for our company.,lead,purchase,high
+428,sales64551@mail.com,Sales meeting,Let's schedule a meeting to discuss the proposal.,lead,meeting,medium
+434,user4324@mail.com,Report,I will send the report later today.,normal,general,low
+435,contact90426@business.com,Quotation request,"Hello, we are interested in your AI solution. What are your available plans and prices?",lead,pricing,medium
+437,customer74820@business.com,Report,Please find the report attached.,normal,general,low
+441,contact82990@business.com,Interested in purchasing,Could you provide information about your subscription plan. I would like to place an order.,lead,purchase,high
+443,company76378@example.com,Product details,I am considering purchasing your subscription plan.,lead,product_inquiry,low
+446,user63714@business.com,Order request,I am considering purchasing your service. We are interested in buying the solution.,lead,purchase,high
+447,customer82174@mail.com,Congratulations,Congratulations! You have won a free prize. Click now to claim it.,spam,general,low
+448,client26618@company.com,Schedule a demo,Is it possible to book a demonstration?,lead,demo,high
+450,company87198@company.com,Thank you,I received the document you sent.,normal,general,low
+452,client1317@example.com,Request for pricing,I am looking for information regarding your AI solution. How much does the service cost?,lead,pricing,medium
+453,client91068@company.com,Meeting confirmation,I have forwarded the information to the team.,normal,general,low
+455,user98817@company.com,Special offer,Exclusive promotion available today only.,spam,general,low
+458,client80850@mail.com,Document,Thank you for the quick response.,normal,general,low
+459,business98724@example.com,Congratulations,Get an exclusive discount today. Limited time offer!,spam,general,low
+461,user86398@business.com,Product information,Our company is currently looking for your product.,lead,product_inquiry,medium
+465,contact89614@company.com,Collaboration request,Could we discuss a possible collaboration?,lead,partnership,medium
+467,contact54551@mail.com,Pricing inquiry,Could you provide information about your product. Could you send a price estimate?,lead,pricing,medium
+469,contact42927@mail.com,Product pricing,"Hello, we are interested in your AI solution. Please let me know the cost for a business plan.",lead,pricing,high
+470,sales57442@company.com,Meeting confirmation,I will send the report later today.,normal,general,low
+471,customer40639@company.com,Quotation request,"Hello, we are interested in your subscription plan. How much does the service cost?",lead,pricing,medium
+472,company68651@test.com,Service inquiry,"Hi, I am interested in your service.",lead,product_inquiry,low
+473,company16737@business.com,Thank you,Please find the requested file attached.,normal,general,low
+475,contact47302@example.com,Product pricing,I am looking for information regarding your platform. Can you provide a quotation?,lead,pricing,high
+478,business23556@example.com,Request for pricing,"Hi, I am interested in your subscription plan. Please share your pricing structure.",lead,pricing,high
+485,user32229@company.com,Schedule a call,Can we have a video call to discuss the product?,lead,meeting,medium
+486,contact45506@example.com,Meeting request,Are you available for a quick call tomorrow?,lead,meeting,medium
+490,sales11228@test.com,Information,Please review the attached document.,normal,general,low
+492,client35745@company.com,Order request,Could you provide information about your business solution. We are planning to purchase this for our company.,lead,purchase,high
+493,business13948@company.com,Product demonstration,Can someone show us how the product works?,lead,demo,high
+494,client40510@mail.com,Buying your product,"Hello, we are interested in your business solution. I would like to place an order.",lead,purchase,high
+495,sales79176@example.com,Pricing inquiry,I would like to know more about your product. Please let me know the cost for a business plan.,lead,pricing,medium
+496,client67400@example.com,Interested in purchasing,"Hello, we are interested in your AI solution. We are planning to purchase this for our company.",lead,purchase,high
+500,contact76923@business.com,Discussion request,Are you available for a meeting next week?,lead,meeting,medium
+507,client93602@business.com,Product demonstration,We would like to arrange a demo for our team.,lead,demo,high
+508,contact42253@mail.com,Discussion request,I am interested in discussing this further. Can we meet?,lead,meeting,medium
+509,customer61924@test.com,Product pricing,I am looking for information regarding your AI solution. Could you send me the pricing details?,lead,pricing,high
+511,user22868@company.com,Product information,Our company is currently looking for your enterprise software.,lead,product_inquiry,low
+512,sales46195@test.com,Order request,I am looking for information regarding your software. Please let me know how we can place an order.,lead,purchase,high
+513,user64617@test.com,Report,I have forwarded the information to the team.,normal,general,low
+520,contact91006@test.com,Document,The project is progressing as planned.,normal,general,low
+522,sales75182@mail.com,Product details,I would like to know more about your service.,lead,product_inquiry,medium
+526,customer34861@company.com,Interested in purchasing,"Hello, we are interested in your business solution. Can we proceed with the purchase?",lead,purchase,high
+527,customer50685@mail.com,Product pricing,We are evaluating your platform. Could you send a price estimate?,lead,pricing,high
+529,user75866@company.com,Meeting request,I would like to book a meeting with your company.,lead,meeting,medium
+530,customer9825@business.com,Pricing inquiry,We are evaluating your software. Please share your pricing structure.,lead,pricing,high
+535,company600@mail.com,Quotation request,I am looking for information regarding your subscription plan. What are your available plans and prices?,lead,pricing,high
+536,business22491@business.com,More information,Our company is currently looking for your platform.,lead,product_inquiry,medium
+538,company50096@business.com,Product details,"Hello, we are interested in your enterprise software.",lead,product_inquiry,medium
+539,user35300@test.com,Product pricing,I would like to discuss your subscription plan. Please share your pricing structure.,lead,pricing,high
+540,user77396@company.com,Product information,"Hello, we are interested in your business solution.",lead,product_inquiry,low
+542,business62524@business.com,Update,I will get back to you shortly.,normal,general,low
+543,user58956@company.com,Product information,We are interested in learning more about your service.,lead,product_inquiry,medium
+544,user25360@company.com,Special offer,You have been selected as a lucky winner.,spam,general,low
+545,company42010@example.com,Quotation request,Our company is currently looking for your service. Please let me know the cost for a business plan.,lead,pricing,medium
+547,business19524@test.com,Pricing information,I am looking for information regarding your enterprise software. Could you send me the pricing details?,lead,pricing,high
+559,sales4105@company.com,Sales meeting,Could we have a call to discuss the product?,lead,meeting,medium
+569,company84064@business.com,Product information,I would like to discuss your platform.,lead,product_inquiry,low
+574,sales93602@company.com,Report,Thank you for your help.,normal,general,low
+579,contact15804@mail.com,Quotation request,"Hi, I am interested in your platform. Can you provide a quotation?",lead,pricing,high
+582,sales23276@business.com,Service inquiry,"Hello, we are interested in your subscription plan.",lead,product_inquiry,low
+583,company27544@company.com,Project update,Please review the attached document.,normal,general,low
+587,company16999@example.com,Product information,Our company is currently looking for your AI solution.,lead,product_inquiry,low
+590,user24797@company.com,Service inquiry,I am considering purchasing your subscription plan.,lead,product_inquiry,low
+591,business29502@company.com,Free reward,Congratulations! You have won a free prize. Click now to claim it.,spam,general,low
+592,sales85367@example.com,Pricing information,We are interested in learning more about your service. Could you send me the pricing details?,lead,pricing,high
+593,sales14270@example.com,Product details,We are interested in learning more about your software.,lead,product_inquiry,medium
+594,company62280@company.com,Quotation request,I would like to discuss your enterprise software. Could you send me the pricing details?,lead,pricing,medium
+599,company30837@example.com,Pricing information,I would like to discuss your AI solution. Could you send a price estimate?,lead,pricing,high
+600,user67170@example.com,Pricing inquiry,I am looking for information regarding your subscription plan. What are your available plans and prices?,lead,pricing,high
+602,user22998@example.com,Order request,I would like to discuss your software. We are ready to purchase the product.,lead,purchase,high
+604,client81601@business.com,Pricing inquiry,I would like to know more about your service. Please share your pricing structure.,lead,pricing,high
+606,user50656@mail.com,Sales meeting,I would like to schedule a call with your team.,lead,meeting,medium
+611,client6125@example.com,Meeting request,Let's schedule a meeting to discuss the proposal.,lead,meeting,medium
+612,user44441@test.com,Purchase inquiry,We are interested in learning more about your AI solution. Please let me know how we can place an order.,lead,purchase,high
+613,sales95343@company.com,Meeting confirmation,I have received your message.,normal,general,low
+616,sales49728@mail.com,Order request,"Hi, I am interested in your AI solution. We are interested in buying the solution.",lead,purchase,high
+618,customer65291@example.com,Sales meeting,Please share your availability for a meeting.,lead,meeting,medium
+619,contact122@example.com,Meeting request,Can we have a video call to discuss the product?,lead,meeting,medium
+620,contact73806@company.com,Thank you,Thank you for the quick response.,normal,general,low
+621,company7213@company.com,Update,Thank you for your help.,normal,general,low
+624,customer6100@company.com,Order request,We are interested in learning more about your business solution. Please let me know how we can place an order.,lead,purchase,high
+625,business15926@mail.com,More information,"Hello, we are interested in your product.",lead,product_inquiry,medium
+628,contact23326@test.com,Product information,We are interested in learning more about your enterprise software.,lead,product_inquiry,low
+633,business81910@business.com,Report,The meeting is confirmed for tomorrow.,normal,general,low
+635,customer99816@business.com,Information,The project is progressing as planned.,normal,general,low
+636,sales70079@business.com,Schedule,Thanks for the update.,normal,general,low
+638,company89673@business.com,Pricing inquiry,Our company is currently looking for your product. Please let me know the cost for a business plan.,lead,pricing,high
+639,customer80854@test.com,Product pricing,Our company is currently looking for your software. Please share your pricing structure.,lead,pricing,high
+645,client5426@mail.com,Product information,I would like to know more about your service.,lead,product_inquiry,medium
+646,company61222@company.com,Interested in purchasing,I would like to know more about your product. We are ready to purchase the product.,lead,purchase,high
+647,user75161@test.com,Purchase inquiry,I am looking for information regarding your product. Can we proceed with the purchase?,lead,purchase,high
+648,contact9036@test.com,Product details,We are interested in learning more about your AI solution.,lead,product_inquiry,medium
+652,user14960@mail.com,Service inquiry,"Hi, I am interested in your business solution.",lead,product_inquiry,low
+653,client5847@business.com,Product details,"Hi, I am interested in your business solution.",lead,product_inquiry,low
+658,business33118@test.com,Purchase inquiry,"Hello, we are interested in your platform. We are ready to purchase the product.",lead,purchase,high
+660,contact8388@test.com,Quotation request,"Hello, we are interested in your software. Could you send a price estimate?",lead,pricing,medium
+661,company79603@example.com,Product pricing,We are interested in learning more about your platform. Please share your pricing structure.,lead,pricing,medium
+662,user86702@example.com,Sales meeting,Could you arrange a call with a representative?,lead,meeting,medium
+665,customer40036@company.com,Pricing information,I am looking for information regarding your enterprise software. How much does the service cost?,lead,pricing,medium
+670,sales86014@company.com,More information,I am considering purchasing your business solution.,lead,product_inquiry,medium
+672,user41562@mail.com,Product details,I am looking for information regarding your service.,lead,product_inquiry,low
+673,user47218@company.com,Interested in purchasing,Our company is currently looking for your enterprise software. We are planning to purchase this for our company.,lead,purchase,high
+675,sales79611@example.com,Buying your product,We are interested in learning more about your platform. I would like to place an order.,lead,purchase,high
+676,business34602@example.com,Special offer,Get huge discounts on our products today.,spam,general,low
+682,business58587@company.com,Purchase inquiry,Our company is currently looking for your service. We are interested in buying the solution.,lead,purchase,high
+686,sales68437@business.com,Exclusive deal,Get an exclusive discount today. Limited time offer!,spam,general,low
+697,customer28489@mail.com,You are a winner,Earn thousands of dollars from home with this opportunity.,spam,general,low
+702,contact12722@company.com,Pricing inquiry,Our company is currently looking for your enterprise software. Please let me know the cost for a business plan.,lead,pricing,high
+704,contact55239@business.com,Service inquiry,I am looking for information regarding your software.,lead,product_inquiry,low
+708,business816@example.com,Schedule,I will send the report later today.,normal,general,low
+712,client99055@company.com,Thank you,Thanks for the update.,normal,general,low
+714,customer98117@company.com,Order request,Could you provide information about your service. Please let me know how we can place an order.,lead,purchase,high
+715,user44459@test.com,Service inquiry,"Hello, we are interested in your AI solution.",lead,product_inquiry,low
+721,sales4826@business.com,Pricing information,We are interested in learning more about your AI solution. How much does the service cost?,lead,pricing,high
+722,company87873@mail.com,Request for pricing,"Hello, we are interested in your product. Please let me know the cost for a business plan.",lead,pricing,high
+727,client73915@mail.com,Pricing information,We are evaluating your product. Could you send a price estimate?,lead,pricing,high
+731,sales98245@business.com,Interested in purchasing,We are evaluating your platform. Can we proceed with the purchase?,lead,purchase,high
+733,sales31826@business.com,Service inquiry,I would like to discuss your AI solution.,lead,product_inquiry,medium
+738,client70979@example.com,Product demonstration,Can we schedule a demo?,lead,demo,medium
+747,contact70090@business.com,Request for pricing,Could you provide information about your subscription plan. What are your available plans and prices?,lead,pricing,medium
+749,client82657@example.com,Service inquiry,"Hi, I am interested in your AI solution.",lead,product_inquiry,low
+750,contact33879@business.com,Order request,I am considering purchasing your business solution. We are interested in buying the solution.,lead,purchase,high
+751,sales85182@test.com,Product pricing,I am looking for information regarding your AI solution. How much does the service cost?,lead,pricing,medium
+752,client10377@mail.com,Order request,I am considering purchasing your subscription plan. Please let me know how we can place an order.,lead,purchase,high
+755,client47700@test.com,Order request,We are evaluating your enterprise software. We are planning to purchase this for our company.,lead,purchase,high
+756,business24202@example.com,Update,I have received your message.,normal,general,low
+758,contact11011@example.com,Quotation request,We are interested in learning more about your software. Could you send me the pricing details?,lead,pricing,high
+763,contact83958@test.com,Service inquiry,I am looking for information regarding your subscription plan.,lead,product_inquiry,low
+764,client40452@business.com,Buying your product,We are interested in learning more about your AI solution. We are ready to purchase the product.,lead,purchase,high
+769,customer55443@company.com,Special offer,Earn thousands of dollars from home with this opportunity.,spam,general,low
+772,contact64586@company.com,Quotation request,I am looking for information regarding your subscription plan. Please share your pricing structure.,lead,pricing,medium
+774,business2030@mail.com,More information,"Hi, I am interested in your AI solution.",lead,product_inquiry,medium
+775,company60876@example.com,Discussion request,I would like to book a meeting with your company.,lead,meeting,medium
+777,business50536@mail.com,Buying your product,"Hi, I am interested in your platform. Please let me know how we can place an order.",lead,purchase,high
+778,business62074@mail.com,Request for pricing,I would like to discuss your platform. How much does the service cost?,lead,pricing,medium
+781,company2074@company.com,Request for pricing,"Hello, we are interested in your AI solution. Could you send a price estimate?",lead,pricing,high
+784,contact44457@example.com,Request for pricing,I would like to know more about your subscription plan. Could you send me the pricing details?,lead,pricing,medium
+785,client30597@business.com,Service inquiry,We are interested in learning more about your platform.,lead,product_inquiry,medium
+787,company5275@mail.com,Discussion request,Please let me know a suitable time for a discussion.,lead,meeting,medium
+791,customer83727@test.com,Order request,We are interested in learning more about your business solution. Can we proceed with the purchase?,lead,purchase,high
+793,client72381@company.com,Pricing information,Could you provide information about your AI solution. How much does the service cost?,lead,pricing,medium
+795,user4199@company.com,Product information,"Hi, I am interested in your service.",lead,product_inquiry,medium
+798,business86050@mail.com,Project update,Thank you for the quick response.,normal,general,low
+800,contact5428@example.com,More information,I am considering purchasing your software.,lead,product_inquiry,low
+804,client92184@mail.com,Information,Thanks for the update.,normal,general,low
+807,client72220@business.com,More information,I am considering purchasing your AI solution.,lead,product_inquiry,medium
+816,sales39473@example.com,Congratulations,Congratulations! Your reward is waiting for you.,spam,general,low
+819,customer40048@test.com,You are a winner,Exclusive promotion available today only.,spam,general,low
+821,client38082@mail.com,More information,I would like to discuss your platform.,lead,product_inquiry,medium
+822,client34513@example.com,Purchase inquiry,I would like to discuss your software. We are interested in buying the solution.,lead,purchase,high
+824,customer34998@mail.com,Service inquiry,We are interested in learning more about your AI solution.,lead,product_inquiry,medium
+829,customer45093@example.com,Request for pricing,I am looking for information regarding your service. Please let me know the cost for a business plan.,lead,pricing,high
+840,sales33874@mail.com,Interested in purchasing,We are interested in learning more about your product. We are ready to purchase the product.,lead,purchase,high
+844,sales18263@test.com,Order request,I would like to discuss your service. I would like to place an order.,lead,purchase,high
+851,business50885@mail.com,More information,I would like to know more about your subscription plan.,lead,product_inquiry,low
+852,client2067@business.com,Product demonstration,Could you arrange a product demonstration?,lead,demo,high
+855,sales75064@test.com,Pricing information,Could you provide information about your business solution. Can you provide a quotation?,lead,pricing,medium
+859,user37575@mail.com,Sales meeting,Can we arrange a meeting to discuss our requirements?,lead,meeting,medium
+860,user84785@mail.com,Purchase inquiry,We are interested in learning more about your service. Can we proceed with the purchase?,lead,purchase,high
+863,client11920@business.com,Report,Thank you for the quick response.,normal,general,low
+864,sales59003@business.com,Service inquiry,"Hello, we are interested in your platform.",lead,product_inquiry,medium
+865,contact49986@example.com,More information,We are interested in learning more about your service.,lead,product_inquiry,low
+868,sales23784@example.com,Update,I will send the report later today.,normal,general,low
+872,contact36552@test.com,Project update,The meeting is confirmed for tomorrow.,normal,general,low
+878,company48409@mail.com,Congratulations,Earn thousands of dollars from home with this opportunity.,spam,general,low
+885,client82080@example.com,Interested in purchasing,"Hi, I am interested in your platform. We are ready to purchase the product.",lead,purchase,high
+887,company33447@example.com,Interested in purchasing,"Hi, I am interested in your AI solution. Please let me know how we can place an order.",lead,purchase,high
+889,user44394@mail.com,Product information,I would like to know more about your AI solution.,lead,product_inquiry,low
+891,client54357@example.com,Limited time offer,Click now to receive your special bonus.,spam,general,low
+895,contact51161@company.com,Schedule a call,I am interested in discussing this further. Can we meet?,lead,meeting,medium
+897,business68925@business.com,Quotation request,Our company is currently looking for your business solution. Can you provide a quotation?,lead,pricing,high
+898,contact3368@mail.com,Purchase inquiry,Our company is currently looking for your platform. Can we proceed with the purchase?,lead,purchase,high
+900,sales4891@mail.com,Interested in purchasing,"Hello, we are interested in your service. I would like to place an order.",lead,purchase,high
+905,business35966@example.com,Buying your product,"Hello, we are interested in your product. I would like to place an order.",lead,purchase,high
+909,customer55997@mail.com,Product information,"Hello, we are interested in your enterprise software.",lead,product_inquiry,medium
+913,business80963@business.com,Buying your product,I would like to discuss your AI solution. I would like to place an order.,lead,purchase,high
+916,user45793@test.com,Buying your product,I would like to discuss your service. We are planning to purchase this for our company.,lead,purchase,high
+918,contact54290@company.com,Product information,We are evaluating your subscription plan.,lead,product_inquiry,low
+921,contact78228@mail.com,Update,I received the document you sent.,normal,general,low
+922,contact14353@test.com,Quotation request,I would like to know more about your product. Can you provide a quotation?,lead,pricing,high
+926,contact1164@test.com,Product details,Could you provide information about your business solution.,lead,product_inquiry,medium
+929,contact51777@business.com,Purchase inquiry,Our company is currently looking for your enterprise software. Please let me know how we can place an order.,lead,purchase,high
+933,business11197@company.com,Pricing inquiry,I would like to know more about your subscription plan. Could you send a price estimate?,lead,pricing,high
+938,contact63442@business.com,Project update,Thank you for sending the information.,normal,general,low
+939,sales95952@test.com,Meeting request,Please let me know a suitable time for a discussion.,lead,meeting,medium
+945,sales62118@test.com,Product details,I am looking for information regarding your product.,lead,product_inquiry,medium
+946,customer16722@test.com,Product pricing,I am looking for information regarding your software. Please share your pricing structure.,lead,pricing,high
+947,user33779@example.com,Order request,I would like to know more about your product. We are planning to purchase this for our company.,lead,purchase,high
+952,contact96354@business.com,Schedule a call,Can we set up a meeting to discuss pricing?,lead,meeting,medium
+953,client62520@business.com,Purchase inquiry,"Hi, I am interested in your service. Can we proceed with the purchase?",lead,purchase,high
+957,sales35828@business.com,Free reward,Congratulations! Your reward is waiting for you.,spam,general,low
+958,sales31792@test.com,Product pricing,I am looking for information regarding your enterprise software. Can you provide a quotation?,lead,pricing,medium
+961,company25407@example.com,Quotation request,I am considering purchasing your AI solution. Could you send a price estimate?,lead,pricing,high
+962,customer92908@example.com,Pricing inquiry,I am looking for information regarding your AI solution. How much does the service cost?,lead,pricing,medium
+965,sales87600@business.com,Product information,I would like to discuss your product.,lead,product_inquiry,low
+966,customer33947@business.com,Product pricing,"Hi, I am interested in your enterprise software. Can you provide a quotation?",lead,pricing,high
+967,client14312@company.com,Quotation request,Our company is currently looking for your enterprise software. What are your available plans and prices?,lead,pricing,medium
+975,contact44672@example.com,Buying your product,"Hi, I am interested in your platform. We are planning to purchase this for our company.",lead,purchase,high
+979,business3424@test.com,Document,Thank you for sending the information.,normal,general,low
+982,user85801@test.com,Product information,Could you provide information about your platform.,lead,product_inquiry,medium
+983,customer96498@company.com,Service inquiry,I am looking for information regarding your AI solution.,lead,product_inquiry,medium
+985,user77569@example.com,Product pricing,"Hello, we are interested in your subscription plan. How much does the service cost?",lead,pricing,high
+993,company54655@mail.com,You are a winner,Congratulations! Your reward is waiting for you.,spam,general,low
+994,sales35613@test.com,Report,Please find the requested file attached.,normal,general,low
+1001,customer97147@example.com,Order request,I am looking for information regarding your subscription plan. We are ready to purchase the product.,lead,purchase,high
+1005,client26308@mail.com,Product pricing,Our company is currently looking for your platform. What are your available plans and prices?,lead,pricing,medium
+1010,business99759@business.com,Free reward,Exclusive promotion available today only.,spam,general,low
+1011,contact30207@example.com,Interested in purchasing,I am looking for information regarding your service. We are interested in buying the solution.,lead,purchase,high
+1013,client76051@company.com,More information,Our company is currently looking for your AI solution.,lead,product_inquiry,low
+1017,business84987@example.com,Quotation request,Our company is currently looking for your service. Please share your pricing structure.,lead,pricing,high
+1018,client60886@company.com,Product details,I would like to know more about your subscription plan.,lead,product_inquiry,medium
+1023,contact88528@business.com,You are a winner,Congratulations! You have won a free prize. Click now to claim it.,spam,general,low
+1025,sales26932@company.com,Interested in purchasing,We are interested in learning more about your platform. We are interested in buying the solution.,lead,purchase,high
+1028,company45349@mail.com,Buying your product,We are evaluating your software. We are ready to purchase the product.,lead,purchase,high
+1036,company86051@business.com,Pricing inquiry,Our company is currently looking for your business solution. Can you provide a quotation?,lead,pricing,medium
+1037,user40272@company.com,More information,I would like to discuss your product.,lead,product_inquiry,medium
+1039,contact37487@company.com,Buying your product,I would like to know more about your service. Please let me know how we can place an order.,lead,purchase,high
+1041,business26990@test.com,Interested in purchasing,I would like to discuss your product. We are planning to purchase this for our company.,lead,purchase,high
+1044,company20554@example.com,Schedule a call,Can someone from your team contact me for a discussion?,lead,meeting,medium
+1046,sales14821@mail.com,Interested in purchasing,I am looking for information regarding your subscription plan. We are planning to purchase this for our company.,lead,purchase,high
+1052,company58502@test.com,Purchase inquiry,We are evaluating your business solution. We are planning to purchase this for our company.,lead,purchase,high
+1053,business95520@mail.com,More information,Could you provide information about your subscription plan.,lead,product_inquiry,low
+1061,client74230@mail.com,Buying your product,"Hello, we are interested in your business solution. We are interested in buying the solution.",lead,purchase,high
+1064,customer35839@business.com,Buying your product,I would like to know more about your business solution. I would like to place an order.,lead,purchase,high
+1065,sales10169@test.com,Purchase inquiry,We are evaluating your product. We are interested in buying the solution.,lead,purchase,high
+1066,user41546@business.com,Service inquiry,"Hello, we are interested in your service.",lead,product_inquiry,low
+1067,customer18050@test.com,Product details,"Hello, we are interested in your business solution.",lead,product_inquiry,medium
+1071,sales40035@example.com,Discussion request,I would like to speak with someone about your solution.,lead,meeting,medium
+1074,customer25836@example.com,Pricing inquiry,"Hi, I am interested in your subscription plan. Please let me know the cost for a business plan.",lead,pricing,high
+1078,business65719@test.com,Product details,I am looking for information regarding your business solution.,lead,product_inquiry,low
+1081,sales77351@company.com,Product information,Our company is currently looking for your subscription plan.,lead,product_inquiry,low
+1082,contact29925@mail.com,Request for pricing,I am considering purchasing your enterprise software. Can you provide a quotation?,lead,pricing,high
+1083,business65087@business.com,Purchase inquiry,I would like to discuss your platform. We are interested in buying the solution.,lead,purchase,high
+1087,contact86417@example.com,More information,"Hello, we are interested in your enterprise software.",lead,product_inquiry,low
+1090,sales76373@test.com,Thank you,Please find the report attached.,normal,general,low
+1091,client67132@business.com,More information,I am considering purchasing your subscription plan.,lead,product_inquiry,low
+1092,company64238@mail.com,Meeting request,Could we have a call to discuss the product?,lead,meeting,medium
+1096,company86881@mail.com,Update,The meeting is confirmed for tomorrow.,normal,general,low
+1097,client15715@mail.com,Order request,We are interested in learning more about your software. We are ready to purchase the product.,lead,purchase,high
+1100,sales64397@test.com,Buying your product,I would like to discuss your platform. We are interested in buying the solution.,lead,purchase,high
+1102,sales46337@business.com,Buying your product,I am looking for information regarding your enterprise software. We are interested in buying the solution.,lead,purchase,high
+1103,company97362@test.com,Pricing information,"Hi, I am interested in your service. Please let me know the cost for a business plan.",lead,pricing,high
+1104,company46940@mail.com,Product details,Could you provide information about your platform.,lead,product_inquiry,low
+1105,contact11233@example.com,Service inquiry,Our company is currently looking for your AI solution.,lead,product_inquiry,low
+1109,contact87575@business.com,Quotation request,"Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,high
+1110,sales9972@test.com,Order request,Could you provide information about your AI solution. Can we proceed with the purchase?,lead,purchase,high
+1111,contact97471@example.com,Purchase inquiry,We are evaluating your enterprise software. I would like to place an order.,lead,purchase,high
+1120,sales21148@business.com,Request for pricing,Could you provide information about your product. Please let me know the cost for a business plan.,lead,pricing,high
+1124,customer11100@business.com,Interested in purchasing,"Hi, I am interested in your subscription plan. We are ready to purchase the product.",lead,purchase,high
+1126,contact87160@test.com,Service inquiry,Our company is currently looking for your platform.,lead,product_inquiry,medium
+1131,sales32389@business.com,Purchase inquiry,I am considering purchasing your enterprise software. Can we proceed with the purchase?,lead,purchase,high
+1141,client79020@test.com,Meeting confirmation,Thank you for your help.,normal,general,low
+1147,client48282@company.com,Product details,We are evaluating your AI solution.,lead,product_inquiry,medium
+1148,customer73307@test.com,Schedule a call,Can we schedule a meeting to discuss your services?,lead,meeting,medium
+1153,client27180@test.com,Order request,I would like to discuss your enterprise software. I would like to place an order.,lead,purchase,high
+1154,user19229@example.com,Interested in purchasing,Could you provide information about your service. Can we proceed with the purchase?,lead,purchase,high
+1155,company76502@mail.com,Interested in purchasing,I am looking for information regarding your subscription plan. I would like to place an order.,lead,purchase,high
+1156,sales52208@company.com,Schedule a call,Please share your availability for a meeting.,lead,meeting,medium
+1158,contact88021@test.com,Pricing inquiry,I am considering purchasing your AI solution. Can you provide a quotation?,lead,pricing,high
+1169,sales66781@business.com,Request for pricing,We are evaluating your service. Please let me know the cost for a business plan.,lead,pricing,high
+1170,customer69045@test.com,Report,I will get back to you shortly.,normal,general,low
+1171,company89400@example.com,Request for pricing,I would like to discuss your platform. Please share your pricing structure.,lead,pricing,high
+1177,user27392@company.com,Meeting request,Can we schedule a meeting to discuss your services?,lead,meeting,medium
+1180,client62547@business.com,Product pricing,We are interested in learning more about your AI solution. Can you provide a quotation?,lead,pricing,high
+1195,business85262@company.com,Request for pricing,"Hi, I am interested in your AI solution. Can you provide a quotation?",lead,pricing,medium
+1196,business62226@mail.com,Service inquiry,"Hello, we are interested in your product.",lead,product_inquiry,low
+1216,client99159@example.com,Update,Please find the report attached.,normal,general,low
+1218,sales38389@mail.com,Request for pricing,"Hello, we are interested in your AI solution. Please share your pricing structure.",lead,pricing,high
+1223,business56306@mail.com,Service inquiry,I would like to know more about your enterprise software.,lead,product_inquiry,medium
+1233,customer67165@test.com,Service inquiry,We are interested in learning more about your product.,lead,product_inquiry,medium
+1234,contact34007@company.com,Interested in purchasing,"Hi, I am interested in your software. We are interested in buying the solution.",lead,purchase,high
+1249,company40067@business.com,Order request,"Hi, I am interested in your service. We are ready to purchase the product.",lead,purchase,high
+1251,client373@example.com,Order request,Our company is currently looking for your service. Please let me know how we can place an order.,lead,purchase,high
+1262,user76063@mail.com,Product pricing,Our company is currently looking for your AI solution. Please let me know the cost for a business plan.,lead,pricing,medium
+1267,customer80640@business.com,Request for pricing,We are evaluating your enterprise software. Could you send a price estimate?,lead,pricing,high
+1271,client8679@mail.com,Product pricing,"Hi, I am interested in your business solution. Can you provide a quotation?",lead,pricing,medium
+1272,business72806@company.com,Service inquiry,"Hi, I am interested in your product.",lead,product_inquiry,medium
+1273,user83435@test.com,Sales meeting,Are you available for a meeting next week?,lead,meeting,medium
+1279,sales16218@company.com,Product information,We are evaluating your platform.,lead,product_inquiry,low
+1285,contact4156@mail.com,More information,Could you provide information about your platform.,lead,product_inquiry,medium
+1287,business58371@example.com,Product information,"Hello, we are interested in your subscription plan.",lead,product_inquiry,low
+1288,sales39838@company.com,Product pricing,I am considering purchasing your AI solution. Could you send me the pricing details?,lead,pricing,medium
+1289,company64697@test.com,Discussion request,I would like to arrange a meeting with your sales team.,lead,meeting,medium
+1298,user3425@company.com,Quotation request,Our company is currently looking for your business solution. Could you send me the pricing details?,lead,pricing,medium
+1300,contact82190@business.com,Pricing inquiry,"Hi, I am interested in your subscription plan. Can you provide a quotation?",lead,pricing,high
+1308,user86571@test.com,Schedule a call,Would it be possible to arrange a meeting this week?,lead,meeting,medium
+1310,customer13559@example.com,Product information,I would like to discuss your business solution.,lead,product_inquiry,medium
+1314,client40558@test.com,Product details,We are evaluating your service.,lead,product_inquiry,medium
+1315,business66567@test.com,Purchase inquiry,We are interested in learning more about your service. We are ready to purchase the product.,lead,purchase,high
+1323,contact15198@company.com,Product pricing,"Hi, I am interested in your platform. Please share your pricing structure.",lead,pricing,high
+1325,business2917@company.com,Interested in purchasing,I am considering purchasing your AI solution. I would like to place an order.,lead,purchase,high
+1327,company48904@company.com,Product pricing,Our company is currently looking for your product. Can you provide a quotation?,lead,pricing,high
+1335,client62196@business.com,Order request,We are interested in learning more about your subscription plan. Please let me know how we can place an order.,lead,purchase,high
+1341,user65313@business.com,Sales meeting,I want to discuss this product with your sales team.,lead,meeting,medium
+1342,customer47167@example.com,Request for pricing,I would like to discuss your AI solution. Please share your pricing structure.,lead,pricing,medium
+1344,company32871@business.com,Pricing information,Our company is currently looking for your business solution. What are your available plans and prices?,lead,pricing,medium
+1345,sales79271@company.com,Thank you,The meeting is confirmed for tomorrow.,normal,general,low
+1347,sales67293@company.com,Buying your product,Could you provide information about your software. Can we proceed with the purchase?,lead,purchase,high
+1353,user90607@test.com,Schedule,Please find the report attached.,normal,general,low
+1355,customer70156@mail.com,Buying your product,Could you provide information about your AI solution. Can we proceed with the purchase?,lead,purchase,high
+1356,customer22568@example.com,Product pricing,I am looking for information regarding your subscription plan. Could you send a price estimate?,lead,pricing,high
+1360,business70413@mail.com,Buying your product,Could you provide information about your service. We are ready to purchase the product.,lead,purchase,high
+1363,contact32453@test.com,Request for pricing,I would like to discuss your platform. Please let me know the cost for a business plan.,lead,pricing,high
+1367,sales5823@company.com,Service inquiry,I am looking for information regarding your platform.,lead,product_inquiry,low
+1372,sales98369@mail.com,Quotation request,"Hi, I am interested in your platform. Could you send a price estimate?",lead,pricing,medium
+1373,customer32947@example.com,More information,Our company is currently looking for your enterprise software.,lead,product_inquiry,medium
+1375,business61807@business.com,Pricing inquiry,We are interested in learning more about your AI solution. Could you send a price estimate?,lead,pricing,high
+1381,business26312@example.com,Pricing inquiry,Could you provide information about your AI solution. What are your available plans and prices?,lead,pricing,high
+1382,customer29010@example.com,Pricing inquiry,I am considering purchasing your AI solution. Could you send a price estimate?,lead,pricing,medium
+1386,company1670@mail.com,Interested in purchasing,"Hi, I am interested in your enterprise software. Please let me know how we can place an order.",lead,purchase,high
+1411,contact63125@example.com,Buying your product,We are evaluating your enterprise software. We are interested in buying the solution.,lead,purchase,high
+1412,customer1782@test.com,More information,Our company is currently looking for your service.,lead,product_inquiry,medium
+1415,company98610@business.com,Pricing inquiry,Could you provide information about your service. What are your available plans and prices?,lead,pricing,high
+1418,client89368@company.com,Purchase inquiry,I would like to know more about your product. We are interested in buying the solution.,lead,purchase,high
+1425,sales56585@company.com,Quotation request,We are interested in learning more about your enterprise software. Could you send a price estimate?,lead,pricing,high
+1429,customer76861@company.com,Quotation request,"Hello, we are interested in your product. Could you send me the pricing details?",lead,pricing,high
+1430,user1047@test.com,Product information,"Hi, I am interested in your software.",lead,product_inquiry,low
+1456,contact37244@company.com,Interested in purchasing,I would like to discuss your subscription plan. I would like to place an order.,lead,purchase,high
+1463,customer69285@business.com,More information,I am considering purchasing your enterprise software.,lead,product_inquiry,low
+1474,sales66913@company.com,Pricing inquiry,"Hello, we are interested in your platform. Can you provide a quotation?",lead,pricing,medium
+1478,contact76740@test.com,Product information,Could you provide information about your subscription plan.,lead,product_inquiry,medium
+1485,customer86950@example.com,Order request,I am looking for information regarding your AI solution. Please let me know how we can place an order.,lead,purchase,high
+1487,contact33519@business.com,Order request,I would like to know more about your enterprise software. We are ready to purchase the product.,lead,purchase,high
+1503,sales10516@example.com,Product pricing,Could you provide information about your business solution. Please let me know the cost for a business plan.,lead,pricing,high
+1511,customer44396@company.com,Quotation request,I would like to discuss your enterprise software. What are your available plans and prices?,lead,pricing,high
+1513,contact4743@mail.com,Pricing information,Could you provide information about your AI solution. Please share your pricing structure.,lead,pricing,medium
+1515,sales24500@mail.com,Order request,"Hello, we are interested in your software. We are planning to purchase this for our company.",lead,purchase,high
+1516,contact20247@mail.com,Quotation request,I would like to discuss your AI solution. Could you send me the pricing details?,lead,pricing,medium
+1520,business14605@company.com,Buying your product,"Hi, I am interested in your business solution. Please let me know how we can place an order.",lead,purchase,high
+1525,user44945@mail.com,Purchase inquiry,Our company is currently looking for your software. Please let me know how we can place an order.,lead,purchase,high
+1527,business32798@business.com,Quotation request,Our company is currently looking for your service. Could you send a price estimate?,lead,pricing,medium
+1533,customer35390@business.com,Meeting request,Can we arrange a meeting to discuss our requirements?,lead,meeting,medium
+1534,business5459@example.com,Buying your product,Our company is currently looking for your business solution. We are ready to purchase the product.,lead,purchase,high
+1536,customer12799@example.com,Buying your product,I am considering purchasing your business solution. We are planning to purchase this for our company.,lead,purchase,high
+1564,contact13171@mail.com,More information,"Hello, we are interested in your service.",lead,product_inquiry,medium
+1565,company18795@test.com,Pricing inquiry,"Hi, I am interested in your service. What are your available plans and prices?",lead,pricing,high
+1566,customer26618@company.com,Pricing inquiry,We are interested in learning more about your business solution. Please let me know the cost for a business plan.,lead,pricing,medium
+1568,customer71487@business.com,Pricing information,We are evaluating your platform. Could you send me the pricing details?,lead,pricing,high
+1572,company11215@example.com,Order request,"Hello, we are interested in your business solution. We are ready to purchase the product.",lead,purchase,high
+1579,business23938@mail.com,Product details,I would like to know more about your platform.,lead,product_inquiry,low
+1580,sales54356@test.com,Sales meeting,I would like to book a meeting with your company.,lead,meeting,medium
+1585,customer45889@business.com,Product pricing,We are interested in learning more about your subscription plan. What are your available plans and prices?,lead,pricing,high
+1591,customer74703@mail.com,Interested in purchasing,"Hello, we are interested in your AI solution. We are ready to purchase the product.",lead,purchase,high
+1599,sales84233@mail.com,Product information,I would like to discuss your subscription plan.,lead,product_inquiry,low
+1601,customer31495@business.com,Pricing inquiry,"Hello, we are interested in your business solution. How much does the service cost?",lead,pricing,high
+1602,business72411@company.com,Pricing inquiry,Our company is currently looking for your software. Please let me know the cost for a business plan.,lead,pricing,high
+1615,client41219@company.com,Request for pricing,We are evaluating your platform. Can you provide a quotation?,lead,pricing,high
+1617,user58039@company.com,Request for pricing,I would like to discuss your product. Can you provide a quotation?,lead,pricing,high
+1621,sales73605@example.com,Product information,I am looking for information regarding your software.,lead,product_inquiry,medium
+1622,user9665@company.com,Product pricing,Could you provide information about your service. How much does the service cost?,lead,pricing,high
+1626,company59682@example.com,Buying your product,Our company is currently looking for your subscription plan. We are ready to purchase the product.,lead,purchase,high
+1631,business7144@example.com,More information,Could you provide information about your AI solution.,lead,product_inquiry,low
+1640,business45724@company.com,Service inquiry,Could you provide information about your service.,lead,product_inquiry,low
+1642,client46201@business.com,Purchase inquiry,I would like to discuss your subscription plan. Can we proceed with the purchase?,lead,purchase,high
+1660,business3746@test.com,Pricing inquiry,Could you provide information about your software. Could you send a price estimate?,lead,pricing,medium
+1667,sales55138@mail.com,Meeting request,Can we set up a meeting to discuss pricing?,lead,meeting,medium
+1679,contact50306@mail.com,Limited time offer,Get an exclusive discount today. Limited time offer!,spam,general,low
+1680,customer67124@business.com,Order request,"Hello, we are interested in your subscription plan. I would like to place an order.",lead,purchase,high
+1682,company32254@example.com,Pricing inquiry,I would like to know more about your business solution. Can you provide a quotation?,lead,pricing,high
+1683,customer41858@example.com,Order request,I would like to know more about your business solution. We are ready to purchase the product.,lead,purchase,high
+1689,business78930@business.com,Buying your product,"Hello, we are interested in your platform. Can we proceed with the purchase?",lead,purchase,high
+1693,sales39552@business.com,Pricing inquiry,I would like to discuss your platform. Please let me know the cost for a business plan.,lead,pricing,high
+1694,contact6269@mail.com,Buying your product,"Hello, we are interested in your business solution. Can we proceed with the purchase?",lead,purchase,high
+1697,company5746@example.com,Request for pricing,I am considering purchasing your software. Could you send a price estimate?,lead,pricing,high
+1698,contact49849@business.com,Purchase inquiry,We are evaluating your business solution. Please let me know how we can place an order.,lead,purchase,high
+1699,client15815@company.com,Document,I will get back to you shortly.,normal,general,low
+1711,client27895@company.com,Purchase inquiry,We are interested in learning more about your platform. We are planning to purchase this for our company.,lead,purchase,high
+1719,contact91912@test.com,Order request,"Hi, I am interested in your platform. I would like to place an order.",lead,purchase,high
+1720,customer21942@company.com,Interested in purchasing,I would like to know more about your business solution. Please let me know how we can place an order.,lead,purchase,high
+1724,contact66048@company.com,Pricing inquiry,I am looking for information regarding your product. Please let me know the cost for a business plan.,lead,pricing,high
+1726,company47848@mail.com,Product details,We are interested in learning more about your product.,lead,product_inquiry,low
+1727,company89987@test.com,Order request,I am considering purchasing your subscription plan. We are ready to purchase the product.,lead,purchase,high
+1729,sales11801@company.com,Request for pricing,I am looking for information regarding your enterprise software. Please share your pricing structure.,lead,pricing,high
+1737,company77835@example.com,Product pricing,"Hi, I am interested in your subscription plan. Could you send me the pricing details?",lead,pricing,high
+1738,user184@example.com,Purchase inquiry,Could you provide information about your business solution. Please let me know how we can place an order.,lead,purchase,high
+1739,sales35577@company.com,Order request,We are interested in learning more about your service. We are ready to purchase the product.,lead,purchase,high
+1741,user89032@mail.com,Discussion request,Are you available for a quick call tomorrow?,lead,meeting,medium
+1742,client89087@business.com,Product pricing,We are evaluating your product. What are your available plans and prices?,lead,pricing,medium
+1751,customer7268@business.com,Quotation request,We are interested in learning more about your subscription plan. Please let me know the cost for a business plan.,lead,pricing,high
+1756,customer104@company.com,Purchase inquiry,I would like to discuss your AI solution. We are ready to purchase the product.,lead,purchase,high
+1758,company53126@mail.com,Pricing information,I would like to discuss your enterprise software. Could you send me the pricing details?,lead,pricing,high
+1761,client38115@business.com,Service inquiry,I would like to know more about your AI solution.,lead,product_inquiry,low
+1763,company60010@example.com,Quotation request,Could you provide information about your enterprise software. What are your available plans and prices?,lead,pricing,high
+1765,customer20850@business.com,Interested in purchasing,I would like to discuss your subscription plan. We are planning to purchase this for our company.,lead,purchase,high
+1768,customer84659@mail.com,Service inquiry,We are evaluating your product.,lead,product_inquiry,low
+1774,user3961@company.com,Pricing inquiry,I would like to discuss your business solution. How much does the service cost?,lead,pricing,medium
+1775,business33195@mail.com,More information,Could you provide information about your service.,lead,product_inquiry,medium
+1776,user69375@company.com,Interested in purchasing,Our company is currently looking for your service. Can we proceed with the purchase?,lead,purchase,high
+1782,contact70949@business.com,Schedule a call,I would like to arrange a meeting with your sales team.,lead,meeting,medium
+1785,customer4330@business.com,Pricing information,"Hello, we are interested in your subscription plan. Please share your pricing structure.",lead,pricing,medium
+1791,client62699@business.com,Schedule a call,I want to discuss this product with your sales team.,lead,meeting,medium
+1795,client15565@test.com,Schedule a call,Could we have a call to discuss the product?,lead,meeting,medium
+1798,customer7525@company.com,Product information,"Hi, I am interested in your AI solution.",lead,product_inquiry,medium
+1799,sales32113@business.com,Purchase inquiry,I am considering purchasing your business solution. We are interested in buying the solution.,lead,purchase,high
+1810,business49819@company.com,Quotation request,Could you provide information about your subscription plan. Could you send me the pricing details?,lead,pricing,high
+1818,company44341@test.com,Product pricing,We are evaluating your platform. What are your available plans and prices?,lead,pricing,medium
+1822,contact10526@business.com,Product pricing,I would like to discuss your AI solution. Can you provide a quotation?,lead,pricing,high
+1829,customer31161@company.com,Pricing inquiry,We are interested in learning more about your subscription plan. Could you send me the pricing details?,lead,pricing,medium
+1830,business3336@business.com,Buying your product,"Hello, we are interested in your enterprise software. We are planning to purchase this for our company.",lead,purchase,high
+1832,company19769@test.com,Purchase inquiry,I would like to know more about your business solution. We are ready to purchase the product.,lead,purchase,high
+1841,business58947@mail.com,Purchase inquiry,I am considering purchasing your subscription plan. We are interested in buying the solution.,lead,purchase,high
+1842,contact34215@business.com,Product demonstration,Is it possible to book a demonstration?,lead,demo,high
+1843,contact64875@company.com,Pricing inquiry,Could you provide information about your enterprise software. How much does the service cost?,lead,pricing,high
+1854,client41856@company.com,Pricing information,We are interested in learning more about your enterprise software. Please share your pricing structure.,lead,pricing,high
+1862,customer18033@business.com,Pricing inquiry,I would like to discuss your enterprise software. Can you provide a quotation?,lead,pricing,high
+1865,customer92519@test.com,Product information,I am considering purchasing your software.,lead,product_inquiry,low
+1874,business14828@business.com,Discussion request,Could we have a call to discuss the product?,lead,meeting,medium
+1876,business63504@mail.com,Purchase inquiry,I am considering purchasing your enterprise software. Please let me know how we can place an order.,lead,purchase,high
+1880,user6080@business.com,Product pricing,I would like to discuss your AI solution. Please share your pricing structure.,lead,pricing,medium
+1888,business37205@business.com,Sales meeting,I would like to arrange a meeting with your sales team.,lead,meeting,medium
+1890,contact94748@mail.com,Product details,"Hello, we are interested in your platform.",lead,product_inquiry,medium
+1891,user79489@business.com,Service inquiry,"Hello, we are interested in your enterprise software.",lead,product_inquiry,medium
+1903,company85560@company.com,Product pricing,Our company is currently looking for your subscription plan. How much does the service cost?,lead,pricing,high
+1904,client91752@example.com,More information,We are interested in learning more about your platform.,lead,product_inquiry,medium
+1905,client14998@example.com,Request for pricing,We are interested in learning more about your platform. What are your available plans and prices?,lead,pricing,high
+1908,company73999@company.com,Order request,We are interested in learning more about your business solution. We are interested in buying the solution.,lead,purchase,high
+1911,business19806@mail.com,More information,"Hi, I am interested in your business solution.",lead,product_inquiry,low
+1921,client42972@business.com,Request for pricing,We are interested in learning more about your subscription plan. Can you provide a quotation?,lead,pricing,medium
+1929,customer48448@business.com,Interested in purchasing,"Hi, I am interested in your product. We are planning to purchase this for our company.",lead,purchase,high
+1932,client64364@company.com,Pricing information,"Hi, I am interested in your subscription plan. How much does the service cost?",lead,pricing,medium
+1933,contact93595@company.com,Product information,"Hi, I am interested in your business solution.",lead,product_inquiry,medium
+1935,user71414@business.com,Pricing inquiry,I would like to discuss your software. Please share your pricing structure.,lead,pricing,high
+1951,company91805@test.com,More information,I am considering purchasing your product.,lead,product_inquiry,medium
+1953,business61342@test.com,Purchase inquiry,"Hello, we are interested in your service. Can we proceed with the purchase?",lead,purchase,high
+1956,contact24500@example.com,Request for pricing,I am considering purchasing your product. What are your available plans and prices?,lead,pricing,high
+1962,sales43766@example.com,Interested in purchasing,I am looking for information regarding your service. I would like to place an order.,lead,purchase,high
+1975,client23629@company.com,Buying your product,I would like to discuss your software. We are planning to purchase this for our company.,lead,purchase,high
+1979,customer79219@mail.com,Product pricing,Could you provide information about your product. Could you send a price estimate?,lead,pricing,medium
+1982,customer61017@business.com,Order request,Our company is currently looking for your subscription plan. Can we proceed with the purchase?,lead,purchase,high
+1984,company46877@mail.com,Order request,"Hi, I am interested in your product. I would like to place an order.",lead,purchase,high
+1985,sales4898@test.com,Order request,"Hi, I am interested in your platform. We are planning to purchase this for our company.",lead,purchase,high
+1988,company5118@company.com,More information,"Hi, I am interested in your platform.",lead,product_inquiry,low
+1990,business97980@business.com,Product details,Could you provide information about your enterprise software.,lead,product_inquiry,medium
+1995,sales37444@business.com,Product information,I am looking for information regarding your enterprise software.,lead,product_inquiry,medium
+2001,client27708@test.com,Buying your product,I would like to know more about your subscription plan. Please let me know how we can place an order.,lead,purchase,high
+2014,sales12987@mail.com,Pricing information,I am considering purchasing your subscription plan. Could you send a price estimate?,lead,pricing,high
+2018,sales78919@mail.com,More information,"Hello, we are interested in your business solution.",lead,product_inquiry,medium
+2021,client60287@company.com,Purchase inquiry,"Hi, I am interested in your AI solution. We are interested in buying the solution.",lead,purchase,high
+2029,sales44642@company.com,Purchase inquiry,I would like to know more about your business solution. Can we proceed with the purchase?,lead,purchase,high
+2038,user27842@test.com,Buying your product,We are evaluating your AI solution. We are ready to purchase the product.,lead,purchase,high
+2044,client74733@example.com,Purchase inquiry,Our company is currently looking for your business solution. Can we proceed with the purchase?,lead,purchase,high
+2048,sales59877@company.com,Interested in purchasing,Our company is currently looking for your AI solution. Please let me know how we can place an order.,lead,purchase,high
+2053,contact77350@company.com,Quotation request,"Hello, we are interested in your subscription plan. What are your available plans and prices?",lead,pricing,high
+2058,company88946@test.com,Order request,We are evaluating your AI solution. We are planning to purchase this for our company.,lead,purchase,high
+2064,business25253@mail.com,Interested in purchasing,I am looking for information regarding your service. We are planning to purchase this for our company.,lead,purchase,high
+2067,company43841@business.com,Buying your product,We are evaluating your business solution. I would like to place an order.,lead,purchase,high
+2069,customer53680@business.com,Meeting request,Could you arrange a call with a representative?,lead,meeting,medium
+2077,business98381@example.com,Buying your product,We are evaluating your platform. Can we proceed with the purchase?,lead,purchase,high
+2078,contact26313@test.com,More information,I would like to know more about your service.,lead,product_inquiry,low
+2083,client52044@mail.com,Product information,I would like to know more about your platform.,lead,product_inquiry,low
+2108,client2177@business.com,Product details,Our company is currently looking for your platform.,lead,product_inquiry,low
+2109,business32736@company.com,Information,Thank you for sending the information.,normal,general,low
+2112,business22990@test.com,Schedule a call,Let's schedule a meeting to discuss the proposal.,lead,meeting,medium
+2116,customer2058@business.com,Schedule a call,I would like to speak with someone about your solution.,lead,meeting,medium
+2118,user79171@example.com,Sales meeting,Please let me know a suitable time for a discussion.,lead,meeting,medium
+2127,user45175@company.com,Purchase inquiry,I am looking for information regarding your subscription plan. Can we proceed with the purchase?,lead,purchase,high
+2134,customer66255@company.com,Order request,I would like to discuss your enterprise software. We are interested in buying the solution.,lead,purchase,high
+2140,company6511@mail.com,Service inquiry,We are interested in learning more about your enterprise software.,lead,product_inquiry,medium
+2148,contact40884@test.com,Product details,I am considering purchasing your software.,lead,product_inquiry,medium
+2157,customer93566@mail.com,Product details,I am considering purchasing your platform.,lead,product_inquiry,medium
+2170,contact65268@company.com,Purchase inquiry,"Hello, we are interested in your enterprise software. We are planning to purchase this for our company.",lead,purchase,high
+2175,company69938@business.com,Pricing information,Could you provide information about your product. What are your available plans and prices?,lead,pricing,medium
+2179,client73018@test.com,Interested in purchasing,"Hi, I am interested in your subscription plan. Can we proceed with the purchase?",lead,purchase,high
+2182,sales17728@business.com,Interested in purchasing,I am considering purchasing your business solution. We are ready to purchase the product.,lead,purchase,high
+2185,user7073@mail.com,Interested in purchasing,I would like to discuss your product. We are interested in buying the solution.,lead,purchase,high
+2188,customer93634@test.com,Purchase inquiry,We are evaluating your product. Please let me know how we can place an order.,lead,purchase,high
+2189,company70668@business.com,Service inquiry,Could you provide information about your AI solution.,lead,product_inquiry,low
+2191,user9407@test.com,Pricing information,"Hi, I am interested in your business solution. How much does the service cost?",lead,pricing,high
+2195,business92802@mail.com,Interested in purchasing,"Hello, we are interested in your product. We are planning to purchase this for our company.",lead,purchase,high
+2197,contact33886@example.com,Purchase inquiry,I am considering purchasing your subscription plan. We are ready to purchase the product.,lead,purchase,high
+2199,company3724@test.com,Pricing information,"Hi, I am interested in your software. Please share your pricing structure.",lead,pricing,high
+2209,customer87067@business.com,Meeting request,Please suggest a convenient time for a meeting.,lead,meeting,medium
+2226,user64091@business.com,Quotation request,Could you provide information about your enterprise software. Please share your pricing structure.,lead,pricing,high
+2233,customer50964@company.com,Quotation request,I would like to discuss your platform. Could you send me the pricing details?,lead,pricing,high
+2235,customer74653@example.com,Pricing information,Our company is currently looking for your AI solution. Could you send a price estimate?,lead,pricing,high
+2237,company66369@example.com,Product information,Could you provide information about your enterprise software.,lead,product_inquiry,medium
+2240,contact70128@example.com,Purchase inquiry,"Hello, we are interested in your platform. Can we proceed with the purchase?",lead,purchase,high
+2242,customer50893@test.com,Request for pricing,"Hi, I am interested in your enterprise software. Could you send me the pricing details?",lead,pricing,medium
+2245,sales59735@mail.com,Service inquiry,I would like to discuss your product.,lead,product_inquiry,low
+2247,company97094@example.com,Service inquiry,Could you provide information about your product.,lead,product_inquiry,medium
+2251,business93500@company.com,Buying your product,I would like to know more about your AI solution. I would like to place an order.,lead,purchase,high
+2258,sales12822@example.com,Service inquiry,I would like to discuss your business solution.,lead,product_inquiry,medium
+2259,business97563@company.com,Pricing inquiry,I am considering purchasing your platform. Please share your pricing structure.,lead,pricing,high
+2262,customer69870@test.com,Pricing information,I would like to know more about your service. What are your available plans and prices?,lead,pricing,high
+2267,company9129@company.com,Quotation request,I am looking for information regarding your business solution. Please share your pricing structure.,lead,pricing,high
+2268,business83228@business.com,Buying your product,I would like to know more about your platform. Please let me know how we can place an order.,lead,purchase,high
+2269,contact54853@company.com,Product pricing,I am looking for information regarding your subscription plan. Could you send me the pricing details?,lead,pricing,medium
+2270,customer64274@business.com,Interested in purchasing,We are interested in learning more about your product. We are interested in buying the solution.,lead,purchase,high
+2275,user55741@mail.com,Product pricing,Could you provide information about your business solution. Please share your pricing structure.,lead,pricing,medium
+2277,customer87423@business.com,Order request,"Hello, we are interested in your subscription plan. Please let me know how we can place an order.",lead,purchase,high
+2285,customer23149@company.com,Product information,I would like to discuss your service.,lead,product_inquiry,medium
+2287,user77735@business.com,Interested in purchasing,I would like to know more about your enterprise software. Please let me know how we can place an order.,lead,purchase,high
+2293,user41920@mail.com,Purchase inquiry,I am looking for information regarding your product. Please let me know how we can place an order.,lead,purchase,high
+2298,business52452@business.com,Request for pricing,I am considering purchasing your enterprise software. Please let me know the cost for a business plan.,lead,pricing,medium
+2299,customer2248@mail.com,Service inquiry,I would like to know more about your service.,lead,product_inquiry,medium
+2300,client20850@business.com,Order request,Our company is currently looking for your software. Can we proceed with the purchase?,lead,purchase,high
+2306,business69520@business.com,Buying your product,I am looking for information regarding your platform. We are interested in buying the solution.,lead,purchase,high
+2307,customer58699@business.com,Interested in purchasing,I am considering purchasing your subscription plan. We are ready to purchase the product.,lead,purchase,high
+2312,client60745@test.com,Quotation request,I would like to know more about your business solution. Could you send me the pricing details?,lead,pricing,medium
+2318,client91935@example.com,Request for pricing,We are interested in learning more about your product. What are your available plans and prices?,lead,pricing,high
+2323,company18679@business.com,Pricing inquiry,"Hi, I am interested in your business solution. How much does the service cost?",lead,pricing,high
+2328,company44423@example.com,Pricing information,I would like to know more about your AI solution. Could you send me the pricing details?,lead,pricing,high
+2329,sales52003@company.com,Quotation request,Could you provide information about your software. How much does the service cost?,lead,pricing,high
+2331,sales73196@example.com,Interested in purchasing,Our company is currently looking for your software. Please let me know how we can place an order.,lead,purchase,high
+2340,company59298@example.com,Order request,Could you provide information about your platform. Please let me know how we can place an order.,lead,purchase,high
+2344,contact3221@business.com,Service inquiry,I am looking for information regarding your product.,lead,product_inquiry,medium
+2348,sales74563@company.com,Product pricing,"Hi, I am interested in your product. Can you provide a quotation?",lead,pricing,high
+2349,company10074@business.com,Interested in purchasing,Our company is currently looking for your enterprise software. Please let me know how we can place an order.,lead,purchase,high
+2360,contact21582@business.com,Pricing information,I am considering purchasing your subscription plan. Please let me know the cost for a business plan.,lead,pricing,high
+2362,company61374@business.com,Product details,Could you provide information about your service.,lead,product_inquiry,low
+2371,sales51585@company.com,Order request,We are interested in learning more about your enterprise software. We are interested in buying the solution.,lead,purchase,high
+2375,contact83756@example.com,Discussion request,Can we set up a meeting to discuss pricing?,lead,meeting,medium
+2385,business79216@mail.com,Product information,I would like to discuss your enterprise software.,lead,product_inquiry,low
+2386,customer89730@company.com,Buying your product,Our company is currently looking for your enterprise software. We are ready to purchase the product.,lead,purchase,high
+2393,business29384@business.com,Service inquiry,Could you provide information about your software.,lead,product_inquiry,low
+2405,user18064@business.com,Product details,I am looking for information regarding your software.,lead,product_inquiry,low
+2409,business82274@mail.com,Quotation request,We are interested in learning more about your platform. How much does the service cost?,lead,pricing,high
+2412,sales16788@mail.com,Product details,Could you provide information about your subscription plan.,lead,product_inquiry,medium
+2417,user61692@test.com,Order request,We are interested in learning more about your business solution. We are planning to purchase this for our company.,lead,purchase,high
+2423,business90160@business.com,Service inquiry,I am looking for information regarding your service.,lead,product_inquiry,low
+2432,customer9311@business.com,Request for pricing,I would like to know more about your platform. Please share your pricing structure.,lead,pricing,high
+2434,contact94415@business.com,Product information,"Hi, I am interested in your platform.",lead,product_inquiry,low
+2443,contact35715@company.com,Sales meeting,Can we schedule a meeting to discuss your services?,lead,meeting,medium
+2446,business28664@business.com,Pricing information,Could you provide information about your service. Please let me know the cost for a business plan.,lead,pricing,high
+2447,contact61666@example.com,Interested in purchasing,We are evaluating your AI solution. Can we proceed with the purchase?,lead,purchase,high
+2455,business53769@business.com,Interested in purchasing,Could you provide information about your product. I would like to place an order.,lead,purchase,high
+2456,user97236@company.com,Request for pricing,"Hello, we are interested in your software. How much does the service cost?",lead,pricing,medium
+2472,user2202@company.com,Purchase inquiry,I am considering purchasing your subscription plan. I would like to place an order.,lead,purchase,high
+2473,client32146@company.com,Service inquiry,I would like to discuss your service.,lead,product_inquiry,low
+2488,contact25483@mail.com,Purchase inquiry,I would like to know more about your AI solution. Can we proceed with the purchase?,lead,purchase,high
+2494,user3013@mail.com,Product details,I am looking for information regarding your AI solution.,lead,product_inquiry,medium
+2495,contact39466@business.com,Order request,I would like to discuss your enterprise software. We are ready to purchase the product.,lead,purchase,high
+2500,client64569@mail.com,Product pricing,I am considering purchasing your platform. Please share your pricing structure.,lead,pricing,high
+2503,user91507@company.com,Pricing inquiry,I would like to know more about your enterprise software. Can you provide a quotation?,lead,pricing,high
+2516,client86107@example.com,Pricing information,I am looking for information regarding your product. Could you send a price estimate?,lead,pricing,high
+2520,user21619@business.com,Buying your product,I am considering purchasing your service. We are ready to purchase the product.,lead,purchase,high
+2523,customer63381@test.com,Product pricing,I am considering purchasing your business solution. Please share your pricing structure.,lead,pricing,high
+2526,company43695@example.com,Product details,We are interested in learning more about your subscription plan.,lead,product_inquiry,medium
+2530,business52132@example.com,Pricing information,Our company is currently looking for your software. What are your available plans and prices?,lead,pricing,high
+2531,user96143@business.com,Product pricing,We are interested in learning more about your enterprise software. Could you send me the pricing details?,lead,pricing,medium
+2541,user24911@test.com,Product pricing,"Hello, we are interested in your business solution. What are your available plans and prices?",lead,pricing,high
+2543,user82881@business.com,Interested in purchasing,We are interested in learning more about your AI solution. Can we proceed with the purchase?,lead,purchase,high
+2547,company2344@business.com,Pricing inquiry,I would like to discuss your AI solution. Could you send me the pricing details?,lead,pricing,medium
+2556,user18112@test.com,Product pricing,I am considering purchasing your service. Could you send a price estimate?,lead,pricing,high
+2559,user71050@example.com,Request for pricing,"Hi, I am interested in your product. Please share your pricing structure.",lead,pricing,medium
+2563,client47433@mail.com,Pricing information,"Hi, I am interested in your platform. Can you provide a quotation?",lead,pricing,high
+2571,sales16902@test.com,Quotation request,I am looking for information regarding your AI solution. Could you send a price estimate?,lead,pricing,high
+2572,business32867@example.com,Product information,Our company is currently looking for your service.,lead,product_inquiry,medium
+2575,sales85029@example.com,Interested in purchasing,I would like to discuss your service. I would like to place an order.,lead,purchase,high
+2578,company57437@example.com,Interested in purchasing,Our company is currently looking for your subscription plan. Can we proceed with the purchase?,lead,purchase,high
+2583,client29009@mail.com,Buying your product,Could you provide information about your product. I would like to place an order.,lead,purchase,high
+2589,customer63148@company.com,Product pricing,We are interested in learning more about your enterprise software. How much does the service cost?,lead,pricing,high
+2590,contact26244@mail.com,Product details,Could you provide information about your product.,lead,product_inquiry,low
+2597,customer36854@test.com,Pricing inquiry,We are evaluating your software. How much does the service cost?,lead,pricing,high
+2599,company71019@company.com,Interested in purchasing,"Hi, I am interested in your subscription plan. Please let me know how we can place an order.",lead,purchase,high
+2610,sales55196@example.com,Request for pricing,I am considering purchasing your software. How much does the service cost?,lead,pricing,high
+2621,client27009@company.com,Interested in purchasing,I would like to know more about your software. Can we proceed with the purchase?,lead,purchase,high
+2631,user5665@business.com,Request for pricing,I would like to know more about your product. How much does the service cost?,lead,pricing,medium
+2632,contact6503@example.com,Pricing information,Could you provide information about your subscription plan. Could you send me the pricing details?,lead,pricing,high
+2646,company20887@example.com,Thank you,I have received your message.,normal,general,low
+2648,user51242@business.com,Product pricing,We are evaluating your platform. Can you provide a quotation?,lead,pricing,high
+2651,sales11189@mail.com,Service inquiry,We are evaluating your AI solution.,lead,product_inquiry,medium
+2661,sales42438@company.com,Request for pricing,I would like to discuss your AI solution. What are your available plans and prices?,lead,pricing,high
+2668,sales28110@mail.com,Purchase inquiry,Could you provide information about your software. We are interested in buying the solution.,lead,purchase,high
+2669,contact9394@example.com,Interested in purchasing,"Hi, I am interested in your platform. We are planning to purchase this for our company.",lead,purchase,high
+2674,customer33542@example.com,Order request,I am considering purchasing your enterprise software. We are ready to purchase the product.,lead,purchase,high
+2696,company74743@test.com,Purchase inquiry,We are evaluating your software. We are interested in buying the solution.,lead,purchase,high
+2706,contact88777@company.com,Pricing information,I would like to know more about your enterprise software. How much does the service cost?,lead,pricing,high
+2707,client45282@mail.com,Purchase inquiry,We are interested in learning more about your enterprise software. We are interested in buying the solution.,lead,purchase,high
+2709,user15853@business.com,Service inquiry,Our company is currently looking for your business solution.,lead,product_inquiry,low
+2716,user96795@business.com,Product details,"Hello, we are interested in your product.",lead,product_inquiry,medium
+2726,business45285@mail.com,Request for pricing,I am considering purchasing your business solution. Could you send a price estimate?,lead,pricing,high
+2731,sales22211@test.com,Product details,We are evaluating your product.,lead,product_inquiry,medium
+2733,user13418@mail.com,Request for pricing,I would like to discuss your AI solution. Could you send a price estimate?,lead,pricing,high
+2734,business24564@example.com,Request for pricing,I would like to discuss your subscription plan. Could you send a price estimate?,lead,pricing,medium
+2742,user19307@example.com,Quotation request,I would like to discuss your AI solution. Can you provide a quotation?,lead,pricing,medium
+2743,user22505@company.com,Quotation request,We are interested in learning more about your service. Could you send me the pricing details?,lead,pricing,medium
+2744,sales86549@business.com,Order request,I would like to know more about your platform. Can we proceed with the purchase?,lead,purchase,high
+2745,contact19805@example.com,Buying your product,"Hello, we are interested in your product. Can we proceed with the purchase?",lead,purchase,high
+2756,client10322@test.com,Service inquiry,"Hi, I am interested in your subscription plan.",lead,product_inquiry,low
+2760,client84451@company.com,Product information,We are interested in learning more about your business solution.,lead,product_inquiry,medium
+2778,customer42930@business.com,Purchase inquiry,I am considering purchasing your product. Can we proceed with the purchase?,lead,purchase,high
+2790,contact55407@business.com,Order request,We are evaluating your business solution. Please let me know how we can place an order.,lead,purchase,high
+2794,business17287@example.com,Order request,Our company is currently looking for your AI solution. We are ready to purchase the product.,lead,purchase,high
+2796,business89490@example.com,Pricing information,Our company is currently looking for your enterprise software. How much does the service cost?,lead,pricing,medium
+2797,client90586@company.com,Buying your product,Could you provide information about your subscription plan. I would like to place an order.,lead,purchase,high
+2801,customer82270@business.com,Request for pricing,Our company is currently looking for your service. Please let me know the cost for a business plan.,lead,pricing,medium
+2818,sales84589@mail.com,Order request,Could you provide information about your platform. Can we proceed with the purchase?,lead,purchase,high
+2820,contact65389@test.com,Pricing information,I am considering purchasing your product. Please let me know the cost for a business plan.,lead,pricing,high
+2824,business3780@example.com,Product details,I would like to know more about your AI solution.,lead,product_inquiry,medium
+2825,customer5928@business.com,Buying your product,"Hi, I am interested in your AI solution. I would like to place an order.",lead,purchase,high
+2829,business50936@example.com,Pricing inquiry,Our company is currently looking for your software. Please share your pricing structure.,lead,pricing,high
+2832,business62748@business.com,Product details,"Hi, I am interested in your platform.",lead,product_inquiry,low
+2837,customer14873@mail.com,Service inquiry,"Hi, I am interested in your platform.",lead,product_inquiry,medium
+2843,contact18530@business.com,Purchase inquiry,We are interested in learning more about your enterprise software. Please let me know how we can place an order.,lead,purchase,high
+2855,user20887@example.com,Purchase inquiry,I am considering purchasing your business solution. We are planning to purchase this for our company.,lead,purchase,high
+2856,customer2309@test.com,Product details,"Hi, I am interested in your AI solution.",lead,product_inquiry,medium
+2861,customer96658@mail.com,Pricing inquiry,We are interested in learning more about your platform. Could you send me the pricing details?,lead,pricing,high
+2869,business45835@test.com,Service inquiry,"Hi, I am interested in your software.",lead,product_inquiry,low
+2878,business71387@test.com,Purchase inquiry,"Hi, I am interested in your product. We are interested in buying the solution.",lead,purchase,high
+2885,company32637@company.com,Purchase inquiry,I would like to discuss your subscription plan. We are interested in buying the solution.,lead,purchase,high
+2888,business3548@company.com,Pricing inquiry,We are evaluating your service. Can you provide a quotation?,lead,pricing,medium
+2890,user11069@company.com,Request for pricing,"Hi, I am interested in your product. Could you send me the pricing details?",lead,pricing,medium
+2891,client3037@test.com,More information,I would like to know more about your platform.,lead,product_inquiry,medium
+2896,company70891@example.com,Pricing information,I would like to know more about your software. Please let me know the cost for a business plan.,lead,pricing,high
+2897,client73949@example.com,Buying your product,"Hello, we are interested in your service. I would like to place an order.",lead,purchase,high
+2902,user76249@mail.com,Interested in purchasing,"Hello, we are interested in your product. We are ready to purchase the product.",lead,purchase,high
+2904,customer60424@test.com,Interested in purchasing,I am considering purchasing your enterprise software. We are planning to purchase this for our company.,lead,purchase,high
+2919,user39695@mail.com,Product information,I would like to know more about your business solution.,lead,product_inquiry,low
+2920,customer25429@business.com,Pricing information,"Hello, we are interested in your enterprise software. Please share your pricing structure.",lead,pricing,medium
+2923,client72340@company.com,Purchase inquiry,We are interested in learning more about your software. Can we proceed with the purchase?,lead,purchase,high
+2924,user29784@business.com,Quotation request,We are evaluating your enterprise software. How much does the service cost?,lead,pricing,high
+2926,company66517@mail.com,Service inquiry,I am looking for information regarding your enterprise software.,lead,product_inquiry,low
+2934,company69614@test.com,Pricing inquiry,"Hi, I am interested in your product. Please let me know the cost for a business plan.",lead,pricing,high
+2935,user97166@test.com,Product pricing,Could you provide information about your enterprise software. Could you send a price estimate?,lead,pricing,high
+2938,customer74969@mail.com,Buying your product,I would like to discuss your business solution. We are interested in buying the solution.,lead,purchase,high
+2943,sales88608@mail.com,Order request,Our company is currently looking for your software. We are ready to purchase the product.,lead,purchase,high
+2947,sales50988@example.com,Pricing inquiry,I am considering purchasing your product. How much does the service cost?,lead,pricing,medium
+2953,business96492@mail.com,Request for pricing,"Hi, I am interested in your AI solution. How much does the service cost?",lead,pricing,high
+2957,company85666@business.com,Purchase inquiry,"Hi, I am interested in your enterprise software. We are planning to purchase this for our company.",lead,purchase,high
+2962,user9638@mail.com,Request for pricing,We are interested in learning more about your enterprise software. Could you send a price estimate?,lead,pricing,high
+2963,business5566@business.com,Pricing information,"Hi, I am interested in your platform. How much does the service cost?",lead,pricing,high
+2964,company94365@test.com,Service inquiry,"Hi, I am interested in your enterprise software.",lead,product_inquiry,medium
+2969,customer69795@company.com,Order request,We are evaluating your product. Can we proceed with the purchase?,lead,purchase,high
+2972,sales50693@test.com,Discussion request,Can we have a video call to discuss the product?,lead,meeting,medium
+2975,user59005@company.com,Service inquiry,I would like to discuss your platform.,lead,product_inquiry,low
+2978,user20693@test.com,Request for pricing,"Hello, we are interested in your subscription plan. Could you send me the pricing details?",lead,pricing,high
+2980,customer8361@test.com,Pricing inquiry,I would like to know more about your AI solution. What are your available plans and prices?,lead,pricing,high
+2991,sales51209@mail.com,Product pricing,"Hi, I am interested in your software. Can you provide a quotation?",lead,pricing,high
+2992,sales11935@company.com,Pricing inquiry,Could you provide information about your business solution. Please share your pricing structure.,lead,pricing,high
+3001,customer90960@test.com,Buying your product,"Hello, we are interested in your subscription plan. Can we proceed with the purchase?",lead,purchase,high
+3002,client82814@test.com,Pricing inquiry,I would like to know more about your enterprise software. Could you send a price estimate?,lead,pricing,high
+3008,contact93524@test.com,Pricing inquiry,We are interested in learning more about your service. Please share your pricing structure.,lead,pricing,high
+3011,customer72655@business.com,Product details,I am considering purchasing your product.,lead,product_inquiry,medium
+3014,customer8405@mail.com,Buying your product,"Hi, I am interested in your software. Please let me know how we can place an order.",lead,purchase,high
+3020,contact48832@example.com,Product pricing,We are interested in learning more about your software. Could you send me the pricing details?,lead,pricing,high
+3022,sales47643@company.com,Meeting request,I would like to arrange a meeting with your sales team.,lead,meeting,medium
+3024,sales2027@example.com,Quotation request,"Hello, we are interested in your enterprise software. How much does the service cost?",lead,pricing,high
+3032,sales80155@mail.com,Purchase inquiry,I would like to know more about your business solution. We are interested in buying the solution.,lead,purchase,high
+3036,contact71921@company.com,Sales meeting,Can we set up a meeting to discuss pricing?,lead,meeting,medium
+3040,sales6669@mail.com,Purchase inquiry,I would like to discuss your subscription plan. We are planning to purchase this for our company.,lead,purchase,high
+3049,sales17825@company.com,Purchase inquiry,I would like to know more about your software. We are ready to purchase the product.,lead,purchase,high
+3050,user54846@example.com,Order request,"Hi, I am interested in your software. I would like to place an order.",lead,purchase,high
+3051,sales90066@test.com,Product pricing,Our company is currently looking for your service. Please share your pricing structure.,lead,pricing,medium
+3052,customer64628@example.com,Product details,"Hi, I am interested in your subscription plan.",lead,product_inquiry,low
+3063,contact1810@example.com,Pricing inquiry,"Hi, I am interested in your enterprise software. Can you provide a quotation?",lead,pricing,medium
+3065,business94033@company.com,Request for pricing,I would like to discuss your product. Could you send a price estimate?,lead,pricing,medium
+3074,customer19953@example.com,More information,We are interested in learning more about your product.,lead,product_inquiry,medium
+3080,client3332@test.com,Interested in purchasing,"Hello, we are interested in your product. Can we proceed with the purchase?",lead,purchase,high
+3088,user44621@company.com,Product information,Could you provide information about your software.,lead,product_inquiry,medium
+3092,contact16806@company.com,Request for pricing,We are interested in learning more about your AI solution. How much does the service cost?,lead,pricing,high
+3106,client51464@company.com,Product pricing,Our company is currently looking for your product. Could you send me the pricing details?,lead,pricing,medium
+3107,contact7423@business.com,Request for pricing,"Hello, we are interested in your enterprise software. Can you provide a quotation?",lead,pricing,high
+3108,client30753@mail.com,Buying your product,Could you provide information about your subscription plan. We are ready to purchase the product.,lead,purchase,high
+3110,customer57899@mail.com,Order request,We are evaluating your product. Please let me know how we can place an order.,lead,purchase,high
+3112,business17070@company.com,Product pricing,I am looking for information regarding your enterprise software. What are your available plans and prices?,lead,pricing,high
+3131,business14890@company.com,Buying your product,Could you provide information about your product. Can we proceed with the purchase?,lead,purchase,high
+3132,contact15653@business.com,Interested in purchasing,Our company is currently looking for your business solution. Please let me know how we can place an order.,lead,purchase,high
+3133,contact25713@company.com,Product pricing,"Hi, I am interested in your product. Could you send a price estimate?",lead,pricing,medium
+3138,company41824@company.com,Pricing inquiry,I am considering purchasing your subscription plan. Could you send me the pricing details?,lead,pricing,medium
+3139,company35103@mail.com,Product details,I would like to know more about your enterprise software.,lead,product_inquiry,low
+3143,customer14711@business.com,Buying your product,Our company is currently looking for your AI solution. Can we proceed with the purchase?,lead,purchase,high
+3157,business29805@mail.com,Buying your product,Our company is currently looking for your business solution. I would like to place an order.,lead,purchase,high
+3161,customer46528@test.com,Pricing inquiry,I would like to discuss your platform. What are your available plans and prices?,lead,pricing,high
+3164,business28502@company.com,Buying your product,We are evaluating your service. I would like to place an order.,lead,purchase,high
+3167,user81093@business.com,Buying your product,"Hi, I am interested in your enterprise software. I would like to place an order.",lead,purchase,high
+3168,user32165@example.com,Product information,Could you provide information about your AI solution.,lead,product_inquiry,low
+3178,sales49379@test.com,Purchase inquiry,I am looking for information regarding your platform. We are interested in buying the solution.,lead,purchase,high
+3182,business75017@company.com,Product information,I would like to know more about your product.,lead,product_inquiry,medium
+3185,customer78997@company.com,Request for pricing,Could you provide information about your subscription plan. Can you provide a quotation?,lead,pricing,high
+3186,sales75699@test.com,More information,"Hi, I am interested in your subscription plan.",lead,product_inquiry,low
+3194,client40230@business.com,Pricing inquiry,I would like to know more about your enterprise software. How much does the service cost?,lead,pricing,high
+3211,user88707@test.com,Buying your product,We are evaluating your software. We are interested in buying the solution.,lead,purchase,high
+3217,user76856@company.com,Buying your product,I am considering purchasing your business solution. Can we proceed with the purchase?,lead,purchase,high
+3227,company24160@company.com,Pricing inquiry,Our company is currently looking for your business solution. Could you send me the pricing details?,lead,pricing,high
+3229,sales14227@example.com,Interested in purchasing,We are evaluating your enterprise software. I would like to place an order.,lead,purchase,high
+3230,user70914@example.com,More information,I am looking for information regarding your enterprise software.,lead,product_inquiry,low
+3231,user76458@example.com,Product details,I would like to know more about your product.,lead,product_inquiry,low
+3233,business70428@business.com,Product pricing,Our company is currently looking for your business solution. Could you send me the pricing details?,lead,pricing,high
+3243,business96400@test.com,Interested in purchasing,"Hi, I am interested in your platform. I would like to place an order.",lead,purchase,high
+3245,company60190@example.com,Interested in purchasing,"Hi, I am interested in your service. We are interested in buying the solution.",lead,purchase,high
+3248,user62527@mail.com,More information,We are evaluating your subscription plan.,lead,product_inquiry,medium
+3249,customer50735@business.com,Buying your product,"Hello, we are interested in your service. We are planning to purchase this for our company.",lead,purchase,high
+3254,sales24692@mail.com,Interested in purchasing,Our company is currently looking for your subscription plan. I would like to place an order.,lead,purchase,high
+3256,business91442@business.com,Pricing inquiry,We are interested in learning more about your subscription plan. How much does the service cost?,lead,pricing,high
+3258,customer82580@company.com,Quotation request,"Hi, I am interested in your subscription plan. Please share your pricing structure.",lead,pricing,medium
+3260,user14438@mail.com,Interested in purchasing,I am looking for information regarding your business solution. Please let me know how we can place an order.,lead,purchase,high
+3263,sales34266@test.com,Quotation request,I would like to know more about your enterprise software. Could you send a price estimate?,lead,pricing,high
+3266,contact43431@example.com,Product pricing,We are interested in learning more about your subscription plan. How much does the service cost?,lead,pricing,medium
+3267,client66617@business.com,Request for pricing,"Hi, I am interested in your business solution. How much does the service cost?",lead,pricing,medium
+3269,business35228@company.com,Service inquiry,I would like to know more about your business solution.,lead,product_inquiry,low
+3278,business26938@example.com,Purchase inquiry,We are interested in learning more about your business solution. We are ready to purchase the product.,lead,purchase,high
+3284,company73011@test.com,Pricing inquiry,I am looking for information regarding your platform. How much does the service cost?,lead,pricing,high
+3285,user50990@company.com,Order request,I would like to know more about your software. We are ready to purchase the product.,lead,purchase,high
+3287,user52436@business.com,Order request,Could you provide information about your enterprise software. We are planning to purchase this for our company.,lead,purchase,high
+3298,business69497@company.com,Product information,I am considering purchasing your service.,lead,product_inquiry,low
+3308,sales78754@example.com,Service inquiry,I am considering purchasing your service.,lead,product_inquiry,low
+3325,contact25467@test.com,Order request,Could you provide information about your product. We are ready to purchase the product.,lead,purchase,high
+3333,customer73012@test.com,Order request,We are interested in learning more about your platform. I would like to place an order.,lead,purchase,high
+3340,client74743@example.com,Interested in purchasing,I would like to discuss your product. Can we proceed with the purchase?,lead,purchase,high
+3347,company80221@test.com,Quotation request,I would like to know more about your service. Could you send me the pricing details?,lead,pricing,high
+3353,sales45673@company.com,Quotation request,"Hello, we are interested in your service. Please share your pricing structure.",lead,pricing,high
+3361,company6945@test.com,Purchase inquiry,I would like to discuss your platform. We are ready to purchase the product.,lead,purchase,high
+3363,client30288@business.com,Discussion request,I would like to schedule a call with your team.,lead,meeting,medium
+3366,user79140@company.com,Buying your product,Our company is currently looking for your product. We are planning to purchase this for our company.,lead,purchase,high
+3373,user67190@example.com,Service inquiry,I am considering purchasing your AI solution.,lead,product_inquiry,low
+3383,client22473@test.com,Product details,I am looking for information regarding your subscription plan.,lead,product_inquiry,low
+3405,business52589@example.com,Request for pricing,We are evaluating your AI solution. Could you send a price estimate?,lead,pricing,high
+3416,customer49607@business.com,Interested in purchasing,We are evaluating your service. We are interested in buying the solution.,lead,purchase,high
+3417,contact91400@mail.com,More information,"Hello, we are interested in your software.",lead,product_inquiry,medium
+3419,business87823@test.com,Purchase inquiry,I am considering purchasing your platform. We are ready to purchase the product.,lead,purchase,high
+3422,user75992@company.com,Order request,I would like to discuss your platform. We are interested in buying the solution.,lead,purchase,high
+3435,contact83581@mail.com,Pricing information,"Hi, I am interested in your platform. Please share your pricing structure.",lead,pricing,high
+3443,customer77089@test.com,Service inquiry,I would like to know more about your product.,lead,product_inquiry,low
+3451,company61028@mail.com,Interested in purchasing,Could you provide information about your software. We are ready to purchase the product.,lead,purchase,high
+3455,sales66857@mail.com,Pricing inquiry,Our company is currently looking for your enterprise software. How much does the service cost?,lead,pricing,high
+3457,client14643@test.com,Order request,We are evaluating your enterprise software. We are ready to purchase the product.,lead,purchase,high
+3467,client4956@company.com,Order request,I am looking for information regarding your business solution. We are ready to purchase the product.,lead,purchase,high
+3480,sales64543@company.com,Request for pricing,"Hello, we are interested in your service. What are your available plans and prices?",lead,pricing,medium
+3482,sales93726@mail.com,Pricing inquiry,We are interested in learning more about your enterprise software. What are your available plans and prices?,lead,pricing,high
+3489,customer78313@test.com,Buying your product,Our company is currently looking for your software. We are ready to purchase the product.,lead,purchase,high
+3505,business72407@business.com,Purchase inquiry,I would like to know more about your platform. We are interested in buying the solution.,lead,purchase,high
+3506,company45444@test.com,Quotation request,"Hello, we are interested in your service. Please let me know the cost for a business plan.",lead,pricing,medium
+3508,customer16849@test.com,Buying your product,Could you provide information about your software. We are ready to purchase the product.,lead,purchase,high
+3513,client55014@company.com,Product information,We are evaluating your service.,lead,product_inquiry,medium
+3519,company91691@mail.com,Pricing information,Could you provide information about your enterprise software. Could you send a price estimate?,lead,pricing,high
+3525,user35735@company.com,Interested in purchasing,I would like to know more about your AI solution. We are planning to purchase this for our company.,lead,purchase,high
+3539,customer78045@mail.com,Request for pricing,I would like to know more about your software. Could you send a price estimate?,lead,pricing,high
+3542,customer98301@example.com,More information,"Hello, we are interested in your subscription plan.",lead,product_inquiry,low
+3547,business73252@test.com,Interested in purchasing,"Hello, we are interested in your software. Can we proceed with the purchase?",lead,purchase,high
+3550,client20367@company.com,Pricing information,We are interested in learning more about your platform. Please let me know the cost for a business plan.,lead,pricing,medium
+3561,sales15230@mail.com,Interested in purchasing,"Hello, we are interested in your business solution. We are ready to purchase the product.",lead,purchase,high
+3567,company30067@example.com,Quotation request,I am looking for information regarding your platform. Please let me know the cost for a business plan.,lead,pricing,high
+3568,company93725@test.com,Purchase inquiry,Could you provide information about your subscription plan. Please let me know how we can place an order.,lead,purchase,high
+3571,client34123@company.com,Purchase inquiry,"Hello, we are interested in your product. Can we proceed with the purchase?",lead,purchase,high
+3576,user83919@example.com,Product pricing,I am considering purchasing your product. What are your available plans and prices?,lead,pricing,high
+3582,company40325@company.com,Product information,Our company is currently looking for your platform.,lead,product_inquiry,low
+3588,customer92690@company.com,Quotation request,Could you provide information about your AI solution. What are your available plans and prices?,lead,pricing,high
+3593,company3429@test.com,Order request,Our company is currently looking for your product. We are ready to purchase the product.,lead,purchase,high
+3595,user1257@business.com,Product pricing,I am looking for information regarding your subscription plan. Can you provide a quotation?,lead,pricing,high
+3598,sales3720@company.com,Meeting request,I am interested in discussing this further. Can we meet?,lead,meeting,medium
+3603,user38704@company.com,Quotation request,"Hello, we are interested in your enterprise software. What are your available plans and prices?",lead,pricing,high
+3609,business10636@mail.com,Pricing inquiry,I would like to discuss your subscription plan. Please let me know the cost for a business plan.,lead,pricing,high
+3613,client31775@test.com,Quotation request,I would like to know more about your product. Please let me know the cost for a business plan.,lead,pricing,high
+3615,contact29573@company.com,Order request,"Hello, we are interested in your AI solution. Please let me know how we can place an order.",lead,purchase,high
+3624,business24501@example.com,Pricing inquiry,I am looking for information regarding your service. How much does the service cost?,lead,pricing,high
+3628,customer81127@company.com,Request for pricing,I am considering purchasing your business solution. Please share your pricing structure.,lead,pricing,high
+3637,client23988@test.com,Order request,I would like to know more about your platform. We are ready to purchase the product.,lead,purchase,high
+3666,contact99777@business.com,Buying your product,I would like to know more about your enterprise software. I would like to place an order.,lead,purchase,high
+3668,customer1862@test.com,Purchase inquiry,We are evaluating your service. We are interested in buying the solution.,lead,purchase,high
+3676,customer42091@mail.com,Pricing information,I would like to know more about your subscription plan. Can you provide a quotation?,lead,pricing,medium
+3677,client36981@company.com,Quotation request,"Hi, I am interested in your subscription plan. Can you provide a quotation?",lead,pricing,high
+3682,customer51098@business.com,Quotation request,We are evaluating your service. What are your available plans and prices?,lead,pricing,medium
+3683,client61686@mail.com,Purchase inquiry,Our company is currently looking for your subscription plan. I would like to place an order.,lead,purchase,high
+3687,customer64903@test.com,Purchase inquiry,We are interested in learning more about your subscription plan. We are ready to purchase the product.,lead,purchase,high
+3695,user44299@business.com,Pricing inquiry,I am looking for information regarding your business solution. What are your available plans and prices?,lead,pricing,medium
+3696,company30830@business.com,Interested in purchasing,"Hello, we are interested in your enterprise software. Please let me know how we can place an order.",lead,purchase,high
+3720,customer62302@company.com,Pricing inquiry,Could you provide information about your service. How much does the service cost?,lead,pricing,medium
+3723,client96770@example.com,Interested in purchasing,Our company is currently looking for your subscription plan. We are ready to purchase the product.,lead,purchase,high
+3737,customer78622@company.com,Request for pricing,I would like to discuss your software. Could you send me the pricing details?,lead,pricing,high
+3738,customer67363@test.com,Purchase inquiry,I would like to discuss your software. I would like to place an order.,lead,purchase,high
+3748,contact89290@mail.com,Buying your product,I would like to know more about your product. We are planning to purchase this for our company.,lead,purchase,high
+3755,company29238@mail.com,Interested in purchasing,We are evaluating your software. We are planning to purchase this for our company.,lead,purchase,high
+3756,sales2232@company.com,Pricing information,I would like to discuss your business solution. Please let me know the cost for a business plan.,lead,pricing,high
+3758,company36334@mail.com,Buying your product,I would like to discuss your AI solution. We are interested in buying the solution.,lead,purchase,high
+3767,client59205@test.com,Buying your product,Could you provide information about your subscription plan. Please let me know how we can place an order.,lead,purchase,high
+3772,sales61233@mail.com,Product pricing,We are evaluating your software. Could you send a price estimate?,lead,pricing,medium
+3777,contact93085@company.com,Service inquiry,We are evaluating your software.,lead,product_inquiry,low
+3783,contact56541@test.com,Quotation request,I am looking for information regarding your enterprise software. Can you provide a quotation?,lead,pricing,high
+3785,business41779@company.com,Buying your product,We are evaluating your platform. Please let me know how we can place an order.,lead,purchase,high
+3794,customer773@mail.com,More information,I would like to know more about your AI solution.,lead,product_inquiry,low
+3795,sales73154@business.com,Pricing information,"Hello, we are interested in your subscription plan. Could you send a price estimate?",lead,pricing,high
+3798,company35653@test.com,Purchase inquiry,"Hello, we are interested in your business solution. Can we proceed with the purchase?",lead,purchase,high
+3799,customer84852@mail.com,Interested in purchasing,I am looking for information regarding your platform. Can we proceed with the purchase?,lead,purchase,high
+3801,company2508@company.com,Product pricing,I am considering purchasing your product. Could you send me the pricing details?,lead,pricing,medium
+3804,client70115@test.com,Buying your product,We are evaluating your software. Please let me know how we can place an order.,lead,purchase,high
+3808,user2808@test.com,Request for pricing,I am looking for information regarding your subscription plan. Please share your pricing structure.,lead,pricing,high
+3814,business24541@example.com,Purchase inquiry,I am considering purchasing your service. Can we proceed with the purchase?,lead,purchase,high
+3815,user89719@company.com,More information,"Hi, I am interested in your product.",lead,product_inquiry,low
+3816,customer62496@mail.com,Interested in purchasing,I am looking for information regarding your subscription plan. Please let me know how we can place an order.,lead,purchase,high
+3819,contact44527@company.com,Product pricing,Could you provide information about your platform. Please let me know the cost for a business plan.,lead,pricing,medium
+3827,contact71536@test.com,Product information,Could you provide information about your product.,lead,product_inquiry,medium
+3831,contact94027@test.com,Pricing information,I would like to know more about your enterprise software. Could you send me the pricing details?,lead,pricing,high
+3833,sales73085@test.com,Interested in purchasing,"Hi, I am interested in your business solution. We are planning to purchase this for our company.",lead,purchase,high
+3834,contact2235@test.com,Order request,Our company is currently looking for your platform. We are ready to purchase the product.,lead,purchase,high
+3836,user22103@test.com,Order request,Could you provide information about your enterprise software. I would like to place an order.,lead,purchase,high
+3840,customer17281@company.com,Buying your product,I would like to know more about your enterprise software. Can we proceed with the purchase?,lead,purchase,high
+3841,company26189@example.com,Product pricing,We are interested in learning more about your business solution. Could you send me the pricing details?,lead,pricing,high
+3845,customer89230@business.com,More information,We are evaluating your business solution.,lead,product_inquiry,medium
+3849,contact1006@business.com,Buying your product,We are evaluating your subscription plan. Can we proceed with the purchase?,lead,purchase,high
+3864,company16724@mail.com,Purchase inquiry,I am considering purchasing your product. Please let me know how we can place an order.,lead,purchase,high
+3871,company80625@business.com,Purchase inquiry,Our company is currently looking for your enterprise software. We are ready to purchase the product.,lead,purchase,high
+3887,company80829@business.com,Request for pricing,We are interested in learning more about your platform. Could you send a price estimate?,lead,pricing,high
+3891,user67391@test.com,More information,We are interested in learning more about your subscription plan.,lead,product_inquiry,medium
+3896,contact56248@mail.com,Product details,Could you provide information about your software.,lead,product_inquiry,low
+3901,company65539@test.com,Buying your product,We are interested in learning more about your enterprise software. We are planning to purchase this for our company.,lead,purchase,high
+3904,company68391@mail.com,Pricing inquiry,"Hi, I am interested in your enterprise software. How much does the service cost?",lead,pricing,high
+3911,contact84377@mail.com,Pricing information,We are evaluating your product. What are your available plans and prices?,lead,pricing,high
+3912,user36535@example.com,Product pricing,"Hi, I am interested in your AI solution. Could you send me the pricing details?",lead,pricing,medium
+3916,client26923@business.com,Purchase inquiry,We are evaluating your business solution. We are ready to purchase the product.,lead,purchase,high
+3920,company19385@example.com,More information,"Hi, I am interested in your service.",lead,product_inquiry,low
+3922,business5456@company.com,Purchase inquiry,I would like to discuss your AI solution. We are planning to purchase this for our company.,lead,purchase,high
+3924,client96806@business.com,Purchase inquiry,We are evaluating your platform. We are interested in buying the solution.,lead,purchase,high
+3937,client81977@test.com,Service inquiry,Our company is currently looking for your subscription plan.,lead,product_inquiry,medium
+3943,contact81930@example.com,Interested in purchasing,I am looking for information regarding your platform. We are interested in buying the solution.,lead,purchase,high
+3945,company48543@test.com,Product pricing,I would like to discuss your software. How much does the service cost?,lead,pricing,medium
+3947,customer20488@example.com,Buying your product,Could you provide information about your AI solution. We are interested in buying the solution.,lead,purchase,high
+3949,sales11662@test.com,Request for pricing,"Hello, we are interested in your software. Could you send a price estimate?",lead,pricing,high
+3962,sales12370@test.com,Product pricing,I would like to discuss your software. Please share your pricing structure.,lead,pricing,high
+3964,customer40911@example.com,Order request,We are interested in learning more about your AI solution. We are ready to purchase the product.,lead,purchase,high
+3970,company46913@mail.com,Request for pricing,Our company is currently looking for your product. Please let me know the cost for a business plan.,lead,pricing,medium
+3977,business39432@example.com,Order request,I would like to know more about your AI solution. I would like to place an order.,lead,purchase,high
+3985,sales62950@mail.com,Purchase inquiry,Our company is currently looking for your product. We are planning to purchase this for our company.,lead,purchase,high
+3993,user4303@company.com,Buying your product,Our company is currently looking for your product. I would like to place an order.,lead,purchase,high
+4023,contact85519@example.com,Buying your product,"Hi, I am interested in your enterprise software. Please let me know how we can place an order.",lead,purchase,high
+4025,customer7019@company.com,Interested in purchasing,Our company is currently looking for your software. Can we proceed with the purchase?,lead,purchase,high
+4029,customer52764@mail.com,Order request,I am looking for information regarding your service. We are ready to purchase the product.,lead,purchase,high
+4039,company22889@example.com,Request for pricing,We are evaluating your enterprise software. Can you provide a quotation?,lead,pricing,high
+4043,user43683@test.com,Product pricing,I would like to know more about your enterprise software. Can you provide a quotation?,lead,pricing,high
+4046,sales48710@company.com,Interested in purchasing,Our company is currently looking for your enterprise software. We are interested in buying the solution.,lead,purchase,high
+4049,business92777@mail.com,Product details,Our company is currently looking for your service.,lead,product_inquiry,low
+4067,sales50335@business.com,Product information,"Hello, we are interested in your service.",lead,product_inquiry,low
+4072,business62521@mail.com,Request for pricing,Our company is currently looking for your AI solution. Please share your pricing structure.,lead,pricing,high
+4085,user77652@example.com,More information,I am looking for information regarding your platform.,lead,product_inquiry,low
+4090,company41664@company.com,Request for pricing,We are interested in learning more about your subscription plan. Please let me know the cost for a business plan.,lead,pricing,medium
+4097,company6836@mail.com,Pricing inquiry,Our company is currently looking for your platform. Please share your pricing structure.,lead,pricing,high
+4099,business99408@mail.com,Order request,I am considering purchasing your service. We are planning to purchase this for our company.,lead,purchase,high
+4104,sales95049@example.com,Order request,I would like to know more about your service. Can we proceed with the purchase?,lead,purchase,high
+4106,sales5714@example.com,Product pricing,Could you provide information about your software. Can you provide a quotation?,lead,pricing,high
+4107,user49654@test.com,Product details,"Hello, we are interested in your AI solution.",lead,product_inquiry,medium
+4114,business47012@test.com,Buying your product,I am considering purchasing your service. We are interested in buying the solution.,lead,purchase,high
+4117,user41311@company.com,Pricing inquiry,Our company is currently looking for your business solution. Could you send a price estimate?,lead,pricing,high
+4127,business99191@business.com,Pricing information,We are interested in learning more about your AI solution. Could you send me the pricing details?,lead,pricing,high
+4132,user2833@test.com,Buying your product,I am considering purchasing your product. Please let me know how we can place an order.,lead,purchase,high
+4137,client12320@company.com,Pricing inquiry,Could you provide information about your business solution. What are your available plans and prices?,lead,pricing,high
+4143,business40445@example.com,Pricing inquiry,We are evaluating your platform. Can you provide a quotation?,lead,pricing,medium
+4163,contact97088@business.com,Buying your product,We are evaluating your subscription plan. We are ready to purchase the product.,lead,purchase,high
+4169,business88924@test.com,Product information,I am looking for information regarding your product.,lead,product_inquiry,low
+4174,business9176@example.com,Quotation request,"Hello, we are interested in your software. What are your available plans and prices?",lead,pricing,high
+4175,sales56143@company.com,More information,"Hi, I am interested in your enterprise software.",lead,product_inquiry,low
+4181,contact27453@company.com,Buying your product,I am considering purchasing your enterprise software. Can we proceed with the purchase?,lead,purchase,high
+4184,user46381@company.com,Pricing inquiry,We are evaluating your software. Please let me know the cost for a business plan.,lead,pricing,high
+4187,client47997@mail.com,Order request,I am considering purchasing your AI solution. I would like to place an order.,lead,purchase,high
+4190,sales18199@business.com,Purchase inquiry,"Hi, I am interested in your product. Can we proceed with the purchase?",lead,purchase,high
+4196,business25774@business.com,Product pricing,Could you provide information about your business solution. Could you send me the pricing details?,lead,pricing,high
+4198,company15332@test.com,Buying your product,I am looking for information regarding your subscription plan. I would like to place an order.,lead,purchase,high
+4199,business85261@test.com,Product information,I would like to discuss your software.,lead,product_inquiry,medium
+4206,business26916@company.com,Interested in purchasing,Could you provide information about your product. We are interested in buying the solution.,lead,purchase,high
+4218,client66811@business.com,Product pricing,Our company is currently looking for your platform. Please share your pricing structure.,lead,pricing,high
+4225,customer74647@test.com,Buying your product,Could you provide information about your enterprise software. We are ready to purchase the product.,lead,purchase,high
+4229,company57736@company.com,Product information,I am looking for information regarding your business solution.,lead,product_inquiry,low
+4233,contact63653@test.com,Pricing inquiry,I am considering purchasing your product. Can you provide a quotation?,lead,pricing,high
+4242,company16912@mail.com,Product information,"Hello, we are interested in your product.",lead,product_inquiry,medium
+4244,sales36624@company.com,Request for pricing,"Hello, we are interested in your software. Please let me know the cost for a business plan.",lead,pricing,high
+4245,company96943@mail.com,Product details,I would like to discuss your AI solution.,lead,product_inquiry,medium
+4251,business37003@company.com,Purchase inquiry,"Hi, I am interested in your business solution. I would like to place an order.",lead,purchase,high
+4253,user33965@company.com,Service inquiry,I would like to know more about your platform.,lead,product_inquiry,medium
+4257,client93008@company.com,Purchase inquiry,"Hello, we are interested in your software. We are ready to purchase the product.",lead,purchase,high
+4258,contact75049@company.com,Pricing information,"Hi, I am interested in your service. Can you provide a quotation?",lead,pricing,high
+4262,client31880@test.com,Buying your product,I would like to discuss your platform. We are planning to purchase this for our company.,lead,purchase,high
+4276,sales30330@business.com,Product pricing,We are interested in learning more about your software. What are your available plans and prices?,lead,pricing,medium
+4291,sales69669@test.com,Pricing information,I would like to discuss your subscription plan. Can you provide a quotation?,lead,pricing,high
+4302,customer50894@business.com,Pricing inquiry,We are evaluating your platform. Please let me know the cost for a business plan.,lead,pricing,high
+4306,business34426@business.com,Product pricing,"Hi, I am interested in your software. Could you send a price estimate?",lead,pricing,medium
+4310,customer64771@business.com,Pricing inquiry,We are interested in learning more about your enterprise software. Please let me know the cost for a business plan.,lead,pricing,medium
+4311,business29861@company.com,Quotation request,I am looking for information regarding your business solution. What are your available plans and prices?,lead,pricing,high
+4316,sales78423@business.com,Product information,We are evaluating your product.,lead,product_inquiry,low
+4319,customer36890@mail.com,Interested in purchasing,We are evaluating your business solution. Please let me know how we can place an order.,lead,purchase,high
+4324,company31601@company.com,Discussion request,Please suggest a convenient time for a meeting.,lead,meeting,medium
+4325,customer66670@test.com,More information,I would like to discuss your business solution.,lead,product_inquiry,low
+4327,company3216@business.com,More information,I am looking for information regarding your business solution.,lead,product_inquiry,medium
+4328,client60849@company.com,Product pricing,"Hi, I am interested in your service. How much does the service cost?",lead,pricing,high
+4331,sales45366@example.com,More information,I would like to know more about your business solution.,lead,product_inquiry,low
+4332,company14509@business.com,Pricing inquiry,Could you provide information about your service. Please share your pricing structure.,lead,pricing,medium
+4340,business72714@business.com,Pricing information,I am considering purchasing your subscription plan. What are your available plans and prices?,lead,pricing,medium
+4341,user79218@example.com,Purchase inquiry,We are evaluating your enterprise software. We are ready to purchase the product.,lead,purchase,high
+4343,customer54872@company.com,Order request,Our company is currently looking for your subscription plan. Please let me know how we can place an order.,lead,purchase,high
+4348,business1950@test.com,Purchase inquiry,We are interested in learning more about your subscription plan. Can we proceed with the purchase?,lead,purchase,high
+4352,sales92361@mail.com,Product pricing,I am looking for information regarding your service. Please let me know the cost for a business plan.,lead,pricing,high
+4358,client49723@mail.com,Interested in purchasing,I would like to discuss your business solution. We are planning to purchase this for our company.,lead,purchase,high
+4365,user44629@example.com,More information,I am looking for information regarding your service.,lead,product_inquiry,low
+4373,business84798@mail.com,Purchase inquiry,"Hi, I am interested in your service. We are ready to purchase the product.",lead,purchase,high
+4382,business4232@test.com,Pricing inquiry,Our company is currently looking for your service. Please share your pricing structure.,lead,pricing,high
+4388,sales13170@example.com,Interested in purchasing,"Hello, we are interested in your product. Please let me know how we can place an order.",lead,purchase,high
+4391,company84324@business.com,Purchase inquiry,"Hello, we are interested in your platform. We are interested in buying the solution.",lead,purchase,high
+4397,customer25737@test.com,Product pricing,I am considering purchasing your subscription plan. What are your available plans and prices?,lead,pricing,high
+4411,business75991@example.com,Product pricing,"Hi, I am interested in your enterprise software. Could you send a price estimate?",lead,pricing,medium
+4420,client26329@example.com,Product details,Could you provide information about your AI solution.,lead,product_inquiry,medium
+4427,company35195@test.com,Request for pricing,"Hello, we are interested in your subscription plan. How much does the service cost?",lead,pricing,medium
+4428,sales21509@test.com,Product pricing,I am looking for information regarding your software. What are your available plans and prices?,lead,pricing,high
+4432,contact8851@business.com,Purchase inquiry,I am looking for information regarding your service. We are planning to purchase this for our company.,lead,purchase,high
+4437,contact52521@test.com,Pricing information,Our company is currently looking for your software. Please let me know the cost for a business plan.,lead,pricing,high
+4448,company35286@company.com,Pricing inquiry,We are interested in learning more about your platform. Could you send a price estimate?,lead,pricing,high
+4450,contact40424@mail.com,Interested in purchasing,I am considering purchasing your software. Please let me know how we can place an order.,lead,purchase,high
+4456,sales22972@company.com,Order request,I would like to know more about your service. We are ready to purchase the product.,lead,purchase,high
+4457,user22104@test.com,More information,Could you provide information about your enterprise software.,lead,product_inquiry,medium
+4463,sales4986@test.com,Pricing information,Could you provide information about your enterprise software. How much does the service cost?,lead,pricing,high
+4464,sales73765@company.com,Order request,I would like to know more about your product. I would like to place an order.,lead,purchase,high
+4476,company93924@mail.com,Pricing inquiry,"Hi, I am interested in your AI solution. Please let me know the cost for a business plan.",lead,pricing,medium
+4478,sales12672@mail.com,Purchase inquiry,We are interested in learning more about your enterprise software. We are ready to purchase the product.,lead,purchase,high
+4479,company91102@company.com,Order request,I am looking for information regarding your service. I would like to place an order.,lead,purchase,high
+4490,business42446@test.com,More information,We are interested in learning more about your software.,lead,product_inquiry,low
+4491,client72094@test.com,Pricing inquiry,"Hi, I am interested in your platform. Please let me know the cost for a business plan.",lead,pricing,high
+4492,user38628@test.com,Purchase inquiry,I am looking for information regarding your AI solution. We are ready to purchase the product.,lead,purchase,high
+4511,user53713@business.com,Pricing inquiry,I am looking for information regarding your product. Could you send a price estimate?,lead,pricing,high
+4518,contact13443@business.com,More information,I am considering purchasing your platform.,lead,product_inquiry,medium
+4520,customer67041@mail.com,Product details,I would like to discuss your subscription plan.,lead,product_inquiry,low
+4529,customer24738@business.com,Buying your product,We are evaluating your product. I would like to place an order.,lead,purchase,high
+4535,user41817@test.com,Order request,Our company is currently looking for your product. Can we proceed with the purchase?,lead,purchase,high
+4554,user13597@example.com,Quotation request,We are evaluating your platform. How much does the service cost?,lead,pricing,medium
+4555,user92154@test.com,Quotation request,Could you provide information about your platform. Could you send me the pricing details?,lead,pricing,high
+4564,sales16984@business.com,Quotation request,We are evaluating your business solution. How much does the service cost?,lead,pricing,high
+4566,sales67172@example.com,Order request,I would like to know more about your software. We are planning to purchase this for our company.,lead,purchase,high
+4573,business67578@test.com,Quotation request,I am considering purchasing your business solution. Can you provide a quotation?,lead,pricing,high
+4590,sales39162@mail.com,Quotation request,We are interested in learning more about your business solution. Can you provide a quotation?,lead,pricing,medium
+4591,customer80160@mail.com,Sales meeting,Please suggest a convenient time for a meeting.,lead,meeting,medium
+4598,company43962@company.com,Purchase inquiry,"Hello, we are interested in your subscription plan. Can we proceed with the purchase?",lead,purchase,high
+4600,client31240@example.com,Pricing information,Could you provide information about your subscription plan. How much does the service cost?,lead,pricing,medium
+4604,client53867@test.com,Interested in purchasing,We are evaluating your service. Can we proceed with the purchase?,lead,purchase,high
+4612,contact75254@example.com,Product pricing,Our company is currently looking for your enterprise software. Could you send a price estimate?,lead,pricing,high
+4613,client96947@company.com,Service inquiry,We are interested in learning more about your business solution.,lead,product_inquiry,low
+4621,customer40315@test.com,Purchase inquiry,I would like to know more about your product. We are planning to purchase this for our company.,lead,purchase,high
+4631,business47278@test.com,Service inquiry,We are evaluating your platform.,lead,product_inquiry,low
+4632,sales33164@mail.com,Pricing inquiry,"Hi, I am interested in your platform. Could you send me the pricing details?",lead,pricing,high
+4635,company13713@company.com,Order request,I would like to discuss your business solution. Can we proceed with the purchase?,lead,purchase,high
+4638,sales76393@business.com,Order request,We are interested in learning more about your software. Please let me know how we can place an order.,lead,purchase,high
+4657,user25508@test.com,Request for pricing,Our company is currently looking for your business solution. Please let me know the cost for a business plan.,lead,pricing,high
+4658,business64652@business.com,Interested in purchasing,"Hi, I am interested in your subscription plan. We are planning to purchase this for our company.",lead,purchase,high
+4669,company91859@company.com,Buying your product,We are evaluating your product. Can we proceed with the purchase?,lead,purchase,high
+4672,user85043@test.com,Product pricing,I would like to know more about your software. What are your available plans and prices?,lead,pricing,medium
+4676,company35091@example.com,Product pricing,We are interested in learning more about your AI solution. What are your available plans and prices?,lead,pricing,high
+4683,contact67752@mail.com,Quotation request,I would like to know more about your software. Please share your pricing structure.,lead,pricing,medium
+4687,user74696@example.com,Product pricing,Our company is currently looking for your software. Can you provide a quotation?,lead,pricing,high
+4689,customer16272@test.com,Purchase inquiry,I am looking for information regarding your subscription plan. Please let me know how we can place an order.,lead,purchase,high
+4690,business76066@mail.com,Purchase inquiry,Our company is currently looking for your enterprise software. We are interested in buying the solution.,lead,purchase,high
+4691,business8879@test.com,Quotation request,We are evaluating your service. Could you send me the pricing details?,lead,pricing,high
+4693,contact59802@business.com,Quotation request,I am looking for information regarding your software. How much does the service cost?,lead,pricing,medium
+4695,sales81568@example.com,Interested in purchasing,We are interested in learning more about your product. I would like to place an order.,lead,purchase,high
+4700,company99500@test.com,More information,I am looking for information regarding your software.,lead,product_inquiry,medium
+4702,contact39875@example.com,Buying your product,We are interested in learning more about your subscription plan. We are ready to purchase the product.,lead,purchase,high
+4714,sales39276@mail.com,Quotation request,I am looking for information regarding your business solution. Please let me know the cost for a business plan.,lead,pricing,medium
+4715,client51507@business.com,Pricing inquiry,"Hello, we are interested in your software. Can you provide a quotation?",lead,pricing,medium
+4727,business21591@company.com,Product information,Could you provide information about your service.,lead,product_inquiry,low
+4748,contact73068@test.com,Quotation request,"Hi, I am interested in your AI solution. What are your available plans and prices?",lead,pricing,high
+4749,business69184@mail.com,Pricing inquiry,I am considering purchasing your platform. Could you send a price estimate?,lead,pricing,high
+4750,sales20968@example.com,Product information,I would like to know more about your software.,lead,product_inquiry,medium
+4753,company85327@example.com,Buying your product,Could you provide information about your service. Can we proceed with the purchase?,lead,purchase,high
+4759,business17739@mail.com,Product pricing,I am considering purchasing your subscription plan. How much does the service cost?,lead,pricing,high
+4760,sales60432@example.com,Order request,We are interested in learning more about your platform. We are interested in buying the solution.,lead,purchase,high
+4761,user63458@company.com,Pricing inquiry,I am looking for information regarding your enterprise software. Can you provide a quotation?,lead,pricing,medium
+4764,contact44725@test.com,Product pricing,I am looking for information regarding your AI solution. Please let me know the cost for a business plan.,lead,pricing,high
+4765,customer56376@company.com,Product pricing,We are interested in learning more about your business solution. Please share your pricing structure.,lead,pricing,high
+4767,user14609@business.com,Quotation request,I am considering purchasing your subscription plan. Please share your pricing structure.,lead,pricing,medium
+4773,contact60712@test.com,Product details,Our company is currently looking for your business solution.,lead,product_inquiry,low
+4786,sales8721@test.com,Buying your product,I am looking for information regarding your software. We are ready to purchase the product.,lead,purchase,high
+4793,sales83482@example.com,Request for pricing,I would like to know more about your software. How much does the service cost?,lead,pricing,high
+4807,company12661@example.com,Quotation request,"Hi, I am interested in your service. What are your available plans and prices?",lead,pricing,high
+4808,customer77138@business.com,Product pricing,I am considering purchasing your business solution. How much does the service cost?,lead,pricing,high
+4824,user6660@company.com,Pricing inquiry,We are evaluating your enterprise software. Could you send a price estimate?,lead,pricing,high
+4831,client27727@business.com,Product details,I would like to discuss your service.,lead,product_inquiry,medium
+4832,sales3872@test.com,Quotation request,We are interested in learning more about your AI solution. Could you send a price estimate?,lead,pricing,medium
+4838,client39988@business.com,Pricing information,I am considering purchasing your subscription plan. Could you send me the pricing details?,lead,pricing,high
+4839,business98468@example.com,Order request,Could you provide information about your AI solution. We are planning to purchase this for our company.,lead,purchase,high
+4846,customer86369@example.com,Request for pricing,I am considering purchasing your product. Please share your pricing structure.,lead,pricing,high
+4850,business69063@company.com,Quotation request,Our company is currently looking for your software. What are your available plans and prices?,lead,pricing,high
+4852,business2427@mail.com,Interested in purchasing,I am looking for information regarding your product. We are interested in buying the solution.,lead,purchase,high
+4857,business32843@example.com,Buying your product,"Hi, I am interested in your software. I would like to place an order.",lead,purchase,high
+4859,customer67809@company.com,Product pricing,We are interested in learning more about your software. Please let me know the cost for a business plan.,lead,pricing,high
+4862,contact50119@company.com,Buying your product,I am looking for information regarding your software. We are interested in buying the solution.,lead,purchase,high
+4863,company72406@business.com,Interested in purchasing,I would like to discuss your enterprise software. We are interested in buying the solution.,lead,purchase,high
+4867,client89103@mail.com,Pricing inquiry,We are interested in learning more about your software. Could you send a price estimate?,lead,pricing,high
+4870,user76142@test.com,Pricing information,I am looking for information regarding your platform. Please let me know the cost for a business plan.,lead,pricing,high
+4871,sales63827@mail.com,Buying your product,I am looking for information regarding your service. We are planning to purchase this for our company.,lead,purchase,high
+4873,customer14631@test.com,Purchase inquiry,Our company is currently looking for your platform. We are interested in buying the solution.,lead,purchase,high
+4890,client83406@test.com,Buying your product,I would like to discuss your product. We are interested in buying the solution.,lead,purchase,high
+4892,client61511@example.com,Request for pricing,Could you provide information about your platform. Could you send me the pricing details?,lead,pricing,high
+4908,sales50958@test.com,Interested in purchasing,I am looking for information regarding your service. Can we proceed with the purchase?,lead,purchase,high
+4913,company52613@company.com,Service inquiry,I am considering purchasing your product.,lead,product_inquiry,low
+4923,contact67208@company.com,Request for pricing,"Hi, I am interested in your software. Could you send a price estimate?",lead,pricing,medium
+4927,sales61206@company.com,Order request,We are interested in learning more about your platform. Can we proceed with the purchase?,lead,purchase,high
+4930,client8374@company.com,Pricing information,Could you provide information about your product. Could you send me the pricing details?,lead,pricing,high
+4937,business80696@mail.com,Order request,I would like to know more about your service. We are planning to purchase this for our company.,lead,purchase,high
+4943,client91666@company.com,Order request,I am considering purchasing your software. Please let me know how we can place an order.,lead,purchase,high
+4948,contact41974@business.com,Purchase inquiry,We are interested in learning more about your software. I would like to place an order.,lead,purchase,high
+4963,company88366@example.com,Pricing information,We are evaluating your service. How much does the service cost?,lead,pricing,high
+4964,sales51946@business.com,Service inquiry,I would like to discuss your enterprise software.,lead,product_inquiry,medium
+4966,company90360@test.com,Purchase inquiry,"Hi, I am interested in your platform. We are interested in buying the solution.",lead,purchase,high
+4970,business59986@business.com,Service inquiry,We are evaluating your service.,lead,product_inquiry,low
+4976,customer57233@mail.com,Order request,"Hello, we are interested in your software. Can we proceed with the purchase?",lead,purchase,high
+4979,business67697@example.com,Interested in purchasing,I am looking for information regarding your enterprise software. Please let me know how we can place an order.,lead,purchase,high
+4981,sales25677@example.com,Pricing information,Could you provide information about your enterprise software. Could you send me the pricing details?,lead,pricing,medium
+4985,business44646@company.com,Purchase inquiry,We are evaluating your subscription plan. Can we proceed with the purchase?,lead,purchase,high
