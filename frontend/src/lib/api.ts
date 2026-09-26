@@ -86,9 +86,18 @@ export interface LeadListResponse {
   pages: number;
 }
 
-// Urgent = new leads, highest wait time first (used by the Overview triage board)
-export function fetchUrgentLeads(): Promise<LeadListResponse> {
-  return request('/leads?status=new&limit=100&sort_by=id&order=desc');
+// Urgent = anything awaiting a first reply: brand-new leads AND leads that
+// already waited past the SLA (status 'missed'). Oldest first — the top of the
+// list is the lead closest to being lost.
+export function fetchUrgentLeads(): Promise<Lead[]> {
+  return Promise.all([
+    request<LeadListResponse>('/leads?status=new&limit=100&sort_by=id&order=desc'),
+    request<LeadListResponse>('/leads?status=missed&limit=100&sort_by=id&order=desc'),
+  ]).then(([fresh, overdue]) =>
+    [...fresh.items, ...overdue.items].sort(
+      (a, b) => new Date(a.received_at).getTime() - new Date(b.received_at).getTime()
+    )
+  );
 }
 
 export function fetchLeads(params?: Record<string, string | number>): Promise<LeadListResponse> {

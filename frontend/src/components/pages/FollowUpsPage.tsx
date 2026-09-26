@@ -31,8 +31,12 @@ export default function FollowUpsPage() {
     try {
       await sendFollowUp(leadId);
       refetch();
-    } catch {
-      setActionError('The follow-up didn’t send. Check the connection and try again.');
+    } catch (e) {
+      setActionError(
+        e instanceof Error && e.message.length > 20
+          ? `Didn’t send: ${e.message}`
+          : 'The follow-up didn’t send. Check the connection and try again.'
+      );
     } finally {
       setSending(null);
     }

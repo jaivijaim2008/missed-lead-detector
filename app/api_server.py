@@ -1,6 +1,7 @@
 import os
 import sys
 import re
+import json
 import sqlite3
 import base64
 import time
@@ -1081,10 +1082,26 @@ def list_activity(limit: int = Query(50, ge=1, le=100)):
 # -------------------------------------------------------------
 # 10. SETTINGS & GMAIL
 # -------------------------------------------------------------
+SETTINGS_PATH = os.path.join(BASE_DIR, "settings.json")
+
+
+def _load_saved_settings() -> Dict[str, Any]:
+    """Persisted user settings (SLA minutes etc.). Defaults if never saved."""
+    try:
+        with open(SETTINGS_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, dict):
+                return data
+    except Exception:
+        pass
+    return {"sla_threshold_minutes": 60}
+
+
 @app.get("/api/settings")
 def get_settings():
     token_path = os.path.join(PROJECT_ROOT, "credentials", "token.json")
     gmail_connected = os.path.exists(token_path)
+    saved = _load_saved_settings()
 
     return {
         "email_account": {
@@ -1093,7 +1110,7 @@ def get_settings():
             "last_sync": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "auto_sync_enabled": True
         },
-        "sla_threshold_minutes": 60,
+        "sla_threshold_minutes": saved.get("sla_threshold_minutes", 60),
         "ai_model": {
             "name": "TF-IDF + Logistic Regression Lead Classifier",
             "status": "trained & active",
@@ -1116,7 +1133,15 @@ class SettingsUpdatePayload(BaseModel):
 
 @app.post("/api/settings")
 def update_settings(payload: SettingsUpdatePayload):
-    log_activity(action="Settings Updated", details=f"SLA threshold configured to {payload.sla_threshold_minutes} minutes.", actor="User")
+    saved = _load_saved_settings()
+    if payload.sla_threshold_minutes is not None:
+        saved["sla_threshold_minutes"] = max(5, min(1440, int(payload.sla_threshold_minutes)))
+    try:
+        with open(SETTINGS_PATH, "w", encoding="utf-8") as f:
+            json.dump(saved, f, indent=2)
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Could not save settings: {exc}")
+    log_activity(action="Settings Updated", details=f"SLA threshold configured to {saved['sla_threshold_minutes']} minutes.", actor="User")
     return {"success": True, "message": "Settings saved successfully."}
 
 

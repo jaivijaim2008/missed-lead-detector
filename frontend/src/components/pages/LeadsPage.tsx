@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { useApi, formatRelativeTime, riskColor } from '@/lib/hooks';
-import { fetchLeads, updateLeadStatus, LeadListResponse } from '@/lib/api';
+import { fetchLeads, updateLeadStatus, sendFollowUp, LeadListResponse } from '@/lib/api';
 import { Search, ChevronLeft, ChevronRight, Inbox } from 'lucide-react';
 
 const statusChips: Record<string, { label: string; badge: string }> = {
@@ -20,6 +20,8 @@ export default function LeadsPage({ onViewDetail }: { onViewDetail?: (id: number
   const [page, setPage] = useState(1);
   const [busyId, setBusyId] = useState<number | null>(null);
   const [actionError, setActionError] = useState<string | null>(null);
+  const [actionNote, setActionNote] = useState<string | null>(null);
+  const [expandedId, setExpandedId] = useState<number | null>(null);
 
   const params: Record<string, string | number> = { page, limit: 15 };
   if (search) params.search = search;
@@ -36,9 +38,26 @@ export default function LeadsPage({ onViewDetail }: { onViewDetail?: (id: number
     setActionError(null);
     try {
       await updateLeadStatus(leadId, newStatus);
+      setActionNote(newStatus === 'resolved' ? 'Marked as handled. Nice work.' : 'Updated.');
       refetch();
     } catch {
       setActionError('That didn’t go through. Check the connection and try again.');
+    } finally {
+      setBusyId(null);
+    }
+  };
+
+  // Actually sends the follow-up email (server marks the lead followed_up on success).
+  const handleReply = async (leadId: number, name: string) => {
+    setBusyId(leadId);
+    setActionError(null);
+    setActionNote(null);
+    try {
+      await sendFollowUp(leadId);
+      setActionNote(`Follow-up sent to ${name}.`);
+      refetch();
+    } catch (e) {
+      setActionError(e instanceof Error ? e.message : 'The follow-up didn’t send. Try again.');
     } finally {
       setBusyId(null);
     }
@@ -62,6 +81,9 @@ export default function LeadsPage({ onViewDetail }: { onViewDetail?: (id: number
       <div className="md-pagebody">
         {actionError && (
           <div className="md-note md-note-bad" role="alert">{actionError}</div>
+        )}
+        {actionNote && !actionError && (
+          <div className="md-note md-note-ok" role="status">{actionNote}</div>
         )}
 
         {/* Toolbar */}
@@ -158,7 +180,8 @@ export default function LeadsPage({ onViewDetail }: { onViewDetail?: (id: number
                   {data.items.map((lead) => {
                     const chip = statusChips[lead.status] ?? statusChips.dismissed;
                     return (
-                      <tr key={lead.id}>
+                      <Fragment key={lead.id}>
+                      <tr>
                         <td>
                           <div className="md-contact">
                             <b>{lead.name || lead.email}</b>
@@ -187,7 +210,7 @@ export default function LeadsPage({ onViewDetail }: { onViewDetail?: (id: number
                             <button
                               className="md-btn md-btn-primary md-btn-sm-inline"
                               disabled={busyId === lead.id}
-                              onClick={() => handleStatusChange(lead.id, 'followed_up')}
+                              onClick={() => handleReply(lead.id, lead.name || lead.company || lead.email)}
                             >
                               {busyId === lead.id ? 'Sending…' : 'Reply now'}
                             </button>
@@ -206,14 +229,40 @@ export default function LeadsPage({ onViewDetail }: { onViewDetail?: (id: number
                             <button
                               className="md-btn md-btn-quiet md-btn-sm-inline"
                               style={{ marginLeft: 6 }}
-                              onClick={() => onViewDetail(lead.id)}
-                              aria-label={`View details for ${lead.name || lead.email}`}
+                              onClick={() => setExpandedId(expandedId === lead.id ? null : lead.id)}
+                              aria-expanded={expandedId === lead.id}
                             >
-                              Details
+                              {expandedId === lead.id ? 'Close' : 'Details'}
                             </button>
                           )}
                         </td>
                       </tr>
+                      {expandedId === lead.id && (
+                        <tr>
+                          <td colSpan={6} style={{ background: '#FBFAF7' }}>
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12, padding: '4px 2px' }}>
+                              <div>
+                                <b style={{ fontSize: 12, color: 'var(--md-pencil)' }}>FROM</b>
+                                <div style={{ fontSize: 13 }}>{lead.sender_raw || lead.email}</div>
+                              </div>
+                              <div>
+                                <b style={{ fontSize: 12, color: 'var(--md-pencil)' }}>RECEIVED</b>
+                                <div style={{ fontSize: 13 }}>{formatRelativeTime(lead.received_at)} · {lead.days_waiting} day{lead.days_waiting === 1 ? '' : 's'} waiting</div>
+                              </div>
+                              <div>
+                                <b style={{ fontSize: 12, color: 'var(--md-pencil)' }}>WHAT THEY WANT</b>
+                                <div style={{ fontSize: 13 }}>{lead.intent || '—'} · {Math.round(lead.confidence)}% sure it's a lead</div>
+                              </div>
+                              <div>
+                                <b style={{ fontSize: 12, color: 'var(--md-pencil)' }}>URGENCY</b>
+                                <div style={{ fontSize: 13 }}>{lead.risk} · score {lead.risk_score}/100</div>
+                              </div>
+                            </div>
+                            <div className="md-draft" style={{ marginTop: 10 }}>{lead.body}</div>
+                          </td>
+                        </tr>
+                      )}
+                      </Fragment>
                     );
                   })}
                 </tbody>
