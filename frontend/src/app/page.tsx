@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Sidebar from '@/components/Sidebar';
 import OverviewPage from '@/components/pages/OverviewPage';
 import LeadsPage from '@/components/pages/LeadsPage';
@@ -24,26 +24,37 @@ const pages: Record<string, React.ComponentType<{ onViewDetail?: (id: number) =>
   settings: SettingsPage,
 };
 
+function pageFromHash(): string {
+  const h = window.location.hash.replace('#/', '').replace('#', '');
+  return h in pages ? h : 'overview';
+}
+
 export default function Home() {
   const [activePage, setActivePage] = useState('overview');
+
+  // Hash-based navigation: deep links, browser back/forward and refresh all work.
+  useEffect(() => {
+    const sync = () => setActivePage(pageFromHash());
+    sync();
+    window.addEventListener('hashchange', sync);
+    return () => window.removeEventListener('hashchange', sync);
+  }, []);
+
+  const navigate = (page: string) => {
+    window.location.hash = `#/${page}`;
+    setActivePage(page);
+    window.scrollTo({ top: 0 });
+  };
 
   const PageComponent = pages[activePage] || OverviewPage;
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh' }}>
-      <Sidebar activePage={activePage} onNavigate={setActivePage} />
-      <main
-        style={{
-          flex: 1,
-          marginLeft: 'var(--sidebar-width)',
-          minHeight: '100vh',
-          background: 'var(--bg-root)',
-        }}
-      >
+    <div className="md-shell">
+      <Sidebar activePage={activePage} onNavigate={navigate} />
+      <main className="md-main">
         <PageComponent
           onViewDetail={(id: number) => {
-            // Navigate to leads page with detail - future enhancement
-            setActivePage('leads');
+            navigate('leads');
           }}
         />
       </main>

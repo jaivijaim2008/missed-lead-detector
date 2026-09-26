@@ -2,161 +2,257 @@
 
 import { useState } from 'react';
 import { useApi, formatRelativeTime } from '@/lib/hooks';
-import { fetchEmails, EmailListResponse } from '@/lib/api';
-import TopBar from '@/components/TopBar';
-import { Search, ChevronLeft, ChevronRight, Inbox, Tag } from 'lucide-react';
+import { fetchEmails, classifyEmail, EmailListResponse } from '@/lib/api';
+import { Search, ChevronLeft, ChevronRight, Inbox, Wand2 } from 'lucide-react';
 
 const categoryTabs = [
   { key: 'all', label: 'All' },
-  { key: 'leads', label: 'Leads' },
-  { key: 'unanswered', label: 'Unanswered' },
+  { key: 'leads', label: 'Real leads' },
+  { key: 'unanswered', label: 'Not answered yet' },
   { key: 'general', label: 'General' },
-  { key: 'spam', label: 'Spam' },
+  { key: 'spam', label: 'Junk' },
 ];
+
+const labelChip: Record<string, { label: string; badge: string }> = {
+  lead: { label: 'Real lead', badge: 'md-badge-attention' },
+  spam: { label: 'Junk', badge: 'md-badge-plain' },
+  general: { label: 'General', badge: 'md-badge-plain' },
+};
 
 export default function EmailsPage() {
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState('all');
   const [page, setPage] = useState(1);
   const [selectedId, setSelectedId] = useState<number | null>(null);
+  const [classifying, setClassifying] = useState(false);
+  const [verdict, setVerdict] = useState<string | null>(null);
+  const [classifyError, setClassifyError] = useState<string | null>(null);
 
   const params: Record<string, string | number> = { page, limit: 20, category };
   if (search) params.search = search;
 
-  const { data, loading, refetch } = useApi<EmailListResponse>(
+  const { data, loading, error, refetch } = useApi<EmailListResponse>(
     () => fetchEmails(params),
     [page, search, category]
   );
 
   const selectedEmail = data?.items.find((e) => e.id === selectedId);
 
-  return (
-    <div className="fade-in">
-      <TopBar title="Emails" subtitle={data ? `${data.total} emails` : 'Loading…'} onRefresh={refetch} />
+  const handleClassify = async () => {
+    if (!selectedEmail) return;
+    setClassifying(true);
+    setVerdict(null);
+    setClassifyError(null);
+    try {
+      const res = await classifyEmail({
+        sender: selectedEmail.sender,
+        subject: selectedEmail.subject,
+        body: selectedEmail.body,
+      });
+      const label =
+        res.prediction === 'lead' ? 'a real sales lead' : res.prediction === 'spam' ? 'junk' : 'general mail';
+      setVerdict(
+        `LeadGuard thinks this is ${label} — about ${Math.round(res.confidence)}% sure. Suggested next step: ${
+          res.suggested_draft ? 'a reply is ready in Follow-ups' : 'no reply needed'
+        }.`
+      );
+    } catch {
+      setClassifyError('The double-check didn’t run just now. Try again in a moment.');
+    } finally {
+      setClassifying(false);
+    }
+  };
 
-      <div style={{ padding: 24 }}>
-        {/* Search + Tabs */}
-        <div style={{ display: 'flex', gap: 12, marginBottom: 16, alignItems: 'center', flexWrap: 'wrap' }}>
-          <div style={{ position: 'relative', flex: '1 1 260px', maxWidth: 320 }}>
-            <Search size={14} style={{ position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)', color: 'var(--text-tertiary)' }} />
-            <input className="input" placeholder="Search emails…" value={search} onChange={(e) => { setSearch(e.target.value); setPage(1); }} style={{ paddingLeft: 34 }} />
+  return (
+    <div className="md-theme">
+      <header className="md-pagehead">
+        <div>
+          <h1>Inbox</h1>
+          <p className="md-pagehead-sub">
+            {data
+              ? `${data.total} email${data.total === 1 ? '' : 's'} · LeadGuard has already sorted junk from real opportunities`
+              : 'Loading…'}
+          </p>
+        </div>
+      </header>
+
+      <div className="md-pagebody">
+        {/* Search + tabs */}
+        <div className="md-toolbar">
+          <div className="md-search">
+            <Search size={14} aria-hidden="true" />
+            <input
+              className="md-input"
+              placeholder="Search your inbox…"
+              value={search}
+              onChange={(e) => { setSearch(e.target.value); setPage(1); }}
+              aria-label="Search emails"
+            />
           </div>
-          <div className="tab-bar" style={{ borderBottom: 'none', gap: 0 }}>
+          <div className="md-tabs" role="tablist" aria-label="Email categories">
             {categoryTabs.map((t) => (
-              <button key={t.key} className={`tab-item ${category === t.key ? 'active' : ''}`} onClick={() => { setCategory(t.key); setPage(1); }}>
+              <button
+                key={t.key}
+                role="tab"
+                aria-selected={category === t.key}
+                className={`md-tab ${category === t.key ? 'active' : ''}`}
+                onClick={() => { setCategory(t.key); setPage(1); }}
+              >
                 {t.label}
               </button>
             ))}
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: selectedEmail ? '1fr 1fr' : '1fr', gap: 16 }}>
-          {/* Email List */}
-          <div className="card card-flush" style={{ overflow: 'auto', maxHeight: 'calc(100vh - 200px)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: selectedEmail ? '1.1fr 1fr' : '1fr', gap: 16, alignItems: 'start' }}>
+          {/* Mail list */}
+          <div className="md-tablecard">
             {loading ? (
-              <div style={{ padding: 16 }}>
+              <div>
                 {[...Array(8)].map((_, i) => (
-                  <div key={i} className="skeleton" style={{ height: 56, marginBottom: 2, borderRadius: 4 }} />
+                  <div key={i} className="md-loadrow" style={{ margin: 0, borderRadius: 0 }} />
                 ))}
+              </div>
+            ) : error ? (
+              <div className="md-error" style={{ margin: 20 }}>
+                <strong>Couldn’t load your inbox</strong>
+                <span>Check that LeadGuard’s engine is running, then try again.</span>
+                <code>cd app &amp;&amp; python api_server.py</code>
+                <div>
+                  <button className="md-btn md-btn-primary md-btn-md" onClick={refetch}>Try again</button>
+                </div>
               </div>
             ) : !data || data.items.length === 0 ? (
-              <div className="empty-state">
-                <Inbox size={28} />
-                <p>No emails match your criteria.</p>
+              <div className="empty-state" style={{ padding: '44px 20px' }}>
+                <Inbox size={28} style={{ color: 'var(--md-pencil)' }} />
+                <p style={{ fontWeight: 600, color: 'var(--md-ink)', margin: '8px 0 4px' }}>
+                  No emails here
+                </p>
+                <p style={{ fontSize: 13, color: 'var(--md-pencil-deep)', margin: 0 }}>
+                  {search
+                    ? 'Nothing matches that search. Try different words or clear it.'
+                    : 'New mail will appear here as your inbox is checked.'}
+                </p>
               </div>
             ) : (
-              <div>
-                {data.items.map((email) => (
-                  <div
-                    key={email.id}
-                    onClick={() => setSelectedId(email.id === selectedId ? null : email.id)}
-                    style={{
-                      padding: '12px 16px',
-                      borderBottom: '1px solid var(--border-subtle)',
-                      cursor: 'pointer',
-                      background: email.id === selectedId ? 'rgba(59,130,246,0.06)' : 'transparent',
-                      transition: 'background 150ms',
-                    }}
-                    onMouseEnter={(e) => {
-                      if (email.id !== selectedId) e.currentTarget.style.background = 'rgba(148,163,184,0.04)';
-                    }}
-                    onMouseLeave={(e) => {
-                      if (email.id !== selectedId) e.currentTarget.style.background = 'transparent';
-                    }}
-                  >
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                        <span style={{ fontWeight: 500, fontSize: 13 }}>{email.sender_name}</span>
-                        <span
-                          className={`badge ${email.label === 'lead' ? 'badge-info' : email.label === 'spam' ? 'badge-danger' : 'badge-neutral'}`}
-                        >
-                          {email.label}
+              <div style={{ maxHeight: 'calc(100vh - 260px)', overflowY: 'auto' }}>
+                {data.items.map((email) => {
+                  const chip = labelChip[email.label] ?? labelChip.general;
+                  return (
+                    <button
+                      key={email.id}
+                      className={`md-mailrow ${email.id === selectedId ? 'is-open' : ''}`}
+                      onClick={() => { setSelectedId(email.id === selectedId ? null : email.id); setVerdict(null); setClassifyError(null); }}
+                      aria-pressed={email.id === selectedId}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', gap: 10, marginBottom: 3 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 8, minWidth: 0 }}>
+                          <span style={{ fontWeight: 600, fontSize: 13, color: 'var(--md-ink)' }}>
+                            {email.sender_name || email.sender}
+                          </span>
+                          <span className={`md-badge ${chip.badge}`}>{chip.label}</span>
+                        </div>
+                        <span style={{ fontSize: 11.5, color: 'var(--md-pencil)', whiteSpace: 'nowrap' }}>
+                          {formatRelativeTime(email.received_at)}
                         </span>
                       </div>
-                      <span style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>{formatRelativeTime(email.received_at)}</span>
-                    </div>
-                    <div style={{ fontSize: 13, color: 'var(--text-primary)', marginBottom: 2, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                      {email.subject}
-                    </div>
-                    <div style={{ fontSize: 12, color: 'var(--text-tertiary)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                      {email.snippet}
-                    </div>
-                  </div>
-                ))}
+                      <div style={{ fontSize: 13, color: 'var(--md-ink)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {email.subject}
+                      </div>
+                      <div style={{ fontSize: 12, color: 'var(--md-pencil-deep)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {email.snippet}
+                      </div>
+                    </button>
+                  );
+                })}
               </div>
             )}
           </div>
 
-          {/* Email Detail Panel */}
+          {/* Reading pane */}
           {selectedEmail && (
-            <div className="card" style={{ maxHeight: 'calc(100vh - 200px)', overflowY: 'auto' }}>
-              <div style={{ marginBottom: 16 }}>
-                <h2 style={{ fontSize: 16, fontWeight: 600, marginBottom: 8 }}>{selectedEmail.subject}</h2>
-                <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 12 }}>
-                  <span className={`badge ${selectedEmail.label === 'lead' ? 'badge-info' : selectedEmail.label === 'spam' ? 'badge-danger' : 'badge-neutral'}`}>
-                    <Tag size={10} /> {selectedEmail.label}
+            <div className="md-chart" style={{ position: 'sticky', top: 16 }}>
+              <h3 style={{ marginBottom: 4 }}>{selectedEmail.subject}</h3>
+              <p className="md-chart-sub" style={{ marginBottom: 10 }}>
+                From {selectedEmail.sender_name || selectedEmail.sender}
+                {selectedEmail.company ? ` · ${selectedEmail.company}` : ''} · {formatRelativeTime(selectedEmail.received_at)}
+              </p>
+              <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 12 }}>
+                <span className={`md-badge ${(labelChip[selectedEmail.label] ?? labelChip.general).badge}`}>
+                  {(labelChip[selectedEmail.label] ?? labelChip.general).label}
+                </span>
+                {selectedEmail.confidence > 0 && (
+                  <span className="md-badge md-badge-plain">
+                    {Math.round(selectedEmail.confidence)}% sure
                   </span>
-                  {selectedEmail.confidence > 0 && (
-                    <span className="badge badge-neutral">{selectedEmail.confidence}% confidence</span>
-                  )}
-                  {selectedEmail.intent && <span className="badge badge-neutral">{selectedEmail.intent}</span>}
-                  {selectedEmail.priority && <span className="badge badge-neutral">{selectedEmail.priority}</span>}
-                </div>
-                <div style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 4 }}>
-                  <strong>From:</strong> {selectedEmail.sender}
-                </div>
-                <div style={{ fontSize: 12, color: 'var(--text-tertiary)' }}>
-                  <strong>Company:</strong> {selectedEmail.company}
-                </div>
+                )}
+                {selectedEmail.intent && (
+                  <span className="md-badge md-badge-plain">Wants: {selectedEmail.intent}</span>
+                )}
+                {selectedEmail.priority && (
+                  <span className="md-badge md-badge-plain">
+                    {selectedEmail.priority === 'high' ? 'Urgent' : selectedEmail.priority === 'medium' ? 'Normal' : 'Relaxed'}
+                  </span>
+                )}
               </div>
               <div
                 style={{
+                  background: '#FBFAF7',
+                  border: '1px solid var(--md-hair)',
+                  borderRadius: 10,
                   padding: 16,
-                  background: 'var(--bg-surface-raised)',
-                  borderRadius: 'var(--radius-sm)',
-                  border: '1px solid var(--border-default)',
-                  fontSize: 13,
-                  color: 'var(--text-secondary)',
-                  whiteSpace: 'pre-wrap',
+                  fontSize: 13.5,
                   lineHeight: 1.7,
+                  color: 'var(--md-pencil-deep)',
+                  whiteSpace: 'pre-wrap',
+                  maxHeight: 340,
+                  overflowY: 'auto',
                 }}
               >
                 {selectedEmail.body}
               </div>
+
+              {/* Next step */}
+              {selectedEmail.label === 'lead' ? (
+                <div style={{ marginTop: 14, display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+                  <button className="md-btn md-btn-primary md-btn-md" onClick={handleClassify} disabled={classifying}>
+                    <Wand2 size={13} style={{ marginRight: 6 }} />
+                    {classifying ? 'Double-checking…' : 'Double-check this one'}
+                  </button>
+                  <span style={{ fontSize: 12.5, color: 'var(--md-pencil-deep)' }}>
+                    Reply from the Leads page — “Reply now” sends the ready-made note.
+                  </span>
+                </div>
+              ) : (
+                <p style={{ marginTop: 14, fontSize: 12.5, color: 'var(--md-pencil-deep)', margin: '14px 0 0' }}>
+                  No action needed — LeadGuard will keep watching this sender.
+                </p>
+              )}
+
+              {verdict && (
+                <div className="md-note md-note-ok" style={{ marginTop: 12, marginBottom: 0 }} role="status">
+                  {verdict}
+                </div>
+              )}
+              {classifyError && (
+                <div className="md-note md-note-bad" style={{ marginTop: 12, marginBottom: 0 }} role="alert">
+                  {classifyError}
+                </div>
+              )}
             </div>
           )}
         </div>
 
-        {/* Pagination */}
+        {/* Pager */}
         {data && data.pages > 1 && (
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 12 }}>
-            <span style={{ fontSize: 12, color: 'var(--text-tertiary)' }}>Page {data.page} of {data.pages}</span>
-            <div style={{ display: 'flex', gap: 4 }}>
-              <button className="btn btn-outline btn-sm" disabled={page <= 1} onClick={() => setPage((p) => p - 1)}>
-                <ChevronLeft size={14} />
+          <div className="md-pager">
+            <span>Page {data.page} of {data.pages}</span>
+            <div className="md-pager-btns">
+              <button className="md-btn md-btn-quiet md-btn-md" disabled={page <= 1} onClick={() => setPage(page - 1)}>
+                <ChevronLeft size={14} /> Back
               </button>
-              <button className="btn btn-outline btn-sm" disabled={page >= data.pages} onClick={() => setPage((p) => p + 1)}>
-                <ChevronRight size={14} />
+              <button className="md-btn md-btn-quiet md-btn-md" disabled={page >= data.pages} onClick={() => setPage(page + 1)}>
+                Next <ChevronRight size={14} />
               </button>
             </div>
           </div>

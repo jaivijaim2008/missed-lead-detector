@@ -108,29 +108,25 @@ export default function OverviewPage() {
 
   return (
     <div className="md-theme">
-      {/* ── In-page top bar ── */}
-      <div className="md-topbar">
-        <span className="md-wordmark">
-          <svg className="md-wordmark-dot" viewBox="0 0 10 10" aria-hidden="true">
-            <circle cx="5" cy="5" r="4" fill="currentColor" />
-          </svg>
-          LeadGuard
-        </span>
-        <span className="md-topbar-status">
-          <span
-            className={`md-status-dot ${error ? 'is-waiting' : ''}`}
-            aria-hidden="true"
-          />
+      {/* ── Opening sentence ── */}
+      <header className="md-opening">
+        <p
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 7,
+            fontSize: 12.5,
+            color: 'var(--md-pencil-deep)',
+            margin: '0 0 14px',
+          }}
+        >
+          <span className={`md-status-dot ${error ? 'is-waiting' : ''}`} aria-hidden="true" />
           {error
             ? 'Inbox checking paused'
             : stats
               ? `Inbox checking on · ${stats.total_emails} emails read`
               : 'Checking your inbox…'}
-        </span>
-      </div>
-
-      {/* ── Opening sentence ── */}
-      <header className="md-opening">
+        </p>
         {loading && !stats ? (
           <>
             <div className="md-sentence-skeleton" />

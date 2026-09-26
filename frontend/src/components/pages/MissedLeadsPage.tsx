@@ -1,30 +1,58 @@
 'use client';
 
 import { useState } from 'react';
-import { useApi, riskColor, formatRelativeTime } from '@/lib/hooks';
+import { useApi } from '@/lib/hooks';
 import { fetchMissedLeads, triggerSlaCheck, sendFollowUp, MissedLeadsResponse } from '@/lib/api';
-import TopBar from '@/components/TopBar';
-import { AlertTriangle, Clock, ShieldAlert, CheckCircle, Zap, Send } from 'lucide-react';
+import { Send, RefreshCw, CheckCircle2 } from 'lucide-react';
+
+const urgencyWord: Record<string, string> = {
+  CRITICAL: 'Slipping away now',
+  HIGH: 'Very urgent',
+  MEDIUM: 'Urgent',
+  LOW: 'Can still wait',
+};
+
+const PAGE_SIZE = 10;
 
 export default function MissedLeadsPage() {
   const [riskFilter, setRiskFilter] = useState('all');
   const [sending, setSending] = useState<number | null>(null);
+  const [checkRunning, setCheckRunning] = useState(false);
+  const [note, setNote] = useState<string | null>(null);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
-  const { data, loading, refetch } = useApi<MissedLeadsResponse>(
+  const { data, loading, error, refetch } = useApi<MissedLeadsResponse>(
     () => fetchMissedLeads(riskFilter !== 'all' ? { risk: riskFilter } : undefined),
     [riskFilter]
   );
 
   const handleSlaCheck = async () => {
-    await triggerSlaCheck(60);
-    refetch();
+    setCheckRunning(true);
+    setNote(null);
+    try {
+      const res = await triggerSlaCheck(60);
+      setNote(
+        res.newly_marked_missed > 0
+          ? `Checked just now — ${res.newly_marked_missed} more lead${res.newly_marked_missed === 1 ? ' has' : 's have'} waited too long.`
+          : 'Checked just now — nothing new has slipped past the promise time.'
+      );
+      refetch();
+    } catch {
+      setNote('The check didn’t run. Make sure LeadGuard’s engine is on and try again.');
+    } finally {
+      setCheckRunning(false);
+    }
   };
 
   const handleSendFollowUp = async (leadId: number) => {
     setSending(leadId);
+    setNote(null);
     try {
       await sendFollowUp(leadId);
+      setNote('Follow-up sent. It moves to “On it” until they reply.');
       refetch();
+    } catch {
+      setNote('The follow-up didn’t send. Check the connection and try again.');
     } finally {
       setSending(null);
     }
@@ -33,121 +61,140 @@ export default function MissedLeadsPage() {
   const metrics = data?.metrics;
 
   return (
-    <div className="fade-in">
-      <TopBar
-        title="Missed Leads"
-        subtitle={metrics ? `${metrics.total_missed} unresolved` : 'Loading…'}
-        onRefresh={refetch}
-        actions={
-          <button className="btn btn-primary btn-sm" onClick={handleSlaCheck}>
-            <Zap size={13} /> Run SLA Check
+    <div className="md-theme">
+      <header className="md-pagehead">
+        <div>
+          <h1>Waiting too long</h1>
+          <p className="md-pagehead-sub">
+            {metrics
+              ? `${metrics.total_missed} lead${metrics.total_missed === 1 ? ' has' : 's have'} waited past your reply promise — a quick follow-up usually wins them back`
+              : 'Loading…'}
+          </p>
+        </div>
+        <div className="md-pagehead-actions">
+          <button className="md-btn md-btn-quiet md-btn-md" onClick={handleSlaCheck} disabled={checkRunning}>
+            <RefreshCw size={13} style={{ marginRight: 6 }} />
+            {checkRunning ? 'Checking…' : 'Check now'}
           </button>
-        }
-      />
+        </div>
+      </header>
 
-      <div style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 20 }}>
-        {/* Metric Cards */}
+      <div className="md-pagebody">
+        {note && (
+          <div className="md-note md-note-ok" role="status">{note}</div>
+        )}
+
+        {/* Plain-language totals */}
         {metrics && (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 14 }}>
-            <div className="stat-card">
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span className="stat-label">Total Missed</span>
-                <AlertTriangle size={15} color="#ef4444" style={{ opacity: 0.7 }} />
-              </div>
-              <span className="stat-value">{metrics.total_missed}</span>
+          <div className="md-statstrip">
+            <div className="md-statstrip-item">
+              <b className="is-bad">{metrics.total_missed}</b>
+              <span>waiting too long</span>
             </div>
-            <div className="stat-card">
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span className="stat-label">Critical</span>
-                <ShieldAlert size={15} color="#ef4444" style={{ opacity: 0.7 }} />
-              </div>
-              <span className="stat-value" style={{ color: '#ef4444' }}>{metrics.critical}</span>
+            <div className="md-statstrip-item">
+              <b className="is-bad">{metrics.critical}</b>
+              <span>slipping away now</span>
             </div>
-            <div className="stat-card">
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span className="stat-label">Detected Today</span>
-                <Clock size={15} color="#f59e0b" style={{ opacity: 0.7 }} />
-              </div>
-              <span className="stat-value">{metrics.detected_today}</span>
+            <div className="md-statstrip-item">
+              <b>{metrics.detected_today}</b>
+              <span>noticed today</span>
             </div>
-            <div className="stat-card">
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span className="stat-label">Resolved</span>
-                <CheckCircle size={15} color="#10b981" style={{ opacity: 0.7 }} />
-              </div>
-              <span className="stat-value" style={{ color: '#10b981' }}>{metrics.resolved}</span>
+            <div className="md-statstrip-item">
+              <b className="is-good">{metrics.resolved}</b>
+              <span>won back</span>
             </div>
           </div>
         )}
 
         {/* Filter */}
-        <div style={{ display: 'flex', gap: 10 }}>
-          <select className="select" value={riskFilter} onChange={(e) => setRiskFilter(e.target.value)}>
-            <option value="all">All Risk Levels</option>
-            <option value="CRITICAL">Critical</option>
-            <option value="HIGH">High</option>
-            <option value="MEDIUM">Medium</option>
-            <option value="LOW">Low</option>
+        <div className="md-toolbar">
+          <select
+            className="md-select"
+            value={riskFilter}
+            onChange={(e) => { setRiskFilter(e.target.value); setVisibleCount(PAGE_SIZE); }}
+            aria-label="Filter by urgency"
+          >
+            <option value="all">Any urgency</option>
+            <option value="CRITICAL">Slipping away now</option>
+            <option value="HIGH">Very urgent</option>
+            <option value="MEDIUM">Urgent</option>
+            <option value="LOW">Can still wait</option>
           </select>
         </div>
 
-        {/* Missed Leads List */}
+        {/* List */}
         {loading ? (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          <div>
             {[...Array(5)].map((_, i) => (
-              <div key={i} className="skeleton" style={{ height: 120, borderRadius: 'var(--radius-lg)' }} />
+              <div key={i} className="md-loadrow" />
             ))}
           </div>
+        ) : error ? (
+          <div className="md-error">
+            <strong>Couldn’t load these leads</strong>
+            <span>Check that LeadGuard’s engine is running, then try again.</span>
+            <code>cd app &amp;&amp; python api_server.py</code>
+            <div>
+              <button className="md-btn md-btn-primary md-btn-md" onClick={refetch}>Try again</button>
+            </div>
+          </div>
         ) : !data || data.items.length === 0 ? (
-          <div className="card empty-state">
-            <CheckCircle size={32} color="var(--success)" />
-            <p style={{ fontSize: 14 }}>No missed leads! All leads have been addressed.</p>
+          <div className="md-empty">
+            <CheckCircle2 size={26} style={{ margin: '0 auto 8px', display: 'block' }} />
+            <strong>Nothing is slipping away</strong>
+            <span>
+              Every lead has had a reply or a follow-up within your promise time.
+              Run “Check now” anytime to look again.
+            </span>
           </div>
         ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {data.items.map((lead) => (
-              <div
-                key={lead.id}
-                className="card"
-                style={{
-                  borderLeft: `3px solid ${riskColor(lead.risk)}`,
-                  display: 'grid',
-                  gridTemplateColumns: '1fr auto',
-                  gap: 16,
-                }}
-              >
-                <div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6 }}>
-                    <span style={{ fontWeight: 600, fontSize: 14 }}>{lead.name}</span>
-                    <span style={{ fontSize: 12, color: 'var(--text-tertiary)' }}>· {lead.company}</span>
-                    <span className={`badge ${lead.risk === 'CRITICAL' ? 'badge-danger' : lead.risk === 'HIGH' ? 'badge-warning' : 'badge-neutral'}`}>
-                      {lead.risk}
+          <div>
+            {data.items.slice(0, visibleCount).map((lead) => (
+              <article key={lead.id} className="md-urgent-card">
+                <div style={{ minWidth: 0 }}>
+                  <div className="md-row-who" style={{ marginBottom: 4 }}>
+                    <span>{lead.company || lead.name}</span>
+                    {lead.name && lead.company && (
+                      <span style={{ fontWeight: 400, color: 'var(--md-pencil-deep)' }}>· {lead.name}</span>
+                    )}
+                    <span className="md-badge md-badge-attention">
+                      {urgencyWord[lead.risk] ?? 'Urgent'}
                     </span>
-                    <span className="badge badge-info">{lead.intent}</span>
                   </div>
-                  <div style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 6 }}>
-                    {lead.subject}
-                  </div>
-                  <div style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>
-                    Overdue: {lead.hours_overdue}h · Risk Score: {lead.risk_score}/100 · {formatRelativeTime(lead.received_at)}
-                  </div>
+                  <p className="md-row-quote" style={{ margin: '2px 0 6px' }}>
+                    “{lead.subject}”
+                  </p>
+                  <p className="md-row-meta" style={{ margin: 0 }}>
+                    Waiting {Math.round(lead.hours_overdue)} hour{Math.round(lead.hours_overdue) === 1 ? '' : 's'} past the promise ·
+                    {' '}{lead.recommended_action}
+                  </p>
                 </div>
-
-                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 6, minWidth: 140 }}>
+                <div style={{ textAlign: 'right' }}>
                   <button
-                    className="btn btn-primary btn-sm"
+                    className="md-btn md-btn-primary md-btn-md"
                     onClick={() => handleSendFollowUp(lead.id)}
                     disabled={sending === lead.id}
                   >
-                    <Send size={12} />
-                    {sending === lead.id ? 'Sending…' : 'Send Follow-Up'}
+                    <Send size={13} style={{ marginRight: 6 }} />
+                    {sending === lead.id ? 'Sending…' : 'Send follow-up'}
                   </button>
-                  <span style={{ fontSize: 10, color: 'var(--text-tertiary)', textAlign: 'center' }}>
-                    {lead.recommended_action}
-                  </span>
+                  <div style={{ fontSize: 11, color: 'var(--md-pencil)', marginTop: 6 }}>
+                    A ready-made note goes out
+                  </div>
                 </div>
-              </div>
+              </article>
             ))}
+            {data.items.length > visibleCount && (
+              <div style={{ textAlign: 'center', padding: '10px 0 4px' }}>
+                <button
+                  className="md-btn md-btn-quiet md-btn-md"
+                  onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+                >
+                  Show {Math.min(PAGE_SIZE, data.items.length - visibleCount)} more
+                  ({data.items.length - visibleCount} left)
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>

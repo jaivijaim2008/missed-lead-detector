@@ -3,93 +3,110 @@
 import { useState } from 'react';
 import { useApi } from '@/lib/hooks';
 import { fetchAutomations, triggerAutomation, Automation } from '@/lib/api';
-import TopBar from '@/components/TopBar';
-import { Zap, Play, Clock, CheckCircle } from 'lucide-react';
+import { Play, Workflow } from 'lucide-react';
 
 export default function AutomationsPage() {
-  const { data, loading, refetch } = useApi<Automation[]>(fetchAutomations);
+  const { data, loading, error, refetch } = useApi<Automation[]>(fetchAutomations);
   const [running, setRunning] = useState<string | null>(null);
-  const [message, setMessage] = useState<string | null>(null);
+  const [note, setNote] = useState<{ ok: boolean; text: string } | null>(null);
 
   const handleRun = async (ruleId: string) => {
     setRunning(ruleId);
-    setMessage(null);
+    setNote(null);
     try {
       const res = await triggerAutomation(ruleId);
-      setMessage(res.message);
+      setNote({ ok: true, text: res.message });
       refetch();
     } catch (e: unknown) {
-      setMessage(e instanceof Error ? e.message : 'Failed');
+      setNote({ ok: false, text: e instanceof Error ? e.message : 'That didn’t run. Try again.' });
     } finally {
       setRunning(null);
     }
   };
 
   return (
-    <div className="fade-in">
-      <TopBar title="Automations" subtitle="AI-powered automation rules" onRefresh={refetch} />
+    <div className="md-theme">
+      <header className="md-pagehead">
+        <div>
+          <h1>Automations</h1>
+          <p className="md-pagehead-sub">
+            The busywork LeadGuard handles for you — set it up once and it keeps working
+          </p>
+        </div>
+      </header>
 
-      <div style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 16 }}>
-        {message && (
-          <div
-            style={{
-              padding: '10px 16px',
-              background: 'var(--success-muted)',
-              border: '1px solid rgba(16,185,129,0.2)',
-              borderRadius: 'var(--radius-sm)',
-              fontSize: 13,
-              color: 'var(--success)',
-            }}
-          >
-            {message}
+      <div className="md-pagebody">
+        {note && (
+          <div className={`md-note ${note.ok ? 'md-note-ok' : 'md-note-bad'}`} role="status">
+            {note.text}
           </div>
         )}
 
         {loading ? (
-          [...Array(4)].map((_, i) => (
-            <div key={i} className="skeleton" style={{ height: 100, borderRadius: 'var(--radius-lg)' }} />
-          ))
+          <div>
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="md-loadrow" />
+            ))}
+          </div>
+        ) : error ? (
+          <div className="md-error">
+            <strong>Couldn’t load your automations</strong>
+            <span>Check that LeadGuard’s engine is running, then try again.</span>
+            <code>cd app &amp;&amp; python api_server.py</code>
+            <div>
+              <button className="md-btn md-btn-primary md-btn-md" onClick={refetch}>Try again</button>
+            </div>
+          </div>
         ) : !data || data.length === 0 ? (
-          <div className="card empty-state">
-            <Zap size={28} />
-            <p>No automation rules configured.</p>
+          <div className="md-empty">
+            <Workflow size={26} style={{ margin: '0 auto 8px', display: 'block' }} />
+            <strong>No automations set up yet</strong>
+            <span>
+              Automations are jobs LeadGuard does without being asked — like flagging
+              leads that wait too long. They’ll be listed here once configured.
+            </span>
           </div>
         ) : (
-          data.map((rule) => (
-            <div key={rule.id} className="card" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 16, alignItems: 'center' }}>
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6 }}>
-                  <Zap size={16} color="var(--accent-400)" />
-                  <span style={{ fontWeight: 600, fontSize: 14 }}>{rule.name}</span>
-                  <span className={`badge ${rule.status === 'active' ? 'badge-success' : 'badge-warning'}`}>
-                    {rule.status}
-                  </span>
-                </div>
-                <div style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 8 }}>
-                  {rule.action}
-                </div>
-                <div style={{ display: 'flex', gap: 20, fontSize: 11, color: 'var(--text-tertiary)' }}>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                    <Clock size={11} /> Trigger: {rule.trigger}
-                  </span>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                    <CheckCircle size={11} /> Success: {rule.success_rate}
-                  </span>
-                  <span>Last run: {rule.last_run}</span>
-                  <span>Next: {rule.next_run}</span>
-                </div>
-              </div>
-
-              <button
-                className="btn btn-outline btn-sm"
-                onClick={() => handleRun(rule.id)}
-                disabled={running === rule.id}
+          <div className="md-tablecard">
+            {data.map((rule) => (
+              <div
+                key={rule.id}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  gap: 16,
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                  padding: '15px 18px',
+                  borderBottom: '1px solid var(--md-hair)',
+                }}
               >
-                <Play size={12} />
-                {running === rule.id ? 'Running…' : 'Run Now'}
-              </button>
-            </div>
-          ))
+                <div style={{ flex: 1, minWidth: 240 }}>
+                  <div className="md-row-who" style={{ marginBottom: 4 }}>
+                    <span>{rule.name}</span>
+                    <span
+                      className={`md-badge ${rule.status === 'active' ? 'md-badge-handled' : 'md-badge-plain'}`}
+                    >
+                      {rule.status === 'active' ? 'Running on its own' : 'Paused'}
+                    </span>
+                  </div>
+                  <p className="md-cell-dim" style={{ margin: '0 0 6px' }}>{rule.action}</p>
+                  <p className="md-row-meta" style={{ margin: 0 }}>
+                    Kicks in when: {rule.trigger} · Works {rule.success_rate} of the time ·
+                    Last ran {rule.last_run} · Next: {rule.next_run}
+                  </p>
+                </div>
+                <button
+                  className="md-btn md-btn-quiet md-btn-md"
+                  onClick={() => handleRun(rule.id)}
+                  disabled={running === rule.id}
+                >
+                  <Play size={12} style={{ marginRight: 6 }} />
+                  {running === rule.id ? 'Running…' : 'Run it now'}
+                </button>
+              </div>
+            ))}
+          </div>
         )}
       </div>
     </div>

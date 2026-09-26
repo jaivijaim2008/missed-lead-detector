@@ -2,88 +2,114 @@
 
 import { useApi, formatRelativeTime } from '@/lib/hooks';
 import { fetchActivity, Activity } from '@/lib/api';
-import TopBar from '@/components/TopBar';
-import { Activity as ActivityIcon } from 'lucide-react';
+import { ScrollText } from 'lucide-react';
 
-function activityDotColor(action: string): string {
-  if (action.includes('Missed') || action.includes('Breached') || action.includes('SLA')) return '#ef4444';
-  if (action.includes('Follow') || action.includes('Sent') || action.includes('Resolved')) return '#10b981';
-  if (action.includes('Lead') || action.includes('Detected')) return '#3b82f6';
-  if (action.includes('Automation') || action.includes('Sync')) return '#8b5cf6';
-  if (action.includes('Setting') || action.includes('System')) return '#f59e0b';
-  return '#64748b';
+/** Maps system events to the three-color language; neutral for housekeeping. */
+function eventDot(action: string): string {
+  const a = action.toLowerCase();
+  if (a.includes('missed') || a.includes('breach') || a.includes('sla')) return 'var(--md-attention)';
+  if (a.includes('follow') || a.includes('sent') || a.includes('resolved') || a.includes('won')) return 'var(--md-handled)';
+  if (a.includes('lead') || a.includes('detected')) return 'var(--md-working)';
+  return 'var(--md-pencil)';
+}
+
+/** Plain-language version of each event a non-technical owner cares about. */
+function friendlyAction(action: string): string {
+  const a = action.toLowerCase();
+  if (a.includes('gmail synced') || a.includes('sync')) return 'Checked the inbox';
+  if (a.includes('missed')) return 'Lead waited too long';
+  if (a.includes('follow')) return 'Follow-up sent';
+  if (a.includes('resolved')) return 'Lead won back';
+  if (a.includes('sla')) return 'Reply-promise check';
+  return action;
 }
 
 export default function ActivityPage() {
-  const { data, loading, refetch } = useApi<Activity[]>(() => fetchActivity(100));
+  const { data, loading, error, refetch } = useApi<Activity[]>(() => fetchActivity(100));
 
   return (
-    <div className="fade-in">
-      <TopBar title="Activity Log" subtitle="System audit trail" onRefresh={refetch} />
+    <div className="md-theme">
+      <header className="md-pagehead">
+        <div>
+          <h1>History</h1>
+          <p className="md-pagehead-sub">
+            Everything LeadGuard has done on your behalf, newest first
+          </p>
+        </div>
+      </header>
 
-      <div style={{ padding: 24 }}>
-        <div className="card card-flush" style={{ maxHeight: 'calc(100vh - 140px)', overflowY: 'auto' }}>
+      <div className="md-pagebody">
+        <div className="md-tablecard">
           {loading ? (
-            <div style={{ padding: 20 }}>
+            <div>
               {[...Array(10)].map((_, i) => (
-                <div key={i} className="skeleton" style={{ height: 48, marginBottom: 4, borderRadius: 4 }} />
+                <div key={i} className="md-loadrow" style={{ margin: 0, borderRadius: 0 }} />
               ))}
             </div>
+          ) : error ? (
+            <div className="md-error" style={{ margin: 20 }}>
+              <strong>Couldn’t load your history</strong>
+              <span>Check that LeadGuard’s engine is running, then try again.</span>
+              <code>cd app &amp;&amp; python api_server.py</code>
+              <div>
+                <button className="md-btn md-btn-primary md-btn-md" onClick={refetch}>Try again</button>
+              </div>
+            </div>
           ) : !data || data.length === 0 ? (
-            <div className="empty-state">
-              <ActivityIcon size={28} />
-              <p>No activity recorded yet.</p>
+            <div className="empty-state" style={{ padding: '48px 20px' }}>
+              <ScrollText size={28} style={{ color: 'var(--md-pencil)' }} />
+              <p style={{ fontWeight: 600, color: 'var(--md-ink)', margin: '8px 0 4px' }}>
+                Nothing recorded yet
+              </p>
+              <p style={{ fontSize: 13, color: 'var(--md-pencil-deep)', margin: 0 }}>
+                Once LeadGuard starts checking your inbox, everything it does will be listed here.
+              </p>
             </div>
           ) : (
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th style={{ width: 8 }}></th>
-                  <th>Action</th>
-                  <th>Details</th>
-                  <th>Actor</th>
-                  <th>Lead</th>
-                  <th>Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((a) => (
-                  <tr key={a.id}>
-                    <td>
-                      <div
-                        style={{
-                          width: 8,
-                          height: 8,
-                          borderRadius: '50%',
-                          background: activityDotColor(a.action),
-                        }}
-                      />
-                    </td>
-                    <td>
-                      <span style={{ fontWeight: 500, fontSize: 13 }}>{a.action}</span>
-                    </td>
-                    <td>
-                      <span style={{ fontSize: 12, color: 'var(--text-secondary)', maxWidth: 400, display: 'inline-block', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                        {a.details}
-                      </span>
-                    </td>
-                    <td>
-                      <span className="badge badge-neutral">{a.actor}</span>
-                    </td>
-                    <td>
-                      <span style={{ fontSize: 12, color: 'var(--text-tertiary)', fontVariantNumeric: 'tabular-nums' }}>
-                        {a.lead_id ? `#${a.lead_id}` : '—'}
-                      </span>
-                    </td>
-                    <td>
-                      <span style={{ fontSize: 12, color: 'var(--text-tertiary)' }}>
-                        {formatRelativeTime(a.timestamp)}
-                      </span>
-                    </td>
+            <div style={{ overflowX: 'auto' }}>
+              <table className="md-table">
+                <thead>
+                  <tr>
+                    <th style={{ width: 26 }} aria-label="Event type"></th>
+                    <th>What happened</th>
+                    <th className="md-col-hide">Details</th>
+                    <th className="md-col-hide">By</th>
+                    <th style={{ textAlign: 'right' }}>When</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {data.map((a) => (
+                    <tr key={a.id}>
+                      <td>
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            display: 'inline-block',
+                            width: 9,
+                            height: 9,
+                            borderRadius: '50%',
+                            background: eventDot(a.action),
+                          }}
+                        />
+                        <span className="sr-only">{eventDot(a.action) === 'var(--md-attention)' ? 'Needs attention' : 'Event'}</span>
+                      </td>
+                      <td style={{ fontWeight: 600, fontSize: 13.5 }}>{friendlyAction(a.action)}</td>
+                      <td className="md-col-hide md-cell-dim" style={{ maxWidth: 420 }}>
+                        <span style={{ display: 'inline-block', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: 420 }}>
+                          {a.details}
+                        </span>
+                      </td>
+                      <td className="md-col-hide md-cell-dim">
+                        {a.actor === 'Lead Simulator' || a.actor === 'System' ? 'LeadGuard' : a.actor}
+                      </td>
+                      <td style={{ textAlign: 'right', whiteSpace: 'nowrap' }} className="md-cell-dim">
+                        {formatRelativeTime(a.timestamp)}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           )}
         </div>
       </div>
