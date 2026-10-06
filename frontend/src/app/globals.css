@@ -524,8 +524,11 @@ body {
    PILOT REDESIGN — "Morning Desk" (Overview page only, scoped)
    Warm paper surface, editorial serif numerals, urgency-first triage.
    ===================================================================== */
-.md-theme {
-  /* Palette */
+/* ═══ Morning Desk palette ═══
+   Defined on :root (not .md-theme) so elements rendered outside the
+   page wrapper — e.g. the Compose modal, which portals to <body> —
+   still resolve every token. Single source of truth. */
+:root {
   --md-paper: #F7F5F0;
   --md-ink: #1C1917;
   --md-attention: #C2410C;
@@ -546,7 +549,9 @@ body {
 
   --md-font-display: var(--font-display), Georgia, serif;
   --md-font-ui: var(--font-ui), -apple-system, sans-serif;
+}
 
+.md-theme {
   background: var(--md-paper);
   color: var(--md-ink);
   font-family: var(--md-font-ui);
@@ -1718,6 +1723,136 @@ body {
   color: var(--md-pencil-deep);
 }
 
+/* ── Automations: pipeline strip & rule rows ──── */
+.md-pipeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.md-pipeline-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 1px solid var(--md-hair);
+  border-radius: 10px;
+  padding: 11px 13px;
+  font-size: 12.5px;
+  color: var(--md-pencil-deep);
+  line-height: 1.4;
+}
+
+.md-pipeline-step b {
+  color: var(--md-ink);
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.md-auto-num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--md-ink);
+  color: #FFF;
+  font-weight: 700;
+  font-size: 12.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.md-auto-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--md-hair);
+  flex-wrap: wrap;
+}
+
+.md-auto-meta {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  color: var(--md-pencil-deep);
+}
+
+.md-auto-meta span {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.md-auto-meta b {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--md-pencil);
+  font-weight: 700;
+}
+
+/* ── History: day-grouped timeline ─────────────── */
+.md-day-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: var(--md-paper);
+  padding: 10px 2px 7px;
+  border-bottom: 1px solid var(--md-hair);
+  font-family: var(--md-font-display);
+  font-weight: 600;
+  font-size: 15.5px;
+  color: var(--md-ink);
+}
+
+.md-day-count {
+  font-family: var(--md-font-ui);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--md-pencil);
+}
+
+.md-timeline-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 2px;
+}
+
+.md-timeline-rail {
+  width: 2px;
+  align-self: stretch;
+  background: var(--md-hair);
+  margin-left: 5px;
+  order: 0;
+}
+
+.md-timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2.5px solid #FFFFFF;
+  box-shadow: 0 0 0 1px var(--md-hair);
+  margin-top: 3px;
+  order: 1;
+  flex-shrink: 0;
+}
+
+.md-timeline-row > div {
+  order: 2;
+}
+
+.md-timeline-row > span:last-child {
+  order: 3;
+}
+
 /* ── Loading rows ─────────────────────────────── */
 .md-loadrow {
   height: 58px;
@@ -1741,6 +1876,7 @@ body {
     overflow-x: auto;
     padding: 0 6px;
   }
+  .md-toast { left: 16px; right: 16px; transform: none; }
   .md-brand { padding: 12px; white-space: nowrap; }
   .md-nav { flex-direction: row; padding: 8px; gap: 4px; }
   .md-nav-item { white-space: nowrap; width: auto; }
@@ -1753,4 +1889,200 @@ body {
   .md-urgent-card { grid-template-columns: 1fr; }
   .md-kv { grid-template-columns: 1fr; }
   .md-pagehead h1 { font-size: 22px; }
+}
+
+/* ═════════════════════════════════════════════════
+   Compose modal (write your own email & send)
+   ═════════════════════════════════════════════════ */
+/* ═════════════════════════════════════════════════
+   Compose modal (write your own email & send)
+   Rendered via React portal into <body>, so it never
+   inherits page-level stacking/positioning. z-index
+   headroom far above page chrome (topbar 30, sidebar
+   40, toast 90) — including Trends' date-range tabs.
+   ═════════════════════════════════════════════════ */
+.md-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.62);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 7vh 16px 16px;
+  animation: md-fade-in 140ms ease;
+}
+
+.md-modal {
+  position: relative;
+  z-index: 10000;
+  background: #FFFFFF;
+  border: 1px solid var(--md-hair, #E3DED4);
+  border-radius: 14px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  width: 100%;
+  max-width: 620px;
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--md-ink, #1C1917);
+  animation: md-pop-in 160ms cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+
+@keyframes md-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes md-pop-in {
+  from { opacity: 0; transform: translateY(-10px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.md-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--md-hair, #E3DED4);
+}
+
+.md-modal-head h2 {
+  font-family: var(--md-font-display);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--md-ink, #1C1917);
+}
+
+.md-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--md-pencil, #78716C);
+  padding: 6px;
+  border-radius: 7px;
+  display: inline-flex;
+}
+
+.md-modal-close:hover:not(:disabled) {
+  background: #F1EEE7;
+  color: var(--md-ink, #1C1917);
+}
+
+.md-modal-close:disabled { opacity: 0.5; cursor: default; }
+
+.md-modal-body {
+  padding: 16px 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+/* Each field owns its own vertical band: block-flow fallback + explicit
+   margins so labels and inputs stack cleanly even if flex were lost. */
+.md-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+  margin: 0 0 13px;
+  position: static;
+}
+
+.md-modal-body .md-field:last-child { margin-bottom: 0; }
+
+.md-field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--md-pencil-deep, #57534E);
+  letter-spacing: 0.02em;
+  margin: 0 0 2px;
+  position: static;
+}
+
+.md-field .md-input {
+  width: 100%;
+  font-size: 14px;
+  padding: 9px 12px;
+  margin: 0;
+  position: static;
+  color: var(--md-ink, #1C1917);
+  background: #FFFFFF;
+  border: 1px solid var(--md-hair, #E3DED4);
+}
+
+.md-field .md-input::placeholder {
+  color: var(--md-pencil, #78716C);
+  opacity: 1;
+}
+
+.md-field .md-input.is-invalid {
+  border-color: var(--md-attention);
+  background: #FFF9F6;
+}
+
+.md-field-err {
+  margin: 0;
+  font-size: 12px;
+  color: var(--md-attention, #C2410C);
+}
+
+.md-textarea {
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.6;
+  font-family: var(--md-font-ui);
+}
+
+/* Subtle scrollbar inside the compose modal (the global dark webkit
+   scrollbar reads as a harsh strip on the white modal). */
+.md-modal-body::-webkit-scrollbar { width: 8px; }
+.md-modal-body::-webkit-scrollbar-track { background: transparent; }
+.md-modal-body::-webkit-scrollbar-thumb {
+  background: var(--md-hair, #E3DED4);
+  border-radius: 4px;
+}
+.md-modal-body::-webkit-scrollbar-thumb:hover { background: var(--md-pencil, #78716C); }
+
+.md-modal-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 13px 20px 16px;
+  border-top: 1px solid var(--md-hair, #E3DED4);
+}
+
+.md-modal-foot .md-note {
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ── Sent-confirmation toast ─────────────────── */
+.md-toast {
+  position: fixed;
+  top: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--md-ink);
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(28, 25, 23, 0.35);
+  animation: md-fade-in 150ms ease, md-toast-rise 200ms ease;
+}
+
+@keyframes md-toast-rise {
+  from { opacity: 0; transform: translate(-50%, -6px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
 }

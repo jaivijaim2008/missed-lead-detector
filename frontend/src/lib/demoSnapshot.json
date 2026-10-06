@@ -1,0 +1,157 @@
+{
+  "leads": [
+    {
+      "id": 470,
+      "sender": "Vercel <notifications@vercel.com>",
+      "subject": "Failed preview deployment on team 'jaivijaim2008's projects'",
+      "body": "Hey jaivijaim2008,\r\n completed an activity.\r\nSomething happened that you should be aware of.\r\nThanks,\r\nThe team @ \r\n\r\n\r\n--\r\n\r\n\r\nIf you have questions, reach out to https://vercel.com/help\r\n\r\n\r\nManage your notification settings:\r\nhttps://vercel.com/jaivijaim2008s-projects/~/settings/notifications\r\n\r\nCopyright 2026 Vercel Inc. All rights reserved.\r\n440 N Barranca Ave #4133 Covina, CA 91723",
+      "label": "lead",
+      "confidence": 34.06707547043262,
+      "intent": "product_inquiry",
+      "priority": "medium",
+      "status": "followed_up",
+      "received_at": "2026-07-24T13:00:46+00:00",
+      "message_id": "19f9436cb7486b8e"
+    },
+    {
+      "id": 43,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "Enterprise Software Pricing Request \u2014 200 seats",
+      "body": "Hi,\n\nI'm Rajesh Kumar, Head of IT Procurement at TechSolutions India.\n\nWe are evaluating sales automation tools for our 200-person sales team and came across your platform. \n\nCould you please share:\n- Pricing for 200 user licenses\n- Annual vs monthly billing options\n- Volume discount structure\n- Implementation timeline and support\n\nWe have a budget review meeting on Friday and would love to finalize a vendor by then.\n\nLooking forward to your response.\n\nBest regards,\nRajesh Kumar\nHead of IT Procurement\nTechSolutions India Pvt. Ltd.\n+91-98765-43210",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "pricing/purchase",
+      "priority": "high",
+      "status": "followed_up",
+      "received_at": "2026-09-24T10:07:00-07:00",
+      "message_id": "1a0d462812f6c482"
+    },
+    {
+      "id": 42,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "Demo Request \u2014 Automated Lead Detection System",
+      "body": "Hello Team,\n\nI found your product through a LinkedIn post and I'm very interested in a live demo.\n\nWe're a global retail company with 50+ stores and struggling to track inbound inquiries from wholesale buyers. Our current system misses almost 30% of leads.\n\nCan we schedule a 30-minute demo call this week or next? \n\nOur team is available:\n- Tuesday 3-5 PM IST\n- Thursday 10 AM - 12 PM IST\n\nPlease let me know what works for you.\n\nThanks,\nSarah Mitchell\nDirector of Sales Operations\nGlobal Retail Group",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "meeting/demo",
+      "priority": "high",
+      "status": "missed",
+      "received_at": "2026-09-24T10:07:02-07:00",
+      "message_id": "1a0d4628afba6061"
+    },
+    {
+      "id": 41,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "Urgent: Partnership Opportunity - Middle East Distribution",
+      "body": "Dear Sales Team,\n\nI represent InnovateTech UAE, a technology distribution company covering the GCC region (UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman).\n\nWe are looking for a strategic software partner to distribute your lead detection solution to our portfolio of 500+ enterprise clients across the Middle East.\n\nThis is a high-priority opportunity. Our CEO would like to connect this week if possible.\n\nCan you arrange a call with your business development head?\n\nRegards,\nMohammed Al-Farsi\nVP Business Development\nInnovateTech UAE\n+971-50-123-4567",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "partnership",
+      "priority": "medium",
+      "status": "missed",
+      "received_at": "2026-09-24T10:07:05-07:00",
+      "message_id": "1a0d4629332cd172"
+    },
+    {
+      "id": 40,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "Quick question about your API integration",
+      "body": "Hi,\n\nI'm a product manager at a B2B SaaS startup. We're building a CRM and want to integrate an AI lead classifier directly into our pipeline via API.\n\nA few questions:\n1. Do you offer a REST API for email classification?\n2. What's the rate limit on the API?\n3. Is there a sandbox/test environment?\n4. What's the pricing model \u2014 per-call or monthly flat fee?\n\nWe're ready to start development immediately if the API supports our use case.\n\nThanks,\nPriya Sharma\nProduct Manager\nStartupVentures.io",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "product_inquiry",
+      "priority": "high",
+      "status": "missed",
+      "received_at": "2026-09-24T13:07:07-04:00",
+      "message_id": "1a0d4629a2ff492f"
+    },
+    {
+      "id": 39,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "ROI Analysis \u2014 Missed Lead Recovery Software",
+      "body": "Hello,\n\nWe're a mid-sized manufacturing company and recently realized we've been losing roughly $2M/year in missed inbound leads that go unanswered for more than 48 hours.\n\nI've been researching automated lead recovery solutions and yours came highly recommended.\n\nCould you send me:\n1. A case study or ROI analysis from similar companies\n2. Your implementation process and timeline\n3. Integration options with Salesforce CRM\n4. A pricing quote for 50 users\n\nWe're ready to move fast \u2014 ideally want something deployed within 30 days.\n\nBest,\nDavid Chen\nVP Sales\nFortune Manufacturing Co.",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "pricing/purchase",
+      "priority": "high",
+      "status": "missed",
+      "received_at": "2026-09-24T10:07:09-07:00",
+      "message_id": "1a0d462a21c87f11"
+    },
+    {
+      "id": 38,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "Educational Institution Discount Available?",
+      "body": "Dear Team,\n\nI'm reaching out from EduTech Pro, an ed-tech company serving 300+ schools across India.\n\nWe handle a large volume of inbound inquiries from schools and parents daily and find it impossible to manually track which ones are high-intent.\n\nDo you offer special pricing for educational institutions or NGOs?\n\nAlso, can this system integrate with:\n- WhatsApp Business API\n- Google Workspace\n- Zoho CRM\n\nLooking forward to your response!\n\nWarm regards,\nAnanya Reddy\nHead of Growth\nEduTech Pro",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "pricing/purchase",
+      "priority": "high",
+      "status": "new",
+      "received_at": "2026-09-24T10:07:11-07:00",
+      "message_id": "1a0d462aca30e651"
+    },
+    {
+      "id": 37,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "Interested in Your Platform \u2014 Logistics Sector",
+      "body": "Good day,\n\nI am Tom Bergmann from Euro Logistics GmbH based in Hamburg, Germany.\n\nWe operate a fleet of 800 trucks across Europe and receive approximately 200 emails per day from potential freight customers. We lose track of many of these inquiries and believe an AI system would help.\n\nPlease provide:\n- GDPR compliance documentation\n- On-premise deployment option (we cannot use cloud for data security)\n- German-language support\n- Pricing in EUR\n\nWe're serious buyers. Can we talk this week?\n\nMit freundlichen Gr\u00fc\u00dfen,\nTom Bergmann\nOperations Director\nEuro Logistics GmbH",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "pricing/purchase",
+      "priority": "high",
+      "status": "followed_up",
+      "received_at": "2026-09-24T10:07:13-07:00",
+      "message_id": "1a0d462b4cd22877"
+    },
+    {
+      "id": 36,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "Healthcare CRM Lead Management \u2014 Urgent Need",
+      "body": "Assalamu Alaikum,\n\nWe are a private healthcare group in Saudi Arabia operating 12 clinics across Riyadh.\n\nPatient inquiry management is a major challenge \u2014 we miss 40% of appointment requests from new patients. This is a critical business problem that is costing us both revenue and patient satisfaction.\n\nIs your solution suitable for healthcare? We need:\n- Arabic language support (at least in email classification)\n- HIPAA/NDMO compliance\n- Integration with our existing HIS system\n- Training and onboarding support in Saudi Arabia\n\nBudget is not a constraint for the right solution.\n\nRegards,\nFatima Al-Hassan\nDigital Transformation Manager\nHealthcarePlus Group KSA",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "product_inquiry",
+      "priority": "high",
+      "status": "missed",
+      "received_at": "2026-09-24T10:07:15-07:00",
+      "message_id": "1a0d462bc80f305c"
+    },
+    {
+      "id": 35,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "Real Estate Lead Management \u2014 Urgent Inquiry",
+      "body": "Hi there,\n\nI run a real estate brokerage in Miami with 45 agents. Our #1 problem is agents missing hot leads in their email.\n\nA buyer emailing us at 9 PM on a Friday expecting a callback the next morning \u2014 our agents miss these constantly.\n\nQuestions:\n1. Can your system notify agents via SMS when a high-priority lead comes in?\n2. Is there a mobile app?\n3. Can we auto-assign leads to specific agents based on location or property type?\n4. What's onboarding like for non-tech-savvy agents?\n\nReady to sign up if this meets our needs.\n\nJake Williams\nBroker/Owner\nRealEstatePro Miami",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "product_inquiry",
+      "priority": "high",
+      "status": "followed_up",
+      "received_at": "2026-09-24T10:07:18-07:00",
+      "message_id": "1a0d462c45b33aae"
+    },
+    {
+      "id": 34,
+      "sender": "Jai Vijai <jaivijai188@gmail.com>",
+      "subject": "White-Label Reseller Opportunity",
+      "body": "Hi Team,\n\nWe are a digital marketing agency based in Pune, India with 200+ SME clients.\n\nWe're looking to white-label a lead management SaaS tool and offer it to our clients under our own brand.\n\nCan you please share:\n- White-label/OEM pricing\n- Customization options (logo, color scheme, domain)\n- API access for integration into our client portals\n- Revenue share or reseller margin structure\n- Technical requirements and support SLA\n\nThis would be an exclusive arrangement if terms are right.\n\nLooking forward to a conversation.\n\nBest,\nSneha Patel\nCEO & Founder\nDigital Agency India",
+      "label": "lead",
+      "confidence": 95.0,
+      "intent": "partnership",
+      "priority": "medium",
+      "status": "missed",
+      "received_at": "2026-09-24T10:07:20-07:00",
+      "message_id": "1a0d462cc6ca84ca"
+    }
+  ],
+  "activities": [
+    {
+      "id": 124,
+      "timestamp": "2026-10-06T22:33:09.617551",
+      "actor": "Gmail Connector",
+      "action": "Gmail Sync Failed",
+      "lead_id": null,
+      "details": "Error during sync: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+    }
+  ]
+}

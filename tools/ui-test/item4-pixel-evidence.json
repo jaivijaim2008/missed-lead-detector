@@ -1,0 +1,24 @@
+{
+  "boxes": {
+    "volume": {
+      "x": 278,
+      "y": 421,
+      "w": 1116,
+      "h": 376
+    },
+    "intent": {
+      "x": 278,
+      "y": 815,
+      "w": 550,
+      "h": 344
+    }
+  },
+  "evidence": {
+    "greenLineInVolume": 1307,
+    "intentOrange": 61,
+    "intentRed": 8,
+    "intentBlue": 102,
+    "intentGreen": 0,
+    "intentNeutral": 145
+  }
+}

@@ -13,7 +13,7 @@ const statusChips: Record<string, { label: string; badge: string }> = {
   dismissed: { label: 'Not a lead', badge: 'md-badge-plain' },
 };
 
-export default function LeadsPage({ onViewDetail }: { onViewDetail?: (id: number) => void }) {
+export default function LeadsPage({ onViewDetail, onComposeReply }: { onViewDetail?: (id: number) => void; onComposeReply?: (draft: { to: string; subject: string }) => void }) {
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
   const [riskFilter, setRiskFilter] = useState('all');
@@ -206,6 +206,19 @@ export default function LeadsPage({ onViewDetail }: { onViewDetail?: (id: number
                         </td>
                         <td className="md-col-hide md-cell-dim">{formatRelativeTime(lead.received_at)}</td>
                         <td style={{ textAlign: 'right', whiteSpace: 'nowrap' }}>
+                          {onComposeReply && (
+                            <button
+                              className="md-btn md-btn-quiet md-btn-sm-inline"
+                              onClick={() =>
+                                onComposeReply({
+                                  to: lead.email,
+                                  subject: `Re: ${lead.subject || '(no subject)'}`,
+                                })
+                              }
+                            >
+                              Write reply
+                            </button>
+                          )}
                           {lead.status === 'new' || lead.status === 'missed' ? (
                             <button
                               className="md-btn md-btn-primary md-btn-sm-inline"

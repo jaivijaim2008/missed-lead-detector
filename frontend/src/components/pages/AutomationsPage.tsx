@@ -5,6 +5,38 @@ import { useApi } from '@/lib/hooks';
 import { fetchAutomations, triggerAutomation, Automation } from '@/lib/api';
 import { Play, Workflow } from 'lucide-react';
 
+/** Plain-language pipeline view: same rules, explained the way they actually behave. */
+const PIPELINE: Record<string, { step: number; name: string; plain: string; runsWhen?: string }> = {
+  auto_gmail_sync: {
+    step: 1,
+    name: 'Checking your inbox',
+    plain: 'Connects to Gmail every few minutes and brings in new mail.',
+  },
+  auto_priority_scoring: {
+    step: 2,
+    name: 'Sorting leads from noise',
+    plain: 'Reads each email and decides whether it is a real opportunity, junk, or just everyday mail.',
+  },
+  auto_missed_lead_sla: {
+    step: 3,
+    name: 'Watching reply promises',
+    plain: 'Every 15 minutes it checks whether any lead has waited too long to hear back from you.',
+  },
+  auto_followup_generator: {
+    step: 4,
+    name: 'Writing follow-ups',
+    plain: 'When a lead waits too long, a ready-to-send note is drafted so replying takes one click.',
+  },
+};
+
+function reliabilityPhrase(rate: string): string {
+  const n = parseFloat(rate);
+  if (isNaN(n)) return rate;
+  if (n >= 99) return 'Working perfectly';
+  if (n >= 90) return `Working well (${Math.round(n)}%)`;
+  return `${Math.round(n)}% success`;
+}
+
 export default function AutomationsPage() {
   const { data, loading, error, refetch } = useApi<Automation[]>(fetchAutomations);
   const [running, setRunning] = useState<string | null>(null);
@@ -24,13 +56,18 @@ export default function AutomationsPage() {
     }
   };
 
+  // Order rules by their pipeline step; unknown rules go last.
+  const rules = (data ?? []).slice().sort(
+    (a, b) => (PIPELINE[a.id]?.step ?? 99) - (PIPELINE[b.id]?.step ?? 99)
+  );
+
   return (
     <div className="md-theme">
       <header className="md-pagehead">
         <div>
           <h1>Automations</h1>
           <p className="md-pagehead-sub">
-            The busywork LeadGuard handles for you — set it up once and it keeps working
+            The background work LeadGuard does for you — set up once, running always
           </p>
         </div>
       </header>
@@ -41,6 +78,26 @@ export default function AutomationsPage() {
             {note.text}
           </div>
         )}
+
+        {/* The pipeline in plain words */}
+        <div className="md-pipeline" aria-hidden="true">
+          <div className="md-pipeline-step">
+            <span className="md-auto-num">1</span>
+            <span><b>Reads</b>every email that arrives</span>
+          </div>
+          <div className="md-pipeline-step">
+            <span className="md-auto-num">2</span>
+            <span><b>Decides</b>lead, junk, or everyday mail</span>
+          </div>
+          <div className="md-pipeline-step">
+            <span className="md-auto-num">3</span>
+            <span><b>Watches</b>reply promises on every lead</span>
+          </div>
+          <div className="md-pipeline-step">
+            <span className="md-auto-num">4</span>
+            <span><b>Reminds</b>drafts the follow-up for you</span>
+          </div>
+        </div>
 
         {loading ? (
           <div>
@@ -68,44 +125,54 @@ export default function AutomationsPage() {
           </div>
         ) : (
           <div className="md-tablecard">
-            {data.map((rule) => (
-              <div
-                key={rule.id}
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  gap: 16,
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                  padding: '15px 18px',
-                  borderBottom: '1px solid var(--md-hair)',
-                }}
-              >
-                <div style={{ flex: 1, minWidth: 240 }}>
-                  <div className="md-row-who" style={{ marginBottom: 4 }}>
-                    <span>{rule.name}</span>
-                    <span
-                      className={`md-badge ${rule.status === 'active' ? 'md-badge-handled' : 'md-badge-plain'}`}
-                    >
-                      {rule.status === 'active' ? 'Running on its own' : 'Paused'}
-                    </span>
+            {rules.map((rule) => {
+              const meta = PIPELINE[rule.id];
+              const active = rule.status === 'active';
+              return (
+                <div key={rule.id} className="md-auto-row">
+                  <span className="md-auto-num" style={meta ? undefined : { background: 'var(--md-pencil)' }}>
+                    {meta?.step ?? '·'}
+                  </span>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div className="md-row-who" style={{ marginBottom: 3 }}>
+                      <span>{meta?.name ?? rule.name}</span>
+                      <span className={`md-badge ${active ? 'md-badge-handled' : 'md-badge-plain'}`}>
+                        {active ? 'Running on its own' : 'Paused'}
+                      </span>
+                    </div>
+                    <p className="md-cell-dim" style={{ margin: '0 0 8px' }}>
+                      {meta?.plain ?? rule.action}
+                    </p>
+                    <div className="md-auto-meta">
+                      <span>
+                        <b>Runs when</b>
+                        {meta?.runsWhen ?? rule.trigger}
+                      </span>
+                      <span>
+                        <b>Last ran</b>
+                        {rule.last_run}
+                      </span>
+                      <span>
+                        <b>Up next</b>
+                        {rule.next_run}
+                      </span>
+                      <span>
+                        <b>Health</b>
+                        {reliabilityPhrase(rule.success_rate)}
+                      </span>
+                    </div>
                   </div>
-                  <p className="md-cell-dim" style={{ margin: '0 0 6px' }}>{rule.action}</p>
-                  <p className="md-row-meta" style={{ margin: 0 }}>
-                    Kicks in when: {rule.trigger} · Works {rule.success_rate} of the time ·
-                    Last ran {rule.last_run} · Next: {rule.next_run}
-                  </p>
+                  <button
+                    className="md-btn md-btn-quiet md-btn-md"
+                    onClick={() => handleRun(rule.id)}
+                    disabled={running === rule.id}
+                  >
+                    <Play size={12} style={{ marginRight: 6 }} />
+                    {running === rule.id ? 'Running…' : 'Run it now'}
+                  </button>
                 </div>
-                <button
-                  className="md-btn md-btn-quiet md-btn-md"
-                  onClick={() => handleRun(rule.id)}
-                  disabled={running === rule.id}
-                >
-                  <Play size={12} style={{ marginRight: 6 }} />
-                  {running === rule.id ? 'Running…' : 'Run it now'}
-                </button>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>

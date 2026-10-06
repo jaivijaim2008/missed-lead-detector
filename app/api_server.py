@@ -52,7 +52,7 @@ app = FastAPI(
 # Enable CORS for Next.js dev server and production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origin_regex="https?://.*",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -858,6 +858,86 @@ def get_email_detail(email_id: int):
     }
 
 
+class SendEmailPayload(BaseModel):
+    to: str
+    subject: str
+    body: str
+
+
+@app.post("/api/emails/send")
+def compose_and_send(payload: SendEmailPayload):
+    """
+    Free-form compose-and-send (separate from the templated follow-ups).
+    Sends a real email via the Gmail API using the send-scope OAuth token
+    (credentials/token_send.json), then logs the send to the History feed.
+    Always returns a clear success or error — never fails silently.
+    """
+    to = (payload.to or "").strip()
+    subject = (payload.subject or "").strip()
+    body = payload.body or ""
+
+    # ---- Validation: block empty recipient / empty message ----
+    if not to:
+        raise HTTPException(status_code=422, detail="Recipient ('to') is required.")
+    if not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", to):
+        raise HTTPException(status_code=422, detail=f"'{to}' is not a valid email address.")
+    if not body.strip():
+        raise HTTPException(status_code=422, detail="Message body is empty — write something first.")
+
+    # ---- Send via Gmail API (same auth as follow-ups) ----
+    try:
+        service = get_gmail_service()
+    except FileNotFoundError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=f"Gmail credentials not configured: {exc}"
+        )
+    except Exception as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=f"Gmail authentication failed: {exc}. "
+                   "Re-authorize by running: python app/gmail_auth.py"
+        )
+
+    message_body = _build_mime_message(to=to, subject=subject or "(no subject)", body=body)
+
+    try:
+        sent = service.users().messages().send(
+            userId="me", body=message_body
+        ).execute()
+    except GoogleHttpError as exc:
+        status_code = getattr(exc, "resp", {}).get("status", "??")
+        if str(status_code) == "429":
+            detail = "Gmail rate limit exceeded. Wait a moment and try again."
+        elif str(status_code) in ("401", "403"):
+            detail = (
+                "Gmail send permission missing or expired. Re-authorize send access by running: "
+                "python app/gmail_auth.py"
+            )
+        else:
+            detail = f"Gmail API error (HTTP {status_code}): {exc}"
+        raise HTTPException(status_code=502, detail=detail)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Unexpected send error: {exc}")
+
+    gmail_message_id = sent.get("id", "N/A")
+
+    # ---- Log to the History/Activity feed like every other action ----
+    log_activity(
+        action="Email Sent",
+        details=f"Composed email sent to {to} — '{subject or '(no subject)'}' (Gmail message ID: {gmail_message_id}).",
+        actor="You"
+    )
+
+    return {
+        "success": True,
+        "recipient": to,
+        "subject": subject or "(no subject)",
+        "gmail_message_id": gmail_message_id,
+        "timestamp": datetime.now().isoformat(),
+    }
+
+
 class ClassifyEmailPayload(BaseModel):
     sender: str = "potential.client@enterprise.com"
     subject: str = "Enterprise plan pricing inquiry"
@@ -865,9 +945,11 @@ class ClassifyEmailPayload(BaseModel):
 
 
 # ---------------------------------------------------------------------------
-# Load the classifier model once at startup for in-memory-only predictions.
-# This avoids any DB writes during classification requests.
+# In-memory classification used by /api/emails/classify (no DB writes).
+# Primary: Anthropic LLM. Fallback: the old TF-IDF pickle if the API
+# call fails or times out, so the endpoint never breaks.
 # ---------------------------------------------------------------------------
+from llm_classifier import classify_email_llm, get_provider_label, get_model_name
 import joblib as _joblib
 
 _MODEL_PATH = os.path.join(PROJECT_ROOT, "model", "lead_classifier.pkl")
@@ -875,13 +957,26 @@ try:
     _classifier_model = _joblib.load(_MODEL_PATH)
 except Exception as _e:
     _classifier_model = None
-    print(f"[classify] WARNING: could not load model from {_MODEL_PATH}: {_e}")
+    print(f"[classify] WARNING: could not load fallback model from {_MODEL_PATH}: {_e}")
 
 
 def _classify_in_memory(sender: str, subject: str, body: str) -> dict:
     """Pure in-memory classification — never touches the database."""
+    llm_result = classify_email_llm(sender, subject, body)
+
+    if llm_result is not None:
+        return {
+            "prediction": llm_result["label"],
+            "confidence": llm_result["confidence"],
+            "intent": llm_result["intent"],
+            "priority": llm_result["priority"],
+            "method": f"llm ({llm_result.get('model', 'claude')})",
+            "reasoning": llm_result.get("reasoning", ""),
+        }
+
+    # ---- Fallback: old TF-IDF model (API down / no key / error) ----
     if _classifier_model is None:
-        raise HTTPException(status_code=503, detail="Classifier model is not loaded. Check model/lead_classifier.pkl.")
+        raise HTTPException(status_code=503, detail="Classifier unavailable: LLM API failed and no local fallback model found.")
 
     text = (subject or "") + " " + (body or "")
     prediction = _classifier_model.predict([text])[0]
@@ -901,6 +996,8 @@ def _classify_in_memory(sender: str, subject: str, body: str) -> dict:
     elif prediction == "spam":
         intent, priority = "spam", "low"
     else:
+        # job_alert / otp_code / social / newsletter / general -> normal
+        prediction = "normal"
         intent, priority = "general", "low"
 
     return {
@@ -908,6 +1005,8 @@ def _classify_in_memory(sender: str, subject: str, body: str) -> dict:
         "confidence": confidence,
         "intent": intent,
         "priority": priority,
+        "method": "fallback (tf-idf)",
+        "reasoning": "Classified by local TF-IDF fallback model.",
     }
 
 
@@ -929,6 +1028,8 @@ def test_classification(payload: ClassifyEmailPayload):
         "confidence": round(result["confidence"], 2),
         "intent": result["intent"],
         "priority": result["priority"].upper(),
+        "method": result.get("method", "llm"),
+        "reasoning": result.get("reasoning", ""),
         "suggested_draft": draft,
     }
 
@@ -1032,7 +1133,7 @@ def get_automations():
             "id": "auto_priority_scoring",
             "name": "Commercial Intent & Urgency Classifier",
             "trigger": "Inbound email received",
-            "action": "NLP TF-IDF classifier predicts Lead/Spam/General & priority",
+            "action": "LLM classifier (Anthropic Claude) predicts Lead/Spam/General & priority",
             "status": "active",
             "last_run": (datetime.now() - timedelta(minutes=2)).strftime("%Y-%m-%d %H:%M"),
             "next_run": "Continuous",
@@ -1085,6 +1186,13 @@ def list_activity(limit: int = Query(50, ge=1, le=100)):
 SETTINGS_PATH = os.path.join(BASE_DIR, "settings.json")
 
 
+def _llm_status() -> str:
+    """Active when an LLM API key is present; otherwise running on the fallback model."""
+    from llm_classifier import get_active_provider
+
+    return "active" if get_active_provider() else "fallback active (no LLM API key)"
+
+
 def _load_saved_settings() -> Dict[str, Any]:
     """Persisted user settings (SLA minutes etc.). Defaults if never saved."""
     try:
@@ -1102,6 +1210,12 @@ def get_settings():
     token_path = os.path.join(PROJECT_ROOT, "credentials", "token.json")
     gmail_connected = os.path.exists(token_path)
     saved = _load_saved_settings()
+    provider_label = get_provider_label()
+    display_name = (
+        f"{provider_label} (LLM classifier) — {get_model_name()}"
+        if provider_label
+        else "LLM classifier — no API key set (using TF-IDF fallback)"
+    )
 
     return {
         "email_account": {
@@ -1112,10 +1226,11 @@ def get_settings():
         },
         "sla_threshold_minutes": saved.get("sla_threshold_minutes", 60),
         "ai_model": {
-            "name": "TF-IDF + Logistic Regression Lead Classifier",
-            "status": "trained & active",
-            "version": "1.2.0",
-            "features": "N-gram (1,2), Intent Keywords, Urgency Heuristics"
+            "name": display_name,
+            "status": _llm_status(),
+            "version": get_model_name(),
+            "fallback": "TF-IDF + Logistic Regression (used only if the LLM API is down)",
+            "features": "Understands meaning, not keywords — reads each email and returns label (lead / normal / spam), intent, priority and a one-sentence reason. Ignores job alerts, OTP codes, social notifications, newsletters and marketing even when they sound urgent."
         },
         "notifications": {
             "email_alerts": True,
@@ -1188,8 +1303,7 @@ def run_background_sync(max_results: int = 500):
         sys.path.append(PROJECT_ROOT)
         from sync_real_inbox import fetch_real_inbox, wipe_simulated_data
 
-        wipe_simulated_data()
-        sync_state["message"] = "Fetching emails from Gmail API..."
+        sync_state["message"] = "Connecting to Gmail and fetching real inbox emails..."
 
         def progress_cb(current, total, status_text=""):
             sync_state["current"] = current
@@ -1198,15 +1312,26 @@ def run_background_sync(max_results: int = 500):
 
         results = fetch_real_inbox(max_results=max_results, progress_callback=progress_cb)
 
+        # After successful fetch, clear simulated fake records so dashboard shows only real emails
+        wipe_simulated_data()
+
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("SELECT COUNT(*) FROM emails")
+        total_in_db = c.fetchone()[0]
+        c.execute("SELECT COUNT(*) FROM emails WHERE label='lead'")
+        total_leads = c.fetchone()[0]
+        conn.close()
+
         sync_state["processed"] = len(results)
         sync_state["status"] = "completed"
         sync_state["is_syncing"] = False
         sync_state["completed_at"] = datetime.now().isoformat()
-        sync_state["message"] = f"Successfully synced {len(results)} emails from Gmail."
+        sync_state["message"] = f"Gmail sync complete — {total_in_db} real emails in database ({total_leads} leads active)."
 
         log_activity(
             action="Gmail Synced",
-            details=f"Retrieved {len(results)} new email(s) from real inbox.",
+            details=f"Retrieved {len(results)} new email(s) from real inbox. Total in DB: {total_in_db}.",
             actor="Gmail Connector"
         )
     except Exception as e:
@@ -1258,4 +1383,6 @@ def inject_demo_data(count: Optional[int] = None):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    host = os.environ.get("HOST", "127.0.0.1")
+    uvicorn.run(app, host=host, port=port)

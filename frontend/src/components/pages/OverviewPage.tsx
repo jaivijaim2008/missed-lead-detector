@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useApi, formatRelativeTime } from '@/lib/hooks';
 import {
   fetchStats,
@@ -8,12 +8,15 @@ import {
   fetchActivity,
   fetchAnalytics,
   sendFollowUp,
+  triggerGmailSync,
+  fetchSyncStatus,
   DashboardStats,
   Activity,
   Lead,
   AnalyticsData,
+  SyncStatus,
 } from '@/lib/api';
-import { palette as BI, chartTheme } from '@/lib/palette';
+import { palette as BI, chartTheme, handledLine } from '@/lib/palette';
 import {
   useDateRange,
   RangeSwitch,
@@ -26,6 +29,7 @@ import {
   CheckCircle2,
   AlertTriangle,
   PieChart as PieIcon,
+  RefreshCw,
 } from 'lucide-react';
 import {
   AreaChart,
@@ -124,6 +128,50 @@ export default function OverviewPage() {
   const [focus, setFocus] = useState<Focus>(null);
   const [sendingId, setSendingId] = useState<number | null>(null);
   const [sendNote, setSendNote] = useState<{ ok: boolean; text: string } | null>(null);
+  const [syncing, setSyncing] = useState(false);
+  const [syncNote, setSyncNote] = useState<{ ok: boolean; text: string } | null>(null);
+
+  // Poll sync status while syncing
+  useEffect(() => {
+    if (!syncing) return;
+    const interval = setInterval(async () => {
+      try {
+        const s = await fetchSyncStatus();
+        if (s.message) {
+          setSyncNote({ ok: s.status !== 'failed', text: s.message });
+        }
+        if (!s.is_syncing) {
+          setSyncing(false);
+          if (s.status === 'completed') {
+            setSyncNote({ ok: true, text: `Done — ${s.processed} emails synced from Gmail.` });
+            refetch();
+            refetchUrgent();
+            refetchActivity();
+          } else if (s.status === 'failed') {
+            setSyncNote({ ok: false, text: `Sync issue: ${s.error || s.message}` });
+          }
+        }
+      } catch {
+        // keep polling
+      }
+    }, 1500);
+    return () => clearInterval(interval);
+  }, [syncing, refetch, refetchUrgent, refetchActivity]);
+
+  const handleSyncGmail = async () => {
+    setSyncing(true);
+    setSyncNote({ ok: true, text: 'Connecting to Gmail inbox…' });
+    try {
+      const res = await triggerGmailSync(100);
+      setSyncNote({ ok: true, text: res.message });
+    } catch (e: unknown) {
+      setSyncing(false);
+      setSyncNote({
+        ok: false,
+        text: e instanceof Error ? e.message : 'Sync request failed. Try again.',
+      });
+    }
+  };
 
   const handleReply = async (leadId: number, name: string) => {
     setSendingId(leadId);
@@ -198,20 +246,46 @@ export default function OverviewPage() {
     <div className="md-theme">
       {/* Opening */}
       <header className="md-opening" style={{ paddingBottom: 10 }}>
-        <p style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12.5, color: 'var(--md-pencil-deep)', margin: '0 0 14px' }}>
-          <span className={`md-status-dot ${error ? 'is-waiting' : ''}`} aria-hidden="true" />
-          {error ? 'Inbox checking paused' : stats ? `Inbox checking on · ${stats.total_emails} emails read` : 'Checking your inbox…'}
-        </p>
-        {loading && !stats ? (
-          <>
-            <div className="md-sentence-skeleton" />
-            <div className="md-sentence-skeleton" style={{ width: 'min(420px, 60%)', height: 22 }} />
-          </>
-        ) : (
-          <>
-            <h1 className="md-sentence">{headline ?? 'Checking your inbox…'}</h1>
-            {subline && <p className="md-subline">{subline}</p>}
-          </>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 12 }}>
+          <div>
+            <p style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12.5, color: 'var(--md-pencil-deep)', margin: '0 0 14px' }}>
+              <span className={`md-status-dot ${error ? 'is-waiting' : ''}`} aria-hidden="true" />
+              {error ? 'Inbox checking paused' : stats ? `Inbox checking on · ${stats.total_emails} emails read` : 'Checking your inbox…'}
+            </p>
+            {loading && !stats ? (
+              <>
+                <div className="md-sentence-skeleton" />
+                <div className="md-sentence-skeleton" style={{ width: 'min(420px, 60%)', height: 22 }} />
+              </>
+            ) : (
+              <>
+                <h1 className="md-sentence">{headline ?? 'Checking your inbox…'}</h1>
+                {subline && <p className="md-subline">{subline}</p>}
+              </>
+            )}
+          </div>
+          <button
+            className="md-btn md-btn-quiet md-btn-md"
+            onClick={handleSyncGmail}
+            disabled={syncing}
+            style={{ marginTop: 2, display: 'inline-flex', alignItems: 'center' }}
+            title="Fetch real emails from your Gmail inbox in one click"
+          >
+            <RefreshCw
+              size={13}
+              style={{ marginRight: 6, animation: syncing ? 'spin 1s linear infinite' : 'none' }}
+            />
+            {syncing ? 'Checking Gmail…' : 'Sync Gmail (1-Click)'}
+          </button>
+        </div>
+        {syncNote && (
+          <div
+            className={`md-note ${syncNote.ok ? 'md-note-ok' : 'md-note-bad'}`}
+            style={{ marginTop: 12, fontSize: 13 }}
+            role="status"
+          >
+            {syncNote.text}
+          </div>
         )}
       </header>
 
@@ -543,7 +617,7 @@ export default function OverviewPage() {
                       />
                       <Area type="monotone" dataKey="leads" name="Leads found" stroke={BI.working} fill="url(#mdLeadsBi)" strokeWidth={2} strokeOpacity={focusSeriesOpacity('leads')} />
                       <Area type="monotone" dataKey="missed" name="Slipped past" stroke={BI.attention} fill="url(#mdMissedBi)" strokeWidth={2} strokeOpacity={focusSeriesOpacity('missed')} />
-                      <Area type="monotone" dataKey="followed_up" name="Follow-ups sent" stroke={BI.handled} fill="none" strokeWidth={1.5} strokeDasharray="4 2" strokeOpacity={focusSeriesOpacity('followed_up')} />
+                      <Area type="monotone" dataKey="followed_up" name="Follow-ups sent" stroke={handledLine} fill="none" strokeWidth={2.5} strokeDasharray="7 3" strokeOpacity={focusSeriesOpacity('followed_up')} />
                     </AreaChart>
                   </ResponsiveContainer>
                 </div>

@@ -19,7 +19,7 @@ const labelChip: Record<string, { label: string; badge: string }> = {
   general: { label: 'General', badge: 'md-badge-plain' },
 };
 
-export default function EmailsPage() {
+export default function EmailsPage({ onComposeReply }: { onComposeReply?: (draft: { to: string; subject: string }) => void }) {
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState('all');
   const [page, setPage] = useState(1);
@@ -212,6 +212,22 @@ export default function EmailsPage() {
                 {selectedEmail.body}
               </div>
 
+              {/* Reply (own draft, pre-filled) */}
+              {onComposeReply && (
+                <button
+                  className="md-btn md-btn-primary md-btn-md"
+                  style={{ marginTop: 14 }}
+                  onClick={() =>
+                    onComposeReply({
+                      to: selectedEmail.email,
+                      subject: `Re: ${selectedEmail.subject || '(no subject)'}`,
+                    })
+                  }
+                >
+                  Reply
+                </button>
+              )}
+
               {/* Next step */}
               {selectedEmail.label === 'lead' ? (
                 <div style={{ marginTop: 14, display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
@@ -220,7 +236,7 @@ export default function EmailsPage() {
                     {classifying ? 'Double-checking…' : 'Double-check this one'}
                   </button>
                   <span style={{ fontSize: 12.5, color: 'var(--md-pencil-deep)' }}>
-                    Reply from the Leads page — “Reply now” sends the ready-made note.
+                    “Reply now” on the Leads page sends the ready-made note; “Reply” above opens your own draft.
                   </span>
                 </div>
               ) : (

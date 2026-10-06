@@ -40,6 +40,17 @@ export function colorFor(category: string): string {
   return categoryColor[category.toLowerCase()] ?? BI.neutral;
 }
 
+/**
+ * Neutral categorical ramp for charts where color carries NO meaning
+ * (e.g. "kinds of requests"). Deliberately avoids the status hues
+ * (orange/red = urgency, green = handled, blue = in progress) so a bar
+ * can never be misread as good/bad.
+ */
+export const neutralRamp = ['#44403C', '#57534E', '#78716C', '#A8A29E', '#D6D3D1'];
+
+/** Darker green for thin/dashed chart lines — `handled` text green is too pale on paper. */
+export const handledLine = '#166534';
+
 /** Shared Recharts styling so every chart looks like the same report. */
 export const chartTheme = {
   axisTick: { fill: BI.neutral, fontSize: 11 },

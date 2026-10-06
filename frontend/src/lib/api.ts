@@ -1,4 +1,8 @@
-const API_BASE = '/api';
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_URL ||
+  (typeof window !== 'undefined'
+    ? 'https://sega-wants-backing-vault.trycloudflare.com/api'
+    : '/api');
 
 export class ApiError extends Error {
   status: number;
@@ -229,6 +233,28 @@ export function sendFollowUp(leadId: number, customMessage?: string): Promise<{ 
   });
 }
 
+// ─── Compose (free-form send) ────────────────────────
+export interface SendEmailPayload {
+  to: string;
+  subject: string;
+  body: string;
+}
+
+export interface SendEmailResponse {
+  success: boolean;
+  recipient: string;
+  subject: string;
+  gmail_message_id: string;
+  timestamp: string;
+}
+
+export function sendEmail(payload: SendEmailPayload): Promise<SendEmailResponse> {
+  return request('/emails/send', {
+    method: 'POST',
+    body: JSON.stringify(payload),
+  });
+}
+
 // ─── Emails ──────────────────────────────────────────
 export interface Email {
   id: number;
@@ -339,6 +365,7 @@ export interface Settings {
     status: string;
     version: string;
     features: string;
+    fallback?: string;
   };
   notifications: {
     email_alerts: boolean;

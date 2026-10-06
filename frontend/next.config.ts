@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
 
+const API_BACKEND = process.env.API_URL || "https://sega-wants-backing-vault.trycloudflare.com";
+
 const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
         source: "/api/:path*",
-        destination: "http://127.0.0.1:8000/api/:path*",
+        destination: `${API_BACKEND}/api/:path*`,
       },
     ];
   },

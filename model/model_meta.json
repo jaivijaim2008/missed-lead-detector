@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "trained_at": "2026-09-27T01:26:44",
+  "accuracy": 100.0,
+  "dataset_rows": 2270,
+  "classes": [
+    "general",
+    "job_alert",
+    "lead",
+    "newsletter",
+    "otp_code",
+    "social",
+    "spam"
+  ]
+}

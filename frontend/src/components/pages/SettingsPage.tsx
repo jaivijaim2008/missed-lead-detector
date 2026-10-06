@@ -278,14 +278,28 @@ export default function SettingsPage() {
               <dd>{settings.ai_model.name}</dd>
             </div>
             <div>
-              <dt>Version</dt>
-              <dd>v{settings.ai_model.version}</dd>
+              <dt>Model</dt>
+              <dd>{settings.ai_model.version}</dd>
+            </div>
+            <div>
+              <dt>Safety net</dt>
+              <dd>{settings.ai_model.fallback ?? 'Local fallback model'}</dd>
             </div>
             <div>
               <dt>Status</dt>
               <dd style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
-                <span className="md-foot-dot" aria-hidden="true" />
-                {settings.ai_model.status === 'active' ? 'Working normally' : settings.ai_model.status}
+                <span
+                  className="md-foot-dot"
+                  style={{
+                    background: settings.ai_model.status === 'active'
+                      ? 'var(--md-handled)'
+                      : 'var(--md-attention)',
+                  }}
+                  aria-hidden="true"
+                />
+                {settings.ai_model.status === 'active'
+                  ? 'Working normally'
+                  : settings.ai_model.status}
               </dd>
             </div>
             <div>

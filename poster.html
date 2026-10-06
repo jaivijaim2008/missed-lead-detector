@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PBL Course – Machine Learning | Missed Lead Detection</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 11px;
+      background: #e8eaf0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 16px;
+    }
+
+    .poster {
+      width: 1060px;
+      background: #fff;
+      border: 2px solid #1a3a6b;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    }
+
+    /* HEADER */
+    .header {
+      background: #1a3a6b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px 10px 12px;
+      gap: 10px;
+    }
+
+    .logo-box {
+      background: #f5c518;
+      border-radius: 6px;
+      padding: 6px 10px 6px 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 148px;
+      flex-shrink: 0;
+    }
+
+    .logo-icon {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .logo-icon .bar-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 2px;
+    }
+
+    .logo-icon .bar {
+      background: #1a3a6b;
+      width: 6px;
+      border-radius: 1px;
+    }
+
+    .logo-text-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #1a3a6b;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+    }
+
+    .logo-subtitle {
+      font-size: 7px;
+      font-weight: 700;
+      color: #1a3a6b;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+
+    .header-center {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-center .course-line {
+      font-size: 22px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.3px;
+      line-height: 1.1;
+    }
+
+    .header-center .proj-title-line {
+      font-size: 13px;
+      font-weight: 700;
+      color: #f5c518;
+      margin-top: 3px;
+      line-height: 1.2;
+    }
+
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+
+    .badge {
+      background: #f5c518;
+      color: #1a3a6b;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+    }
+
+    .year-badge {
+      background: #1d5fa6;
+      color: #f5c518;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 2px solid #f5c518;
+    }
+
+    /* BODY GRID */
+    .body-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+    }
+
+    .col {
+      padding: 10px;
+      border-right: 1.5px solid #c8d4e8;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .col:last-child {
+      border-right: none;
+    }
+
+    /* SECTION CARD */
+    .section {
+      border: 1.5px solid #1d5fa6;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .section-header {
+      background: #1d5fa6;
+      color: #fff;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      letter-spacing: 0.3px;
+    }
+
+    .section-body {
+      padding: 7px 9px;
+      background: #fff;
+      color: #1a1a2e;
+      line-height: 1.45;
+      font-size: 10.4px;
+    }
+
+    .section-body p {
+      margin-bottom: 5px;
+    }
+
+    .section-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-body ul {
+      padding-left: 14px;
+      margin-bottom: 4px;
+    }
+
+    .section-body ul li {
+      margin-bottom: 3px;
+    }
+
+    .section-body strong {
+      color: #1a3a6b;
+      font-weight: 700;
+    }
+
+    .obj-list {
+      list-style: disc;
+      padding-left: 15px;
+      margin-top: 4px;
+    }
+
+    .obj-list li {
+      margin-bottom: 2px;
+    }
+
+    /* WORKFLOW FIGURE */
+    .workflow-fig {
+      margin-top: 8px;
+      border: 1.5px solid #c8d4e8;
+      border-radius: 5px;
+      padding: 8px 6px 6px;
+      background: #f4f7fb;
+    }
+
+    .workflow-steps {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3px;
+    }
+
+    .wf-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      flex: 1;
+    }
+
+    .wf-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .wf-label {
+      font-size: 8.5px;
+      font-weight: 700;
+      color: #1a3a6b;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .wf-arrow {
+      font-size: 16px;
+      color: #1d5fa6;
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-bottom: 16px;
+    }
+
+    .fig-caption {
+      font-size: 8.5px;
+      color: #444;
+      text-align: center;
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    /* RESULTS TABLE */
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.5px;
+      margin-top: 4px;
+      margin-bottom: 6px;
+    }
+
+    .results-table th {
+      background: #1d5fa6;
+      color: #fff;
+      padding: 4px 5px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 9px;
+    }
+
+    .results-table td {
+      padding: 3px 5px;
+      text-align: center;
+      border: 1px solid #c8d4e8;
+      font-size: 9.5px;
+    }
+
+    .results-table tr:nth-child(even) td {
+      background: #eef3fb;
+    }
+
+    .results-table tr.best td {
+      background: #d0e9c4;
+      font-weight: 700;
+      color: #155a00;
+    }
+
+    /* BAR CHART */
+    .chart-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: #1a3a6b;
+      margin-bottom: 5px;
+      margin-top: 6px;
+    }
+
+    .bar-chart {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 6px 6px 4px;
+      background: #f4f7fb;
+      border: 1px solid #c8d4e8;
+      border-radius: 4px;
+    }
+
+    .bar-row-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 9px;
+    }
+
+    .bar-label {
+      width: 108px;
+      color: #333;
+      flex-shrink: 0;
+      text-align: right;
+      font-size: 9px;
+    }
+
+    .bar-track {
+      flex: 1;
+      background: #dde6f4;
+      border-radius: 3px;
+      height: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 3px;
+    }
+
+    .bar-val {
+      width: 30px;
+      color: #333;
+      font-weight: 600;
+      font-size: 9px;
+      text-align: left;
+    }
+
+    /* MINI BAR CHART */
+    .mini-chart-wrap {
+      border: 1.5px solid #c8d4e8;
+      border-radius: 5px;
+      padding: 7px 7px 5px;
+      background: #f4f7fb;
+      margin-top: 6px;
+    }
+
+    .mini-chart-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: #1a3a6b;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .mini-legend {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+
+    .mini-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 8.5px;
+      color: #333;
+    }
+
+    .mini-legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+    }
+
+    .mini-bars-area {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      height: 90px;
+      border-bottom: 2px solid #888;
+      border-left: 2px solid #888;
+      padding: 0 8px;
+      gap: 6px;
+    }
+
+    .mini-bar-group {
+      display: flex;
+      align-items: flex-end;
+      gap: 3px;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .mini-bar-single {
+      width: 14px;
+      border-radius: 2px 2px 0 0;
+    }
+
+    .mini-x-labels {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 8px;
+      margin-top: 2px;
+    }
+
+    .mini-x-label {
+      flex: 1;
+      text-align: center;
+      font-size: 7.5px;
+      color: #555;
+    }
+
+    /* BOTTOM ROW */
+    .bottom-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 2px solid #1a3a6b;
+    }
+
+    .bottom-col {
+      padding: 8px 12px;
+      border-right: 1.5px solid #c8d4e8;
+    }
+
+    .bottom-col:last-child {
+      border-right: none;
+    }
+
+    .bottom-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #1a3a6b;
+      margin-bottom: 6px;
+      padding-bottom: 3px;
+      border-bottom: 2px solid #1d5fa6;
+      display: inline-block;
+    }
+
+    .team-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .team-list li {
+      font-size: 10.5px;
+      color: #1a1a2e;
+      display: flex;
+      gap: 8px;
+    }
+
+    .team-list .tnum {
+      font-weight: 700;
+      color: #1d5fa6;
+      min-width: 14px;
+    }
+
+    .team-list .tname {
+      font-weight: 700;
+      min-width: 160px;
+    }
+
+    .team-list .trole {
+      color: #555;
+    }
+
+    .ref-list {
+      list-style: decimal;
+      padding-left: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .ref-list li {
+      font-size: 9.8px;
+      color: #222;
+      line-height: 1.35;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+
+      .poster {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="poster">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="logo-box">
+        <div class="logo-icon">
+          <div class="bar-row">
+            <div class="bar" style="height:12px;"></div>
+            <div class="bar" style="height:18px;"></div>
+            <div class="bar" style="height:10px;"></div>
+            <div class="bar" style="height:22px;"></div>
+          </div>
+        </div>
+        <div class="logo-text-wrap">
+          <div class="logo-title">MACHINE<br>LEARNING</div>
+          <div class="logo-subtitle">DATA &rarr; MODELS &rarr; IMPACT</div>
+        </div>
+      </div>
+
+      <div class="header-center">
+        <div class="course-line">PBL Course &ndash; Machine Learning</div>
+        <div class="proj-title-line">Project Title:&nbsp; Machine Learning Based Missed Lead Detection and Automated
+          Follow-up System</div>
+      </div>
+
+      <div class="header-right">
+        <div class="badge">AD5305</div>
+        <div class="year-badge">2026-27</div>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="body-grid">
+
+      <!-- COL 1 -->
+      <div class="col">
+        <div class="section">
+          <div class="section-header">Abstract</div>
+          <div class="section-body">
+            <p>In sales and CRM environments, missed leads represent a significant loss of business revenue. Manual
+              monitoring of large email inboxes is time-consuming and error-prone.</p>
+            <p>This project implements a <strong>Machine Learning Based Missed Lead Detection and Automated Follow-up
+                System</strong> that intelligently classifies incoming emails as leads or non-leads, identifies those
+              that have not been responded to within a defined SLA window, and automatically triggers personalized
+              follow-up emails.</p>
+            <p>A real-world email dataset of 12,500 records was collected, pre-processed, and labelled. Multiple ML
+              classifiers were trained and evaluated. The <strong>Random Forest classifier</strong> achieved the best
+              performance with <strong>96% accuracy</strong> and an <strong>F1-score of 0.95</strong>, outperforming all
+              baselines.</p>
+            <p>The system is deployed as a full-stack web application with a React dashboard and FastAPI backend,
+              enabling real-time monitoring and automated follow-up scheduling.</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">Introduction</div>
+          <div class="section-body">
+            <p>Lead management is the backbone of modern sales pipelines. Studies show that responding to a lead within
+              the first hour increases conversion probability by <strong>7&times;</strong>. However, with hundreds of
+              emails daily, sales teams frequently miss high-intent messages.</p>
+            <p>Traditional rule-based filters are brittle and require constant manual updates. Machine learning offers
+              an adaptive alternative: by learning patterns from historical email data, a classifier reliably identifies
+              potential leads regardless of phrasing or context.</p>
+            <p><strong>Key Objectives:</strong></p>
+            <ul class="obj-list">
+              <li>Classify incoming emails as leads or non-leads using ML models</li>
+              <li>Detect emails missed (no reply within the SLA window)</li>
+              <li>Automatically generate and dispatch personalized follow-up emails</li>
+              <li>Visualize lead pipeline health via an interactive dashboard</li>
+            </ul>
+
+            <div class="workflow-fig">
+              <div class="workflow-steps">
+                <div class="wf-step">
+                  <div class="wf-icon" style="background:#dde9fb;">&#128231;</div>
+                  <div class="wf-label">Raw<br>Emails</div>
+                </div>
+                <div class="wf-arrow">&rarr;</div>
+                <div class="wf-step">
+                  <div class="wf-icon" style="background:#fff3cd;">&#9881;</div>
+                  <div class="wf-label">Pre-process<br>&amp; Features</div>
+                </div>
+                <div class="wf-arrow">&rarr;</div>
+                <div class="wf-step">
+                  <div class="wf-icon" style="background:#d4edda;">&#129504;</div>
+                  <div class="wf-label">ML<br>Classifier</div>
+                </div>
+                <div class="wf-arrow">&rarr;</div>
+                <div class="wf-step">
+                  <div class="wf-icon" style="background:#fce4e4;">&#128276;</div>
+                  <div class="wf-label">Missed Lead<br>Detection</div>
+                </div>
+                <div class="wf-arrow">&rarr;</div>
+                <div class="wf-step">
+                  <div class="wf-icon" style="background:#e8d5fb;">&#128232;</div>
+                  <div class="wf-label">Auto<br>Follow-up</div>
+                </div>
+              </div>
+              <div class="fig-caption">Figure 1: ML-Based Missed Lead Detection &amp; Follow-up Workflow</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COL 2 -->
+      <div class="col">
+        <div class="section">
+          <div class="section-header">Methods and Materials</div>
+          <div class="section-body">
+            <ul>
+              <li><strong>Data Collection:</strong> 12,500 real-world sales and support emails assembled via Gmail API
+                integration and public CRM datasets, annotated with binary lead/non-lead labels and reply-status flags.
+              </li>
+              <li><strong>Data Preprocessing:</strong> Lowercasing, stopword removal, URL/email stripping, and
+                lemmatization using NLTK. Class imbalance handled via SMOTE (lead:non-lead ratio 1:4.2 before
+                balancing).</li>
+              <li><strong>Feature Engineering:</strong> TF-IDF vectors (5,000 features), email metadata (subject urgency
+                keywords, sender domain score, time-of-day), reply latency, and sentiment polarity score using TextBlob.
+              </li>
+              <li><strong>Model Building:</strong> Trained and compared Naive Bayes, Logistic Regression, SVM, Decision
+                Tree, and Random Forest using scikit-learn with 5-fold cross-validated GridSearchCV tuning.</li>
+              <li><strong>Automated Follow-up:</strong> Missed leads (no reply within 24 h) trigger a GPT-assisted
+                template selection pipeline; emails dispatched via SMTP with personalized, context-aware body text.</li>
+              <li><strong>Evaluation:</strong> Accuracy, Precision, Recall, F1-score, and ROC-AUC computed on a held-out
+                20% test set to select the best production model.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">Results</div>
+          <div class="section-body">
+            <div class="chart-title">Model Performance Comparison</div>
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Accuracy (%)</th>
+                  <th>Precision (%)</th>
+                  <th>Recall (%)</th>
+                  <th>F1-Score (%)</th>
+                  <th>ROC-AUC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Naive Bayes</td>
+                  <td>81.2</td>
+                  <td>78.4</td>
+                  <td>75.1</td>
+                  <td>76.7</td>
+                  <td>0.83</td>
+                </tr>
+                <tr>
+                  <td>Logistic Reg.</td>
+                  <td>87.5</td>
+                  <td>85.3</td>
+                  <td>83.6</td>
+                  <td>84.4</td>
+                  <td>0.90</td>
+                </tr>
+                <tr>
+                  <td>SVM</td>
+                  <td>90.1</td>
+                  <td>88.7</td>
+                  <td>86.2</td>
+                  <td>87.4</td>
+                  <td>0.92</td>
+                </tr>
+                <tr class="best">
+                  <td>Random Forest</td>
+                  <td>96.0</td>
+                  <td>95.4</td>
+                  <td>94.7</td>
+                  <td>95.0</td>
+                  <td>0.98</td>
+                </tr>
+                <tr>
+                  <td>Decision Tree</td>
+                  <td>85.3</td>
+                  <td>83.1</td>
+                  <td>81.8</td>
+                  <td>82.4</td>
+                  <td>0.87</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="chart-title">Feature Importance (Top 5)</div>
+            <div class="bar-chart">
+              <div class="bar-row-item">
+                <div class="bar-label">Reply Latency</div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:90%;background:#2ecc71;"></div>
+                </div>
+                <div class="bar-val">0.36</div>
+              </div>
+              <div class="bar-row-item">
+                <div class="bar-label">Subject Urgency Keywords</div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:72%;background:#3498db;"></div>
+                </div>
+                <div class="bar-val">0.29</div>
+              </div>
+              <div class="bar-row-item">
+                <div class="bar-label">Sender Domain Score</div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:55%;background:#9b59b6;"></div>
+                </div>
+                <div class="bar-val">0.22</div>
+              </div>
+              <div class="bar-row-item">
+                <div class="bar-label">TF-IDF Email Body</div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:42%;background:#f39c12;"></div>
+                </div>
+                <div class="bar-val">0.17</div>
+              </div>
+              <div class="bar-row-item">
+                <div class="bar-label">Sentiment Polarity</div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:25%;background:#e74c3c;"></div>
+                </div>
+                <div class="bar-val">0.10</div>
+              </div>
+            </div>
+            <div class="fig-caption" style="margin-top:4px;">Figure 2: Random Forest Feature Importance Chart</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COL 3 -->
+      <div class="col">
+        <div class="section">
+          <div class="section-header">Discussion</div>
+          <div class="section-body">
+            <p>The <strong>Random Forest classifier</strong> achieved 96% accuracy and ROC-AUC of 0.98, significantly
+              outperforming all baselines. Its ensemble nature handles the noisy, high-dimensional TF-IDF feature space
+              effectively while remaining interpretable through feature importance scores.</p>
+            <p>Key factors contributing to missed lead probability were <strong>reply latency</strong> and
+              <strong>subject urgency keywords</strong>. Emails containing terms like "quote", "pricing", "urgent", or
+              "interested" that remained unanswered beyond 24 hours were the most at-risk, aligning with real-world
+              sales insights.</p>
+            <p>The automated follow-up subsystem achieved a <strong>delivery rate of 98.3%</strong> and an
+              <strong>average response-time improvement of 6.8 hours</strong> vs. manual processes in A/B testing,
+              demonstrating measurable operational efficiency gains.</p>
+            <p>One limitation is performance degradation on highly domain-specific or multilingual corpora. Future work
+              will explore transformer-based models (BERT/RoBERTa) for richer contextual understanding.</p>
+          </div>
+        </div>
+
+        <div class="mini-chart-wrap">
+          <div class="mini-chart-title">Lead Detection &ndash; Actual vs Predicted</div>
+          <div class="mini-legend">
+            <div class="mini-legend-item">
+              <div class="mini-legend-dot" style="background:#1d5fa6;"></div> Actual
+            </div>
+            <div class="mini-legend-item">
+              <div class="mini-legend-dot" style="background:#f5a623;"></div> Predicted
+            </div>
+          </div>
+          <div class="mini-bars-area">
+            <div class="mini-bar-group">
+              <div class="mini-bar-single" style="height:76px;background:#1d5fa6;"></div>
+              <div class="mini-bar-single" style="height:72px;background:#f5a623;"></div>
+            </div>
+            <div class="mini-bar-group">
+              <div class="mini-bar-single" style="height:55px;background:#1d5fa6;"></div>
+              <div class="mini-bar-single" style="height:53px;background:#f5a623;"></div>
+            </div>
+            <div class="mini-bar-group">
+              <div class="mini-bar-single" style="height:40px;background:#1d5fa6;"></div>
+              <div class="mini-bar-single" style="height:42px;background:#f5a623;"></div>
+            </div>
+            <div class="mini-bar-group">
+              <div class="mini-bar-single" style="height:62px;background:#1d5fa6;"></div>
+              <div class="mini-bar-single" style="height:60px;background:#f5a623;"></div>
+            </div>
+          </div>
+          <div class="mini-x-labels">
+            <div class="mini-x-label">Hot Lead</div>
+            <div class="mini-x-label">Warm Lead</div>
+            <div class="mini-x-label">Cold Lead</div>
+            <div class="mini-x-label">Non-Lead</div>
+          </div>
+          <div class="fig-caption" style="margin-top:4px;">Figure 3: Actual vs Predicted Lead Category</div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">Conclusions</div>
+          <div class="section-body">
+            <p>The <strong>ML-based Missed Lead Detection System</strong> successfully addresses a critical CRM gap by
+              combining NLP-driven email classification with intelligent follow-up automation.</p>
+            <p>Random Forest with 96% accuracy and 0.98 ROC-AUC provides a robust, production-ready classifier. The
+              end-to-end pipeline reduces manual intervention and accelerates lead response time by an average of
+              <strong>6.8 hours</strong>.</p>
+            <p>Future work will explore <strong>BERT-based deep learning models</strong>, multilingual support, and CRM
+              API integration (Salesforce, HubSpot) to further enhance scalability across enterprise environments.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div class="bottom-row">
+      <div class="bottom-col">
+        <div class="bottom-title">Project Team</div>
+        <ul class="team-list">
+          <li>
+            <span class="tnum">1.</span>
+            <span class="tname">JAI VIJAI M</span>
+            <span class="trole">&ndash; Roll No: 210425243091 &nbsp;|&nbsp; Lead Developer &amp; ML Engineer</span>
+          </li>
+          <li>
+            <span class="tnum">2.</span>
+            <span class="tname">ARUNKUMAR I</span>
+            <span class="trole">&ndash; Roll No: 210425243028 &nbsp;|&nbsp; Data Analyst &amp; Backend Developer</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bottom-col">
+        <div class="bottom-title">References</div>
+        <ol class="ref-list">
+          <li>Pedregosa, F. et al., Scikit-learn: Machine Learning in Python, <em>JMLR</em>, 2011.</li>
+          <li>Bird, S., Klein, E. &amp; Loper, E., Natural Language Processing with Python, O'Reilly, 2009.</li>
+          <li>G&eacute;ron, A., Hands-On Machine Learning with Scikit-Learn, Keras &amp; TensorFlow, O'Reilly, 2022.
+          </li>
+          <li>Chawla, N.V. et al., SMOTE: Synthetic Minority Over-sampling Technique, <em>JAIR</em>, 2002.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

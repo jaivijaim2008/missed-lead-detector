@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: leadguard-api
+    runtime: python
+    buildCommand: pip install -r render_requirements.txt
+    startCommand: uvicorn app.api_server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.11.4"

@@ -51,9 +51,18 @@ def get_gmail_service(credentials_path=CREDENTIALS_FILE, token_path=None, scopes
         )
 
     if not creds or not creds.valid:
+        refreshed = False
         if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
+            try:
+                creds.refresh(Request())
+                refreshed = True
+            except Exception as e:
+                print(f"\n[Gmail Auth] Stored token expired/revoked: {e}")
+                print("[Gmail Auth] Opening browser for one-click re-authorization...")
+                creds = None
+                refreshed = False
+
+        if not refreshed or not creds or not creds.valid:
             if not os.path.exists(credentials_path):
                 raise FileNotFoundError(
                     f"Credentials file not found at: {credentials_path}\n"
@@ -70,11 +79,20 @@ def get_gmail_service(credentials_path=CREDENTIALS_FILE, token_path=None, scopes
 
             creds = flow.run_local_server(
                 port=0,
-                success_message="Authentication successful! You may close this window and return to VS Code."
+                success_message="Authentication successful! You may close this window and return to the application."
             )
 
         with open(token_path, "w") as token:
             token.write(creds.to_json())
+
+        # Also keep both token files in sync
+        try:
+            with open(TOKEN_FILE, "w") as tf:
+                tf.write(creds.to_json())
+            with open(TOKEN_SEND_FILE, "w") as tsf:
+                tsf.write(creds.to_json())
+        except Exception:
+            pass
 
     return build("gmail", "v1", credentials=creds)
 

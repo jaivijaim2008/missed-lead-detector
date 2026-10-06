@@ -1,25 +1,34 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces, Public_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({
+// Self-hosted fonts (latin subsets, variable weight). next/font/google
+// downloads these at build time, which breaks `next build` on machines
+// where the build-time fetch fails — local files make builds reproducible.
+// The CSS variable names are unchanged, so no other file needs edits.
+const inter = localFont({
+  src: "../fonts/inter-latin.woff2",
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "100 900",
+  display: "swap",
 });
 
 // Pilot redesign typefaces (Overview "Morning Desk" theme)
-const fraunces = Fraunces({
+const fraunces = localFont({
+  src: [
+    { path: "../fonts/fraunces-latin.woff2", style: "normal" },
+    { path: "../fonts/fraunces-latin-italic.woff2", style: "italic" },
+  ],
   variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
+  weight: "100 900",
+  display: "swap",
 });
 
-const publicSans = Public_Sans({
+const publicSans = localFont({
+  src: "../fonts/public-sans-latin.woff2",
   variable: "--font-ui",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "100 900",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

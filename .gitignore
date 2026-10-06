@@ -1,26 +1,28 @@
 # Credentials & Tokens (CRITICAL - DO NOT COMMIT)
 credentials/
 credentials/*
-*.json
-!frontend/package.json
-!frontend/tsconfig.json
+token*.json
+
+# Environment secrets
+.env
 
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
-*.pkl
-.env
 venv/
 .venv/
 
-# Database
+# Database (recreated at runtime)
 app/leads.db
-*.db
+app/lead_detector.db
+app/leads.db.backup-retrain
 *.sqlite3
 
 # Node / Next.js
 frontend/node_modules/
+tools/ui-test/node_modules/
+node_modules/
 frontend/.next/
 frontend/out/
 frontend/build/
@@ -30,8 +32,30 @@ frontend/build/
 Thumbs.db
 .vscode/
 .idea/
+~$*
 
 # Runtime artifacts (local only)
 *.log
 /overview*.png
 .git-frontend-backup/
+.freebuff/
+.agents/
+
+# Large binary screenshots - not needed for deployment
+*.png
+*.jpg
+!frontend/public/**/*.png
+!frontend/public/**/*.jpg
+!frontend/public/**/*.ico
+
+# Report files
+*.pptx
+*.docx
+*.pdf
+*.txt
+!requirements.txt
+!render_requirements.txt
+!Procfile
+
+# Temp
+temp_extracted_imgs/

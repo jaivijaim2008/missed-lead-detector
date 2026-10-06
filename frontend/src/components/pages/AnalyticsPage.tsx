@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useApi } from '@/lib/hooks';
 import { fetchAnalytics, AnalyticsData } from '@/lib/api';
-import { palette as BI, chartTheme } from '@/lib/palette';
+import { palette as BI, chartTheme, neutralRamp, handledLine } from '@/lib/palette';
 import { useDateRange, RangeSwitch, KpiCard, ChartCard, FilterNote } from '@/lib/bi';
 import {
   AreaChart,
@@ -19,7 +19,8 @@ import {
   Pie,
 } from 'recharts';
 
-const INTENT_COLORS = [BI.working, BI.attention, BI.handled, BI.pending, BI.tense, BI.system, BI.neutral];
+// Neutral ramp: these categories aren't good/bad, so they don't get status colors.
+const INTENT_COLORS = neutralRamp;
 
 // API sends "High Priority" / "Medium Priority" / "Low Priority" — normalize.
 function priorityKey(p: string): 'high' | 'medium' | 'low' {
@@ -176,7 +177,7 @@ export default function AnalyticsPage() {
                 />
                 <Area type="monotone" dataKey="leads" name="Leads found" stroke={BI.working} fill="url(#mdAnLeads)" strokeWidth={2} />
                 <Area type="monotone" dataKey="missed" name="Slipped past" stroke={BI.attention} fill="url(#mdAnMissed)" strokeWidth={2} />
-                <Area type="monotone" dataKey="followed_up" name="Follow-ups sent" stroke={BI.handled} fill="none" strokeWidth={1.5} strokeDasharray="4 2" />
+                <Area type="monotone" dataKey="followed_up" name="Follow-ups sent" stroke={handledLine} fill="none" strokeWidth={2.5} strokeDasharray="7 3" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
