@@ -42,6 +42,7 @@ def get_gmail_service(credentials_path=CREDENTIALS_FILE, token_path=None, scopes
     if scopes is None:
         scopes = SCOPES
 
+    creds = None
     # 1. Prefer environment variable if set (for cloud deployment)
     env_token = os.environ.get("GMAIL_TOKEN_JSON")
     if env_token:
