@@ -1263,7 +1263,12 @@ def update_settings(payload: SettingsUpdatePayload):
 @app.get("/api/gmail/status")
 def gmail_status():
     token_path = os.path.join(PROJECT_ROOT, "credentials", "token.json")
-    connected = os.path.exists(token_path)
+    token_send_path = os.path.join(PROJECT_ROOT, "credentials", "token_send.json")
+    connected = (
+        bool(os.environ.get("GMAIL_TOKEN_JSON"))
+        or os.path.exists(token_path)
+        or os.path.exists(token_send_path)
+    )
     return {
         "connected": connected,
         "status": "Connected" if connected else "Disconnected",
