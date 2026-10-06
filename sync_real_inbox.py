@@ -39,43 +39,27 @@ CREDENTIALS_FILE = os.path.join(BASE_DIR, "credentials", "credentials.json")
 
 
 def get_service_with_full_scope():
-    """Get Gmail service with full scopes (read + send). Tries send token first."""
+    """Get Gmail service with full scopes (read + send). Supports GMAIL_TOKEN_JSON."""
     from google.auth.transport.requests import Request
     from google.oauth2.credentials import Credentials
-    from google_auth_oauthlib.flow import InstalledAppFlow
     from googleapiclient.discovery import build
-    import webbrowser
+    from app.gmail_auth import get_gmail_service
 
-    # Try the send-scoped token first (created by send_test_emails.py)
-    for token_path, scopes in [
-        (TOKEN_SEND_FILE, SCOPES_SEND),
-        (TOKEN_READONLY_FILE, ["https://www.googleapis.com/auth/gmail.readonly"]),
-    ]:
-        if os.path.exists(token_path):
-            try:
-                creds = Credentials.from_authorized_user_file(token_path, scopes)
-                if creds and creds.valid:
-                    return build("gmail", "v1", credentials=creds)
-                if creds and creds.expired and creds.refresh_token:
-                    creds.refresh(Request())
-                    with open(token_path, "w") as f:
-                        f.write(creds.to_json())
-                    return build("gmail", "v1", credentials=creds)
-            except Exception:
-                continue
+    # Check GMAIL_TOKEN_JSON env var first
+    env_token = os.environ.get("GMAIL_TOKEN_JSON")
+    if env_token:
+        try:
+            import json
+            token_info = json.loads(env_token)
+            creds = Credentials.from_authorized_user_info(token_info, SCOPES_SEND)
+            if creds and creds.expired and creds.refresh_token:
+                creds.refresh(Request())
+            if creds and creds.valid:
+                return build("gmail", "v1", credentials=creds)
+        except Exception as e:
+            print(f"[Gmail Auth] Error loading GMAIL_TOKEN_JSON: {e}")
 
-    # Need fresh auth
-    print("\n" + "="*60)
-    print("GMAIL AUTHORIZATION REQUIRED")
-    print("="*60)
-    print("A browser window will open. Please sign in and allow access.")
-    print("="*60 + "\n")
-    flow = InstalledAppFlow.from_client_secrets_file(CREDENTIALS_FILE, SCOPES_SEND)
-    webbrowser.open = lambda url, **kw: os.system(f'start "" "{url}"')
-    creds = flow.run_local_server(port=0)
-    with open(TOKEN_SEND_FILE, "w") as f:
-        f.write(creds.to_json())
-    return build("gmail", "v1", credentials=creds)
+    return get_gmail_service(scopes=SCOPES_SEND)
 
 
 def wipe_simulated_data():
