@@ -42,9 +42,18 @@ def get_gmail_service(credentials_path=CREDENTIALS_FILE, token_path=None, scopes
     if scopes is None:
         scopes = SCOPES
 
-    creds = None
+    # 1. Prefer environment variable if set (for cloud deployment)
+    env_token = os.environ.get("GMAIL_TOKEN_JSON")
+    if env_token:
+        try:
+            import json
+            token_info = json.loads(env_token)
+            creds = Credentials.from_authorized_user_info(token_info, scopes)
+        except Exception as e:
+            print(f"[Gmail Auth] Error loading GMAIL_TOKEN_JSON env var: {e}")
 
-    if os.path.exists(token_path):
+    # 2. Check local token files
+    if not creds and os.path.exists(token_path):
         creds = Credentials.from_authorized_user_file(
             token_path,
             scopes
